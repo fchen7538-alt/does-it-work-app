@@ -933,7 +933,8 @@
     "rxcui": "236809",
     "category": "supplement",
     "synonyms": [
-      "Ginkgo biloba extract"
+      "Ginkgo biloba extract",
+      "standardized Ginkgo biloba extract"
     ]
   },
   {
@@ -3751,15 +3752,6 @@
     "category": "supplement",
     "synonyms": [
       "PhytO2X Antioxidant Blend"
-    ]
-  },
-  {
-    "id": "standardized-ginkgo-biloba-extract",
-    "name": "standardized Ginkgo biloba extract",
-    "rxcui": null,
-    "category": "supplement",
-    "synonyms": [
-      "standardized Ginkgo biloba extract"
     ]
   },
   {

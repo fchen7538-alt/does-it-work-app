@@ -79,7 +79,7 @@ npm scripts already set it, so this only matters if you invoke
 
 The `data/*.json` files currently checked in are **live** (`data/meta.json`,
 `status: "live"`) — pulled for real from DSLD, openFDA, RxNorm, and PubMed
-E-utilities: 171 products (147 supplement, 24 OTC) and 476 ingredients. See
+E-utilities: 171 products (147 supplement, 24 OTC) and 471 ingredients. See
 `data/README.md` for the full breakdown, including the NOW Foods gap noted
 above. Re-run `npm run sync` any time to refresh — curated `sub`,
 `studiedAmount`, `chips`, and `reviewVerdict` fields in `data/evidence.json`,

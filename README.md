@@ -54,7 +54,7 @@ from, so it's clear which claim is about which ingredient.
 
 **`data/*.json` is live data**, pulled for real from DSLD, openFDA, RxNorm,
 and PubMed E-utilities: 171 products (147 supplement across 7 of the 8
-requested brands, 24 OTC) and 472 ingredients, with real PubMed study counts
+requested brands, 24 OTC) and 471 ingredients, with real PubMed study counts
 as of `data/meta.json`'s `lastSynced` timestamps. Curated content (interaction
 records, and reviewer verdicts for the original ~20 core ingredients) is
 preserved rather than overwritten by the pipeline — see `data/README.md` for

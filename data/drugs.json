@@ -17,5 +17,13 @@
   { "id": "omeprazole", "label": "Omeprazole (Prilosec)", "rxcui": "7646", "brandNames": ["Prilosec"] },
   { "id": "hydrochlorothiazide", "label": "Hydrochlorothiazide", "rxcui": "5487", "brandNames": ["Microzide"] },
   { "id": "furosemide", "label": "Furosemide (Lasix)", "rxcui": "4603", "brandNames": ["Lasix"] },
-  { "id": "prednisone", "label": "Prednisone", "rxcui": "8640", "brandNames": ["Deltasone", "Rayos"] }
+  { "id": "prednisone", "label": "Prednisone", "rxcui": "8640", "brandNames": ["Deltasone", "Rayos"] },
+  { "id": "clopidogrel", "label": "Clopidogrel (Plavix)", "rxcui": "32968", "brandNames": ["Plavix"] },
+  { "id": "escitalopram", "label": "Escitalopram (Lexapro)", "rxcui": "321988", "brandNames": ["Lexapro"] },
+  { "id": "alprazolam", "label": "Alprazolam (Xanax)", "rxcui": "596", "brandNames": ["Xanax"] },
+  { "id": "amoxicillin", "label": "Amoxicillin", "rxcui": "723", "brandNames": ["Amoxil"] },
+  { "id": "digoxin", "label": "Digoxin", "rxcui": "3407", "brandNames": ["Lanoxin"] },
+  { "id": "hydrocodone", "label": "Hydrocodone/Acetaminophen (Vicodin)", "rxcui": "5489", "brandNames": ["Vicodin", "Norco"] },
+  { "id": "gabapentin", "label": "Gabapentin (Neurontin)", "rxcui": "25480", "brandNames": ["Neurontin"] },
+  { "id": "duloxetine", "label": "Duloxetine (Cymbalta)", "rxcui": "72625", "brandNames": ["Cymbalta"] }
 ]
