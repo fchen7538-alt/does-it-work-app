@@ -8,11 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "sync": "tsx pipeline/build.ts",
-    "sync:dsld": "tsx pipeline/build.ts --only=dsld",
-    "sync:openfda": "tsx pipeline/build.ts --only=openfda",
-    "sync:rxnorm": "tsx pipeline/build.ts --only=rxnorm",
-    "sync:pubmed": "tsx pipeline/build.ts --only=pubmed"
+    "sync": "NODE_USE_ENV_PROXY=1 tsx pipeline/build.ts",
+    "sync:dsld": "NODE_USE_ENV_PROXY=1 tsx pipeline/build.ts --only=dsld",
+    "sync:openfda": "NODE_USE_ENV_PROXY=1 tsx pipeline/build.ts --only=openfda",
+    "sync:rxnorm": "NODE_USE_ENV_PROXY=1 tsx pipeline/build.ts --only=rxnorm",
+    "sync:pubmed": "NODE_USE_ENV_PROXY=1 tsx pipeline/build.ts --only=pubmed"
   },
   "dependencies": {
     "next": "^14.2.15",

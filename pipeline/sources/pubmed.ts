@@ -73,7 +73,7 @@ export async function findReviewCandidate(topic: string): Promise<ReviewCandidat
       db: "pubmed",
       term: searchTerm,
       retmode: "json",
-      sort: "most+recent",
+      sort: "pub_date",
       retmax: "1",
     }),
   );

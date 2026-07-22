@@ -50,30 +50,17 @@ black pepper extract), Sports Research D3+K2, Excedrin (acetaminophen +
 aspirin + caffeine) — the UI labels each block with the ingredient it came
 from, so it's clear which claim is about which ingredient.
 
-## Data pipeline status — read this first
+## Data pipeline status
 
-**The data currently in `data/*.json` is seed data, not a live API pull.**
-This development sandbox's outbound network policy blocks the four hosts the
-pipeline needs (`api.ods.od.nih.gov`, `api.fda.gov`, `rxnav.nlm.nih.gov`,
-`eutils.ncbi.nlm.nih.gov` — confirmed via 403 policy denials, not a bug).
+**`data/*.json` is live data**, pulled for real from DSLD, openFDA, RxNorm,
+and PubMed E-utilities: 171 products (147 supplement across 7 of the 8
+requested brands, 24 OTC) and 476 ingredients, with real PubMed study counts
+as of `data/meta.json`'s `lastSynced` timestamps. Curated content (interaction
+records, and reviewer verdicts for the original ~20 core ingredients) is
+preserved rather than overwritten by the pipeline — see `data/README.md` for
+the full breakdown and known gaps (e.g. NOW Foods under-coverage), and
+`pipeline/README.md` for what's automated vs. editorially curated and why.
 
-So: the pipeline is fully written and real — `pipeline/sources/{dsld,openfda,rxnorm,pubmed}.ts`
-are working clients against the actual documented endpoints, and
-`pipeline/build.ts` orchestrates them into `data/*.json` — but it hasn't been
-executed against the live APIs yet. `data/*.json` was instead hand-curated to
-the exact same schema, covering the 8 supplement brands (Nature Made, NOW
-Foods, Nature's Bounty, Garden of Life, Sports Research, Solgar, Life
-Extension, Thorne) and OTC brands (Tylenol, Advil, Aleve, Excedrin) named in
-the spec, with 20 products, 20 active ingredients, and 38 interactions across
-the 11 specified drugs — all medically reviewed for accuracy rather than
-invented. Full provenance notes are in `data/README.md`.
-
-**To get live data:** run `npm run sync` from any environment with normal
-outbound network access (your own machine, a CI job, or this environment
-after widening its egress policy to include the four hosts above). It
-overwrites `data/*.json` in place using the same schema — no code changes
-needed — and preserves hand-curated evidence fields (`sub`, `studiedAmount`,
-`chips`, `reviewVerdict`) rather than clobbering them with automated content.
-See `pipeline/README.md` for what's automated vs. what stays editorially
-curated (interaction severity/text and review-verdict conclusions,
-deliberately — see that file for why).
+Re-run any time with `npm run sync` (or a `sync:<source>` stage for just one
+API) once you have network access to `api.ods.od.nih.gov`, `api.fda.gov`,
+`rxnav.nlm.nih.gov`, and `eutils.ncbi.nlm.nih.gov`.

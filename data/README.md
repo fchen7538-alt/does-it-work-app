@@ -1,38 +1,44 @@
 # data/
 
 These files are what `src/lib/data.ts` reads at request time. They're written to
-the exact schema the pipeline in `/pipeline` produces (see `pipeline/README.md`),
-so `npm run sync` can overwrite them in place once run from an environment with
-network access to the source APIs.
+the schema the pipeline in `/pipeline` produces (see `pipeline/README.md`), so
+`npm run sync` overwrites them in place, in any environment with network
+access to the source APIs.
 
-**Current status: seed data**, not a live pull (`meta.json` → `"status": "seed"`).
-This sandbox's network policy blocks the DSLD, openFDA, RxNorm, and PubMed hosts,
-so these files were hand-curated to realistic, medically-reviewed content instead:
+**Current status: live** (`meta.json` → `"status": "live"`, with per-source
+`lastSynced` timestamps). 171 products and 476 ingredients, pulled from the
+real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
 
-- `products.json` — 20 real product lines across the 8 requested supplement
-  brands (Nature Made, NOW Foods, Nature's Bounty, Garden of Life, Sports
-  Research, Solgar, Life Extension, Thorne) plus 4 OTC brands (Tylenol, Advil,
-  Aleve, Excedrin). Doses reflect each brand's actual typical product line but
-  should be treated as representative, not scraped from a live label.
-- `ingredients.json` — canonical ingredient list. RxCUI values are included
-  only where they're well-established, stable identifiers (e.g. acetaminophen
-  161, ibuprofen 5640, aspirin 1191); everything else is `null` rather than a
-  guessed value. A live `npm run sync:rxnorm` run will fill these in properly.
-- `evidence.json` — study counts are representative approximations, not live
-  PubMed esearch counts. `reviewVerdict` is only present where the underlying
-  systematic review/Cochrane review is one we're genuinely confident exists
-  and concludes what's described (e.g. the Cochrane reviews on melatonin for
-  jet lag, omega-3s for cardiovascular disease, vitamin C for the common
-  cold) — consistent with "only show a verdict when one exists."
-- `interactions.json` — every interaction here is a real, defensible
-  pharmacological interaction (either well-documented — e.g. vitamin K vs.
-  warfarin, mineral chelation of fluoroquinolones/tetracyclines, NSAID +
-  anticoagulant bleeding risk — or explicitly hedged with "limited evidence" /
-  "case reports only" language where that's the honest state of the
-  evidence). Several ingredients (probiotics, B12, B-complex, vitamin C)
-  intentionally have zero interactions against this drug list, exercising the
-  "nothing on file" UI state honestly rather than padding every ingredient
-  with a manufactured interaction.
+- `products.json` — supplement products live-pulled from DSLD across 7 of
+  the 8 requested brands (Nature Made, Nature's Bounty, Garden of Life,
+  Sports Research, Solgar, Life Extension, Thorne), plus OTC products
+  live-pulled from openFDA (Tylenol, Advil, Motrin, Aleve, Excedrin). **NOW
+  Foods is a known gap**: DSLD registers their products under the brand
+  `"NOW"`, not `"NOW Foods"` — a single common English word, which DSLD's
+  relevance-ranked search doesn't reliably surface in the first page of
+  results even with an exact-phrase query. The 2 NOW Foods products present
+  are the original hand-curated seed entries, left in place rather than
+  dropped. A future fix: page through DSLD with a much larger `size` and
+  post-filter, or search by an ID/UPC range instead of brand text.
+- `ingredients.json` — canonical ingredient list, including every "other
+  ingredient" (fillers, capsule shells, etc.) DSLD/openFDA returned, not
+  just active ones. RxCUI is filled in live via RxNorm where a concept
+  exists; most dietary ingredients (herbs, minerals-as-such) legitimately
+  have none (`rxcui: null`) since RxNorm covers drugs, not foods/botanicals.
+- `evidence.json` — `studyCount` is a live PubMed esearch count as of the
+  `lastSynced.pubmed` timestamp in `meta.json`. `reviewVerdict` is only
+  present for the original curated set of ~20 ingredients — the pipeline
+  finds review candidates for every ingredient (surfaced in `npm run sync`'s
+  console output as "review candidate found... needs editorial write-up")
+  but deliberately does not auto-generate verdict text (see
+  `pipeline/sources/pubmed.ts`), so uncurated ingredients get an honest
+  `sub: "Summary pending editorial review."` placeholder instead of a
+  fabricated summary.
+- `interactions.json` — unchanged from the original curated set (38 rows
+  across the 11 specified drugs). This is a maintained clinical dataset by
+  design, not something the pipeline generates — see `pipeline/README.md`.
 
-Run `npm run sync` from an environment that can reach the source APIs to
-replace this seed data with a live pull.
+Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live
+data; curated `evidence.json` fields (`sub`, `studiedAmount`, `chips`,
+`reviewVerdict`) and all of `interactions.json` are preserved rather than
+overwritten — see the merge logic in `pipeline/build.ts`.

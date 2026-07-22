@@ -3,18 +3,25 @@
 // Docs: https://dsld.od.nih.gov/api-guide
 // Base URL: https://api.ods.od.nih.gov/dsld/v9
 //
-// DSLD is a search index over scanned supplement labels. We use two calls:
-//   1. POST/GET /search-filter  — full-text + filtered search, returns a
-//      paginated list of lightweight product hits (id, brand, fullName).
-//   2. GET /label/{id}          — full label record for one product,
-//      including the "ingredientRows" panel (name, quantity, unit, part of
-//      Supplement Facts vs "other ingredients").
+// DSLD is an Elasticsearch-backed index over scanned supplement labels. We
+// use two calls:
+//   1. GET /search-filter  — full-text search, returns a paginated list of
+//      ES-style hits ({_id, _source: {brandName, fullName, ...}}). There's
+//      no dedicated brand-filter parameter; the reliable way to restrict to
+//      one brand is a quoted exact phrase in `q` (`q="Nature Made"`) — an
+//      unquoted `q=Nature Made` does a loose relevance search across all
+//      fields and returns unrelated brands.
+//   2. GET /label/{id}     — full label record for one product. Active
+//      ingredients live in `ingredientRows[]`; inactive/"other" ingredients
+//      are a separate `otheringredients.ingredients[]` array — they are NOT
+//      one combined list with a category flag. Each ingredientRows entry's
+//      amount is nested under `quantity[]` (one entry per serving size the
+//      label defines); we use the first serving size.
 //
-// This client only depends on fields documented in the API guide as of this
-// writing. DSLD is a live, evolving index — if the response shape has
-// changed, `mapDsldHitToProduct` / `mapDsldLabelToIngredients` are the two
-// functions to update; nothing else in the pipeline needs to know about
-// DSLD's wire format.
+// Verified against the live API. If DSLD changes its response shape again,
+// `mapDsldLabelToProduct` and the two response interfaces below are the
+// only things that need to change — nothing else in the pipeline needs to
+// know about DSLD's wire format.
 
 import { createRateLimiter, fetchJson } from "../lib/http";
 import type { IngredientRef, Product } from "../../src/lib/types";
@@ -44,45 +51,43 @@ export interface DsldLabel {
   id: string;
   fullName: string;
   brandName: string;
-  netContents?: string;
-  servingsPerContainer?: string;
+  netContentsDisplay?: string;
+  servingSizeDisplay?: string;
   ingredientRows: DsldLabelIngredient[];
 }
 
-/** Raw shape returned by GET /search-filter — subset of fields we use. */
+/** Raw shape returned by GET /search-filter (Elasticsearch hit envelope) — subset of fields we use. */
 interface DsldSearchResponse {
   hits?: Array<{
-    id?: string;
     _id?: string;
-    fullName?: string;
-    brandName?: string;
-    upcSku?: string;
+    _source?: {
+      fullName?: string;
+      brandName?: string;
+      upcSku?: string;
+    };
   }>;
-  total?: number;
 }
 
 /** Raw shape returned by GET /label/{id} — subset of fields we use. */
 interface DsldLabelResponse {
-  id?: string;
-  _id?: string;
+  id?: number | string;
   fullName?: string;
   brandName?: string;
-  netContents?: string;
-  servingsPerContainer?: string;
+  netContents?: Array<{ quantity?: number; unit?: string; display?: string }>;
+  servingSizes?: Array<{ minQuantity?: number; maxQuantity?: number; unit?: string }>;
   ingredientRows?: Array<{
     name?: string;
-    quantity?: string | number;
-    unit?: string;
-    category?: string; // "Supplement Facts" | "Other Ingredients"
+    quantity?: Array<{ quantity?: number; unit?: string }>;
   }>;
+  otheringredients?: {
+    ingredients?: Array<{ name?: string }>;
+  };
 }
 
 export async function searchProductsByBrand(brand: string, size = 25): Promise<DsldSearchHit[]> {
   await throttle();
   const url = `${DSLD_BASE}/search-filter?${new URLSearchParams({
-    q: brand,
-    method: "filtered",
-    "filter[brandName]": brand,
+    q: `"${brand}"`,
     size: String(size),
     from: "0",
   })}`;
@@ -90,32 +95,49 @@ export async function searchProductsByBrand(brand: string, size = 25): Promise<D
   const data = await fetchJson<DsldSearchResponse>(url);
   return (data.hits ?? [])
     .map((h) => ({
-      id: h.id ?? h._id ?? "",
-      fullName: h.fullName ?? "",
-      brandName: h.brandName ?? brand,
-      upcSku: h.upcSku,
+      id: h._id ?? "",
+      fullName: h._source?.fullName ?? "",
+      brandName: h._source?.brandName ?? brand,
+      upcSku: h._source?.upcSku,
     }))
-    .filter((h) => h.id && h.fullName);
+    // Quoted-phrase search still ranks by relevance, not an exact filter —
+    // drop hits whose brand doesn't actually match (case-insensitive).
+    .filter((h) => h.id && h.fullName && h.brandName.toLowerCase() === brand.toLowerCase());
 }
 
 export async function getProductLabel(dsldId: string): Promise<DsldLabel | null> {
   await throttle();
   const url = `${DSLD_BASE}/label/${encodeURIComponent(dsldId)}`;
   const data = await fetchJson<DsldLabelResponse>(url);
-  if (!data || (!data.id && !data._id)) return null;
+  if (!data || data.id === undefined) return null;
+
+  const activeRows: DsldLabelIngredient[] = (data.ingredientRows ?? [])
+    .filter((row) => row.name)
+    .map((row) => {
+      const firstQty = row.quantity?.[0];
+      return {
+        name: row.name!,
+        quantity: firstQty?.quantity !== undefined ? String(firstQty.quantity) : "",
+        unit: firstQty?.unit ?? "",
+        partOf: "supplement_facts" as const,
+      };
+    });
+
+  const otherRows: DsldLabelIngredient[] = (data.otheringredients?.ingredients ?? [])
+    .filter((ing) => ing.name)
+    .map((ing) => ({ name: ing.name!, quantity: "", unit: "", partOf: "other_ingredients" as const }));
+
+  const netContents = data.netContents?.[0];
+  const serving = data.servingSizes?.[0];
 
   return {
-    id: data.id ?? data._id ?? dsldId,
+    id: String(data.id ?? dsldId),
     fullName: data.fullName ?? "",
     brandName: data.brandName ?? "",
-    netContents: data.netContents,
-    servingsPerContainer: data.servingsPerContainer,
-    ingredientRows: (data.ingredientRows ?? []).map((row) => ({
-      name: row.name ?? "",
-      quantity: String(row.quantity ?? ""),
-      unit: row.unit ?? "",
-      partOf: row.category === "Other Ingredients" ? "other_ingredients" : "supplement_facts",
-    })),
+    netContentsDisplay: netContents?.display,
+    servingSizeDisplay:
+      serving?.minQuantity !== undefined ? `${serving.minQuantity} ${serving.unit ?? ""}`.trim() : undefined,
+    ingredientRows: [...activeRows, ...otherRows],
   };
 }
 
@@ -142,11 +164,15 @@ export function mapDsldLabelToProduct(
     .slice(0, 2)
     .toUpperCase();
 
+  const sub = [label.servingSizeDisplay && `serving size: ${label.servingSizeDisplay}`, label.netContentsDisplay]
+    .filter(Boolean)
+    .join(" · ");
+
   const product: Product = {
     id: `${slugify(label.brandName)}-${slugify(label.fullName)}`,
     brand: label.brandName,
     name: label.fullName,
-    sub: label.servingsPerContainer ? `${label.servingsPerContainer} servings per container` : "",
+    sub,
     initials: initials || "SP",
     kind: "supplement",
     ingredients,

@@ -77,25 +77,89 @@ export async function fetchLabelsByBrand(brand: string, limit = 5): Promise<Open
 
 /**
  * Parses the FDA label's free-text "active_ingredient" section into
- * {name, amount} pairs. This section is human-authored prose per label, e.g.
- * "Acetaminophen 500 mg .... Pain reliever/fever reducer" — we take a
- * best-effort regex split; labels that don't match are kept as inactive-only
- * so we never silently fabricate a dose.
+ * {name, amount} pairs. This is human-authored prose, usually one array
+ * entry holding every ingredient for the whole label, e.g. "Active
+ * ingredients (in each caplet) Acetaminophen 250 mg Aspirin 250 mg (NSAID*)
+ * Caffeine 65 mg *nonsteroidal anti-inflammatory drug" — so we scan for
+ * every "Name<space>dose<unit>" run anywhere in the string rather than
+ * expecting one ingredient per array entry. Boilerplate like "Active
+ * ingredients (in each caplet)" is skipped naturally: the name group can't
+ * contain digits/parens/punctuation, so a match only starts where a clean
+ * ingredient name immediately precedes a dose.
  */
+// Boilerplate phrases the regex can't distinguish from a real ingredient
+// name by shape alone (all-letters run immediately before a dose number).
+// A match containing any of these words is discarded rather than kept
+// mangled — cleaner to have a shorter ingredient list than a wrong one.
+const NOISE_WORDS =
+  /\b(purpose|purposes|active ingredient|active ingredients|solubilized|equal to|equal|each|in|nighttime|daytime|sleep-aid|pain reliever|fever reducer|cough suppressant|nasal decongestant|decongestant|expectorant|antihistamine)\b/i;
+
 function parseActiveIngredientLines(lines: string[] | undefined): Array<{ name: string; amount: string }> {
   if (!lines) return [];
   const parsed: Array<{ name: string; amount: string }> = [];
+  const seen = new Set<string>();
+  // Ingredient names on real labels are 1-3 words; capping the run keeps a
+  // false match (e.g. a four-word descriptive phrase before a dose) short
+  // enough that the noise-word filter below can catch it.
+  const pattern = /([A-Za-z][A-Za-z\-]*(?:\s+[A-Za-z][A-Za-z\-]*){0,2})\s+([\d.]+\s?(?:mg|mcg|g|IU))\b/g;
   for (const line of lines) {
-    const match = line.match(/^([A-Za-z0-9\-\s]+?)\s+([\d.]+\s?(?:mg|mcg|g|IU))\b/i);
-    if (match && match[1] && match[2]) {
-      parsed.push({ name: match[1].trim(), amount: match[2].trim() });
+    for (const match of line.matchAll(pattern)) {
+      const name = match[1]?.trim();
+      const amount = match[2]?.trim();
+      if (!name || !amount || NOISE_WORDS.test(name)) continue;
+      const key = `${name.toLowerCase()}|${amount}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      parsed.push({ name, amount });
     }
   }
   return parsed;
 }
 
+/**
+ * `canonicalBrand` is the brand name we searched for (e.g. "Tylenol"), kept
+ * distinct from `hit.brandName`, which is openFDA's per-label brand facet
+ * and often bakes the specific product line into it verbatim — e.g.
+ * "TYLENOL 8 HR ARTHRITIS PAIN" or "JUNIOR STRENGTH ADVIL". Using the raw
+ * per-label value as `product.brand` would fragment one real-world brand
+ * into a dozen inconsistent, differently-capitalized brand facets in the
+ * UI. We display the canonical brand and fold the label's specific variant
+ * into the product name instead.
+ */
+// Recognized purpose categories. openFDA's "purpose" field is one raw string
+// per label with one phrase per active ingredient concatenated together, no
+// separators — e.g. "Purposes Pain reliever Pain reliever Pain reliever aid
+// *nonsteroidal anti-inflammatory drug" for a 3-ingredient combo product.
+// Rather than guess where one phrase ends and the next begins, we scan for
+// known category phrases and report each one found, once.
+const PURPOSE_CATEGORIES = [
+  "pain reliever/fever reducer",
+  "pain reliever",
+  "fever reducer",
+  "nighttime sleep aid",
+  "sleep aid",
+  "antihistamine",
+  "nasal decongestant",
+  "decongestant",
+  "expectorant",
+  "cough suppressant",
+  "stimulant",
+];
+
+function cleanPurpose(lines: string[] | undefined): string {
+  const text = (lines ?? []).join(" ").toLowerCase();
+  const found: string[] = [];
+  for (const category of PURPOSE_CATEGORIES) {
+    if (text.includes(category) && !found.some((f) => f.includes(category))) {
+      found.push(category);
+    }
+  }
+  return found.map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join(", ");
+}
+
 export function mapOpenFdaLabelToProduct(
   hit: OpenFdaLabelHit,
+  canonicalBrand: string,
   resolveIngredientId: (rawName: string) => string,
 ): { product: Product; ingredientNames: string[] } | null {
   const activeIngredients = parseActiveIngredientLines(hit.activeIngredient);
@@ -107,16 +171,27 @@ export function mapOpenFdaLabelToProduct(
     active: true,
   }));
 
-  const initials = hit.brandName.slice(0, 2).toUpperCase();
-  const name = hit.genericName
-    ? `${activeIngredients.map((a) => a.name).join("/")} ${activeIngredients[0]?.amount ?? ""}`.trim()
-    : hit.brandName;
+  const initials = canonicalBrand.slice(0, 2).toUpperCase();
+
+  // Strip the canonical brand (in any casing) off the front of the FDA
+  // label's specific brand facet to get just the variant qualifier, e.g.
+  // "TYLENOL 8 HR ARTHRITIS PAIN" -> "8 HR Arthritis Pain".
+  const variant = hit.brandName
+    .replace(new RegExp(`^${canonicalBrand}\\b`, "i"), "")
+    .trim()
+    .toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+
+  const ingredientLabel = `${activeIngredients.map((a) => a.name).join("/")} ${activeIngredients[0]?.amount ?? ""}`.trim();
+  const name = variant ? `${variant} (${ingredientLabel})` : ingredientLabel;
+
+  const sub = cleanPurpose(hit.purpose);
 
   const product: Product = {
-    id: `${slugify(hit.brandName)}-${slugify(name)}`,
-    brand: hit.brandName,
+    id: `${slugify(canonicalBrand)}-${slugify(name)}`,
+    brand: canonicalBrand,
     name,
-    sub: hit.purpose?.join(", ") ?? "",
+    sub,
     initials: initials || "OT",
     kind: "otc",
     ingredients,

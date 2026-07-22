@@ -71,7 +71,7 @@ async function main() {
     console.log(`\n[dsld] pulling supplement products for ${SUPPLEMENT_BRANDS.length} brands...`);
     for (const brand of SUPPLEMENT_BRANDS) {
       try {
-        const hits = await dsld.searchProductsByBrand(brand, 10);
+        const hits = await dsld.searchProductsByBrand(brand, 30);
         console.log(`  ${brand}: ${hits.length} products found`);
         for (const hit of hits) {
           const label = await dsld.getProductLabel(hit.id);
@@ -100,11 +100,11 @@ async function main() {
     console.log(`\n[openfda] pulling OTC drug labels for ${OTC_BRANDS.length} brands...`);
     for (const brand of OTC_BRANDS) {
       try {
-        const hits = await openfda.fetchLabelsByBrand(brand, 5);
+        const hits = await openfda.fetchLabelsByBrand(brand, 10);
         console.log(`  ${brand}: ${hits.length} labels found`);
         for (const hit of hits) {
           const rawNames: string[] = [];
-          const mapped = openfda.mapOpenFdaLabelToProduct(hit, (name) => {
+          const mapped = openfda.mapOpenFdaLabelToProduct(hit, brand, (name) => {
             rawNames.push(name);
             return name;
           });

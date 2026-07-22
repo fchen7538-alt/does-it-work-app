@@ -1,12 +1,15 @@
 [
   {
     "ingredientId": "curcumin",
-    "studyCount": 4,
-    "filled": 2,
+    "studyCount": 3241,
+    "filled": 5,
     "sub": "Most studies looked at joint pain and stiffness",
     "studiedAmount": "1,000 mg or more per day",
-    "chips": ["3 larger studies", "1 smaller study"],
-    "src": "NIH supplement database, published research",
+    "chips": [
+      "3 larger studies",
+      "1 smaller study"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
       "text": "A 2026 review that combined 10 earlier reviews on curcumin for knee osteoarthritis found meaningful improvement in pain and stiffness, similar to common anti-inflammatory drugs, with fewer side effects reported.",
       "caveat": "only 3 of the 10 reviews were rated high quality",
@@ -15,21 +18,27 @@
   },
   {
     "ingredientId": "black-pepper-extract",
-    "studyCount": 3,
-    "filled": 1,
+    "studyCount": 206,
+    "filled": 5,
     "sub": "Studied mostly as an absorption enhancer added to other supplements, not as a supplement on its own",
     "studiedAmount": "5-20 mg alongside another compound",
-    "chips": ["Small human trials", "Lab/animal studies"],
-    "src": "Published pharmacology research"
+    "chips": [
+      "Small human trials",
+      "Lab/animal studies"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "vitamin-d3",
-    "studyCount": 9,
-    "filled": 4,
+    "studyCount": 32160,
+    "filled": 5,
     "sub": "Strong evidence for correcting low levels; mixed evidence for other uses",
     "studiedAmount": "600-4,000 IU per day, depending on your starting level",
-    "chips": ["6 larger studies", "3 combined reviews"],
-    "src": "NIH supplement database, published research",
+    "chips": [
+      "6 larger studies",
+      "3 combined reviews"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
       "text": "A Cochrane review of vitamin D supplementation trials found it does not clearly reduce the risk of fractures or falls in generally healthy older adults who aren't already deficient — the clearest benefit shows up in people who start out with low levels.",
       "caveat": "trials used different doses and forms of vitamin D, and results were more positive for people with confirmed deficiency",
@@ -38,39 +47,51 @@
   },
   {
     "ingredientId": "vitamin-k2",
-    "studyCount": 5,
-    "filled": 2,
+    "studyCount": 5236,
+    "filled": 5,
     "sub": "Studied mostly for bone density and arterial health, separate from its role in blood clotting",
     "studiedAmount": "45-180 mcg per day",
-    "chips": ["Several clinical trials", "Smaller sample sizes"],
-    "src": "Published research"
+    "chips": [
+      "Several clinical trials",
+      "Smaller sample sizes"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "ashwagandha",
-    "studyCount": 5,
-    "filled": 2,
+    "studyCount": 530,
+    "filled": 5,
     "sub": "Studied mostly for stress and lowering cortisol",
     "studiedAmount": "300-600 mg per day in most studies",
-    "chips": ["3 studies", "2 small trials"],
-    "src": "NIH supplement database, published research"
+    "chips": [
+      "3 studies",
+      "2 small trials"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "magnesium-glycinate",
-    "studyCount": 5,
-    "filled": 2,
+    "studyCount": 1,
+    "filled": 1,
     "sub": "Best evidence is for people with a real magnesium shortage",
     "studiedAmount": "200-400 mg per day",
-    "chips": ["3 larger studies", "2 smaller studies"],
-    "src": "NIH supplement database, published research"
+    "chips": [
+      "3 larger studies",
+      "2 smaller studies"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "fish-oil-omega3",
-    "studyCount": 6,
-    "filled": 3,
+    "studyCount": 1494,
+    "filled": 5,
     "sub": "Best evidence is for lowering triglycerides (a type of fat in the blood)",
     "studiedAmount": "1,000-4,000 mg per day",
-    "chips": ["4 larger studies", "2 combined reviews"],
-    "src": "NIH supplement database, published research",
+    "chips": [
+      "4 larger studies",
+      "2 combined reviews"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
       "text": "A 2020 Cochrane review pooling dozens of trials found that omega-3 supplements probably have little or no effect on the risk of heart attack, stroke, or cardiovascular death overall, though they do reliably lower triglyceride levels.",
       "caveat": "the benefit was more solid for triglycerides than for actual heart attack or stroke outcomes",
@@ -79,12 +100,15 @@
   },
   {
     "ingredientId": "melatonin",
-    "studyCount": 8,
-    "filled": 3,
+    "studyCount": 37501,
+    "filled": 5,
     "sub": "Best evidence is for jet lag and shifting sleep timing",
     "studiedAmount": "0.5-5 mg — timing matters more than the amount",
-    "chips": ["5 larger studies", "3 combined reviews"],
-    "src": "NIH supplement database, published research",
+    "chips": [
+      "5 larger studies",
+      "3 combined reviews"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
       "text": "A Cochrane review of melatonin for jet lag concluded it's remarkably effective at reducing jet lag symptoms and speeding recovery when timed correctly around the destination's night-time, and that it appears safe for occasional short-term use.",
       "caveat": "timing mattered more than dose, and results were less consistent for east-to-west travel",
@@ -93,12 +117,15 @@
   },
   {
     "ingredientId": "probiotics-blend",
-    "studyCount": 7,
-    "filled": 3,
+    "studyCount": 23,
+    "filled": 5,
     "sub": "Best evidence is for preventing diarrhea from antibiotic use",
     "studiedAmount": "1-10 billion CFU per day in most trials; this product is higher",
-    "chips": ["Several combined reviews", "Strain-dependent results"],
-    "src": "Published research",
+    "chips": [
+      "Several combined reviews",
+      "Strain-dependent results"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
       "text": "A Cochrane review of probiotics for preventing antibiotic-associated diarrhea found a moderate protective effect, mainly in trials using Lactobacillus- or Saccharomyces-containing strains.",
       "caveat": "benefits varied a lot by which strains were used, so results don't automatically apply to every probiotic product",
@@ -107,48 +134,62 @@
   },
   {
     "ingredientId": "vitamin-b12",
-    "studyCount": 6,
-    "filled": 2,
+    "studyCount": 1009,
+    "filled": 5,
     "sub": "Best evidence is for correcting a real B12 deficiency",
     "studiedAmount": "500-1,000 mcg per day for supplementation",
-    "chips": ["Clinical studies in deficient populations", "Weaker evidence otherwise"],
-    "src": "Published research"
+    "chips": [
+      "Clinical studies in deficient populations",
+      "Weaker evidence otherwise"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "coq10",
-    "studyCount": 6,
-    "filled": 2,
+    "studyCount": 17036,
+    "filled": 5,
     "sub": "Mixed evidence for statin-related muscle aches; also studied for heart failure and migraine",
     "studiedAmount": "100-300 mg per day",
-    "chips": ["Several clinical trials", "Mixed results"],
-    "src": "Published research"
+    "chips": [
+      "Several clinical trials",
+      "Mixed results"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "calcium-citrate",
-    "studyCount": 8,
-    "filled": 3,
+    "studyCount": 350,
+    "filled": 5,
     "sub": "Best evidence is for bone health when paired with vitamin D, especially in older adults",
     "studiedAmount": "500-1,200 mg per day",
-    "chips": ["Several large trials", "Mixed results on fracture prevention"],
-    "src": "Published research"
+    "chips": [
+      "Several large trials",
+      "Mixed results on fracture prevention"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "vitamin-b-complex",
-    "studyCount": 4,
-    "filled": 2,
+    "studyCount": 63,
+    "filled": 5,
     "sub": "Best evidence is for correcting a real deficiency of one of the B vitamins",
     "studiedAmount": "Varies by vitamin",
-    "chips": ["Clinical studies in deficient populations"],
-    "src": "Published research"
+    "chips": [
+      "Clinical studies in deficient populations"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "zinc-picolinate",
-    "studyCount": 5,
-    "filled": 2,
+    "studyCount": 112,
+    "filled": 5,
     "sub": "Best evidence is for shortening the common cold when started early",
     "studiedAmount": "75 mg or more per day, started within 24 hours of symptoms",
-    "chips": ["Several clinical trials", "Mixed results"],
-    "src": "Published research",
+    "chips": [
+      "Several clinical trials",
+      "Mixed results"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
       "text": "A systematic review of zinc for the common cold found that lozenges or syrup started within a day of symptoms starting may shorten how long a cold lasts by roughly a day, though results varied a lot between individual trials.",
       "caveat": "most trials used zinc lozenges or syrup rather than capsules like this one, so how well the finding carries over to this form isn't fully clear",
@@ -157,12 +198,15 @@
   },
   {
     "ingredientId": "vitamin-c",
-    "studyCount": 10,
-    "filled": 3,
+    "studyCount": 70212,
+    "filled": 5,
     "sub": "Doesn't prevent colds for most people, but may modestly shorten how long one lasts",
     "studiedAmount": "200 mg or more per day",
-    "chips": ["Many trials", "Large combined reviews"],
-    "src": "Published research",
+    "chips": [
+      "Many trials",
+      "Large combined reviews"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
       "text": "A Cochrane review of vitamin C trials found that regularly taking it doesn't reduce how often the average person catches a cold, but it modestly shortens how long a cold lasts once you have one.",
       "caveat": "a reduced-incidence effect was only seen in people under major physical stress, like marathon runners or soldiers in cold climates",
@@ -171,47 +215,4094 @@
   },
   {
     "ingredientId": "acetaminophen",
-    "studyCount": 12,
+    "studyCount": 38650,
     "filled": 5,
     "sub": "Well-established for pain and fever; one of the most studied OTC drugs",
     "studiedAmount": "500-1,000 mg per dose, up to 3,000-4,000 mg per day max",
-    "chips": ["Many RCTs", "Decades of use"],
-    "src": "FDA drug label, published research"
+    "chips": [
+      "Many RCTs",
+      "Decades of use"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "ibuprofen",
-    "studyCount": 10,
+    "studyCount": 19992,
     "filled": 5,
     "sub": "Well-established for pain, fever, and inflammation",
     "studiedAmount": "200-400 mg per dose, up to 1,200 mg per day (OTC max)",
-    "chips": ["Many RCTs", "Decades of use"],
-    "src": "FDA drug label, published research"
+    "chips": [
+      "Many RCTs",
+      "Decades of use"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "naproxen",
-    "studyCount": 9,
+    "studyCount": 8367,
     "filled": 5,
     "sub": "Well-established for pain and inflammation; longer-acting than ibuprofen",
     "studiedAmount": "220 mg per dose, up to 660 mg per day (OTC max)",
-    "chips": ["Many RCTs", "Decades of use"],
-    "src": "FDA drug label, published research"
+    "chips": [
+      "Many RCTs",
+      "Decades of use"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "aspirin",
-    "studyCount": 14,
+    "studyCount": 80260,
     "filled": 5,
     "sub": "One of the most studied drugs in existence, for pain, fever, and (at low daily doses) heart protection",
     "studiedAmount": "250-500 mg per dose for pain relief; 81 mg per day for heart protection",
-    "chips": ["Many RCTs", "Over a century of use"],
-    "src": "FDA drug label, published research"
+    "chips": [
+      "Many RCTs",
+      "Over a century of use"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
   },
   {
     "ingredientId": "caffeine",
-    "studyCount": 11,
-    "filled": 4,
+    "studyCount": 42755,
+    "filled": 5,
     "sub": "Well-studied stimulant; here it's added to boost the pain relievers' effect",
     "studiedAmount": "65-200 mg per dose",
-    "chips": ["Many RCTs", "Long history of use"],
-    "src": "FDA drug label, published research"
+    "chips": [
+      "Many RCTs",
+      "Long history of use"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "gelatin-capsule",
+    "studyCount": 5,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fish-gelatin-glycerin",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vegetable-cellulose-capsule",
+    "studyCount": 4,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "tablet-coating-fillers",
+    "studyCount": 5,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "rice-flour",
+    "studyCount": 131,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mixed-tocopherols",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "carrier-oil-lecithin",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vitamin-d",
+    "studyCount": 115620,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "maltodextrin",
+    "studyCount": 4633,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mineral-oil",
+    "studyCount": 7710,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "calcium",
+    "studyCount": 716387,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "polyethylene-glycol",
+    "studyCount": 115673,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "hydroxypropyl-methylcellulose",
+    "studyCount": 4625,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "glycerin",
+    "studyCount": 75499,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "carnauba-wax",
+    "studyCount": 332,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "calcium-carbonate",
+    "studyCount": 18508,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "magnesium-oxide",
+    "studyCount": 6261,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "triethyl-citrate",
+    "studyCount": 332,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "polysorbate-80",
+    "studyCount": 6650,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "talc",
+    "studyCount": 4002,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "magnesium-stearate",
+    "studyCount": 9102,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "titanium-dioxide",
+    "studyCount": 25027,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sodium-starch-glycolate",
+    "studyCount": 311,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "coenzyme-q-10",
+    "studyCount": 17369,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "beta-carotene",
+    "studyCount": 20068,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "soybean-oil",
+    "studyCount": 10991,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "soy-lecithin",
+    "studyCount": 695,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "gelatin",
+    "studyCount": 52726,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "water",
+    "studyCount": 1506280,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "thiamine",
+    "studyCount": 21239,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "riboflavin",
+    "studyCount": 23469,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vitamin-b6",
+    "studyCount": 23432,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "niacin",
+    "studyCount": 15287,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "pantothenic-acid",
+    "studyCount": 4171,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "thiamine-mononitrate",
+    "studyCount": 19748,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "niacinamide",
+    "studyCount": 19784,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cellulose-gel",
+    "studyCount": 20095,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "calcium-d-pantothenate",
+    "studyCount": 4183,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "croscarmellose-sodium",
+    "studyCount": 5835,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "pyridoxine-hydrochloride",
+    "studyCount": 11230,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "magnesium",
+    "studyCount": 131849,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "zinc",
+    "studyCount": 211742,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "total-carbohydrates",
+    "studyCount": 244217,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vegetable-magnesium-stearate",
+    "studyCount": 165,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vegetable-cellulose",
+    "studyCount": 1360,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "titanium-dioxide-color",
+    "studyCount": 1731,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sodium",
+    "studyCount": 652573,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "silica",
+    "studyCount": 154122,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "energy",
+    "studyCount": 1354796,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "turmeric",
+    "studyCount": 9639,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "stearic-acid",
+    "studyCount": 8518,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "total-fat",
+    "studyCount": 88956,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "turmeric-curcuma-longa-extract",
+    "studyCount": 736,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "protein",
+    "studyCount": 9210157,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "soya-lecithin",
+    "studyCount": 645,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "calories",
+    "studyCount": 35569,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vegetable-glycerin",
+    "studyCount": 829,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vitamin-e",
+    "studyCount": 50455,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "selenium",
+    "studyCount": 50682,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "yellow-beeswax",
+    "studyCount": 1356,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vegetable-oil",
+    "studyCount": 66490,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vitamin-a",
+    "studyCount": 62743,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "iodine",
+    "studyCount": 152304,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vitamin-k",
+    "studyCount": 34545,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "molybdenum",
+    "studyCount": 25627,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "biotin",
+    "studyCount": 38581,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "manganese",
+    "studyCount": 67220,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "chromium",
+    "studyCount": 51994,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "phosphorus",
+    "studyCount": 136280,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "copper",
+    "studyCount": 186960,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "folic-acid",
+    "studyCount": 62486,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lycopene",
+    "studyCount": 7692,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "boron",
+    "studyCount": 53370,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fd-c-red-40-lake",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "silicon",
+    "studyCount": 126941,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lutein",
+    "studyCount": 7937,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "nickel",
+    "studyCount": 75184,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fd-c-blue-2-lake",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "potassium",
+    "studyCount": 307163,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "starch",
+    "studyCount": 99595,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "crospovidone",
+    "studyCount": 13326,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vanadium",
+    "studyCount": 16161,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "chloride",
+    "studyCount": 330317,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fd-c-yellow-6-lake",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "ginkgo-biloba-extract",
+    "studyCount": 2182,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "dicalcium-phosphate",
+    "studyCount": 3276,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "grapeseed-extract",
+    "studyCount": 144,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "citrus-bioflavonoid-complex",
+    "studyCount": 261,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "folate",
+    "studyCount": 77083,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "iron",
+    "studyCount": 314855,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-u-s-a-farmed-green-juice-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sea-salt",
+    "studyCount": 5167,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-stevia-extract",
+    "studyCount": 30,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "raw-probiotic-enzyme-blend",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-cacao",
+    "studyCount": 275,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-sprout-blend",
+    "studyCount": 3,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-fruit-veggie-juice-antioxidant-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-chocolate-flavor",
+    "studyCount": 97,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-apple-flavor",
+    "studyCount": 180,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "silicon-dioxide",
+    "studyCount": 92650,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sodium-croscarmellose",
+    "studyCount": 329,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "microcrystalline-cellulose",
+    "studyCount": 4148,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "yucca",
+    "studyCount": 877,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "living-vitamin-c-complex",
+    "studyCount": 107,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vegetable-coating",
+    "studyCount": 1168,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-antioxidant-berry-blend",
+    "studyCount": 21,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "probiotic-cultures",
+    "studyCount": 8724,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "poten-zyme-organic-whole-citrus-blend",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "alpha-linolenic-acid",
+    "studyCount": 9788,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "perfect-fiber-blend",
+    "studyCount": 14,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-cinnamon",
+    "studyCount": 205,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "probiotic-blend",
+    "studyCount": 390,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "poten-zyme-fermented-whole-fiber-blend",
+    "studyCount": 13,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "stevia-extract",
+    "studyCount": 581,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cysteine",
+    "studyCount": 172952,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "glutamic-acid",
+    "studyCount": 73483,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "glycine",
+    "studyCount": 126640,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-rice",
+    "studyCount": 6886,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "raw-liver-support-blend",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "raw-cleansing-greens-and-antioxidant-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cellulose",
+    "studyCount": 140686,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "poten-zyme-whole-food-matrix",
+    "studyCount": 1599,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "perfect-green-juice-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "perfect-protein-mineral-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "acerola-cherry-extract",
+    "studyCount": 343,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "perfect-veggie-juice-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "omegaxanthin-blend",
+    "studyCount": 56724,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "beeswax",
+    "studyCount": 1356,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "concentrated-fish-oil",
+    "studyCount": 9447,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-strawberry-flavor",
+    "studyCount": 147,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-protein-blend",
+    "studyCount": 389,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-weight-loss-stress-management-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "probiotic-enzyme-blend",
+    "studyCount": 48,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-glucose-management-blend",
+    "studyCount": 3,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-vanilla-flavors",
+    "studyCount": 45,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-erythritol",
+    "studyCount": 156,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cholesterol",
+    "studyCount": 367726,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "alpha-tocopherol",
+    "studyCount": 20196,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cod-liver-oil",
+    "studyCount": 1208,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "total-omega-3-fatty-acids",
+    "studyCount": 9007,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-lemon-flavor",
+    "studyCount": 338,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-peppermint-oil",
+    "studyCount": 109,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lactobacillus-plantarum",
+    "studyCount": 12133,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "collagen-peptides",
+    "studyCount": 79584,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bovine-hide-collagen-peptides",
+    "studyCount": 20,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "safflower-seed-oil-concentrate",
+    "studyCount": 69,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "carob",
+    "studyCount": 1517,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "water-purified",
+    "studyCount": 14996,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "medium-chain-triglyceride-oil",
+    "studyCount": 1552,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "choline",
+    "studyCount": 92316,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "superba2",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "coconut-oil-virgin",
+    "studyCount": 340,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "tapioca-starch-modified",
+    "studyCount": 252,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "rice-bran-wax",
+    "studyCount": 116,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "medium-chain-triglyceride",
+    "studyCount": 4979,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fruit-sugar",
+    "studyCount": 62872,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-glutamine",
+    "studyCount": 58608,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cross-flow-micro-filtered-whey-protein-concentrate",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "free-form-bcaas",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cross-flow-micro-filtered-whey-protein-isolate",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "contains-less-than-1-of",
+    "studyCount": 83642,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "citric-acid",
+    "studyCount": 37455,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "alpha-lipoic-acid",
+    "studyCount": 6951,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "hydroxypropylmethyl-cellulose",
+    "studyCount": 374,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vitamin-b1",
+    "studyCount": 22114,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "inositol",
+    "studyCount": 53357,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "maxepa-r-fish-oil-concentrate",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-powdered-base",
+    "studyCount": 409,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "n-acetyl-l-cysteine",
+    "studyCount": 27579,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "taurine",
+    "studyCount": 24835,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "hydroxypropyl-cellulose",
+    "studyCount": 1540,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "milk-thistle-extract",
+    "studyCount": 100,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vegetable-stearate",
+    "studyCount": 60,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bromelain",
+    "studyCount": 2760,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "trimethylglycine",
+    "studyCount": 11314,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "luteolin",
+    "studyCount": 8737,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "trans-pterostilbene",
+    "studyCount": 1128,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "phosphatidylcholine",
+    "studyCount": 67014,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "broccoli-concentrate-blend",
+    "studyCount": 41,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cyanidin-3-glucoside",
+    "studyCount": 1452,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "pharmaceutical-glaze",
+    "studyCount": 86,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "acerola-extract",
+    "studyCount": 97,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-mixed-tocopherols",
+    "studyCount": 101,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fruit-berry-complex",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "wild-blueberry-anthocyanin-extract",
+    "studyCount": 59,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "pomella-r-pomegranate-extract",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mirtoselect-r-bilberry-extract",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "leucoselect-grape-seed-proanthocyanidin-extract",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "decaffeinated-green-tea-extract",
+    "studyCount": 119,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "biovin-grape-proanthocyanidin-extract",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "maqui-berry-aristotelia-chilensis-anthocyanin-extract",
+    "studyCount": 26,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cherrypure-tart-cherry-prunus-cerasus-proanthocyanidin-extra",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "delphinidins",
+    "studyCount": 1751,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sesame-seed-lignan-extract",
+    "studyCount": 67,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "olive-juice-extract",
+    "studyCount": 50,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "coenzyme-q10",
+    "studyCount": 19123,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mannitol",
+    "studyCount": 26981,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lecithin",
+    "studyCount": 14612,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sucrose",
+    "studyCount": 99023,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "xylitol",
+    "studyCount": 4716,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-sweetener",
+    "studyCount": 17324,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-color",
+    "studyCount": 40823,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-vanilla-cherry-strawberry-flavors",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "biolut-tm-marigold-extract",
+    "studyCount": 24,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "medium-chain-triglycerides",
+    "studyCount": 4979,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "pomella-pomegranate-extract",
+    "studyCount": 7,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "niagen-nicotinamide-riboside",
+    "studyCount": 383,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mirtoselect-bilberrry-extract",
+    "studyCount": 11,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mirtoselect-bilberry-extract",
+    "studyCount": 8,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "aqueous-film-coating",
+    "studyCount": 1514,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "silymarin",
+    "studyCount": 5329,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fruit-berry-proprietary-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cherrypure-sour-cherry-tart-cherry-proanthocyanidin-powder",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sensoril-ashwagandha-extract",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "apigenin",
+    "studyCount": 8246,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bitter-orange-citrus-bioflavonoids",
+    "studyCount": 4153,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bio-quercetin-phytosome",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "stearate",
+    "studyCount": 4629,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "olive-extract",
+    "studyCount": 108,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-arginine",
+    "studyCount": 151794,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "hypromellose",
+    "studyCount": 3034,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "magnesium-citrate",
+    "studyCount": 575,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "leucine",
+    "studyCount": 100802,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "calcium-laurate",
+    "studyCount": 44,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "high-and-low-viscosity-hydroxypropyl-methylcellulose",
+    "studyCount": 85,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "curcumin-phytosome-complex",
+    "studyCount": 2972,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "active-ingredients-acetaminophen",
+    "studyCount": 465,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "pseudoephedrine-hcl",
+    "studyCount": 1740,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "solubilized-ibuprofen-equal-to",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "total-calories",
+    "studyCount": 9685,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "ethyl-cellulose",
+    "studyCount": 2016,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "propylene-glycol",
+    "studyCount": 8474,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "oleic-acid",
+    "studyCount": 30115,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sodium-alginate",
+    "studyCount": 24790,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "ammonium-hydroxide",
+    "studyCount": 3030,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "tocopherol",
+    "studyCount": 27861,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fish-oil-concentrate",
+    "studyCount": 9447,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "other-omega-3-fatty-acids",
+    "studyCount": 7776,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "methacrylic-acid-copolymer",
+    "studyCount": 1988,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "omega-3-fatty-acids",
+    "studyCount": 41079,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "dibasic-calcium-phosphate",
+    "studyCount": 2698,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "tocopherols",
+    "studyCount": 27861,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "ascorbyl-palmitate",
+    "studyCount": 397,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "resin",
+    "studyCount": 145162,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "rapeseed-lecithin",
+    "studyCount": 79,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "dl-alpha-tocopheryl-acetate",
+    "studyCount": 271,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "corn-oil",
+    "studyCount": 11144,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "color-added",
+    "studyCount": 10030,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "corn-syrup",
+    "studyCount": 1196,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sugar",
+    "studyCount": 632991,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lactic-acid",
+    "studyCount": 101197,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "palm-oil",
+    "studyCount": 7299,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sodium-citrate",
+    "studyCount": 8169,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-flavors",
+    "studyCount": 24622,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sodium-lactate",
+    "studyCount": 9122,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "colors-added",
+    "studyCount": 10030,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "tin",
+    "studyCount": 41406,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sunflower-oil",
+    "studyCount": 5648,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "rose-hips",
+    "studyCount": 1303,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "omega-3-fatty-acid-ethyl-ester",
+    "studyCount": 1145,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "omega-3-concentrate",
+    "studyCount": 8145,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "corn-starch",
+    "studyCount": 98953,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "tartaric-acid",
+    "studyCount": 3270,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "malic-acid",
+    "studyCount": 5908,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "hydrogenated-soybean-oil",
+    "studyCount": 958,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "contains-less-than-2-of",
+    "studyCount": 76576,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "rice-bran-oil",
+    "studyCount": 998,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "q-sorb-coenzyme-q-10",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "paba",
+    "studyCount": 3977,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "isolated-soy-protein",
+    "studyCount": 6454,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "choline-bitartrate",
+    "studyCount": 91974,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "brewer-s-yeast",
+    "studyCount": 151421,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "calcium-silicate",
+    "studyCount": 3799,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lactobacillus-acidophilus",
+    "studyCount": 6114,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "proprietary-blend",
+    "studyCount": 270,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cranberry-concentrate",
+    "studyCount": 546,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "contains-2-of",
+    "studyCount": 921029,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "psyllium",
+    "studyCount": 1324,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "goldenseal",
+    "studyCount": 240,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cascara-sagrada",
+    "studyCount": 44,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "citrus-pectin",
+    "studyCount": 688,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "aloe-vera",
+    "studyCount": 5573,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "gentian",
+    "studyCount": 4531,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "buckthorn",
+    "studyCount": 1520,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "milk-thistle-seed-extract",
+    "studyCount": 104,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "tonalin-safflower-oil",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-caramel-color",
+    "studyCount": 16,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "st-john-s-wort-extract",
+    "studyCount": 2262,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "betaine-hydrochloride",
+    "studyCount": 11275,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "rutin",
+    "studyCount": 11715,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "collagen",
+    "studyCount": 299307,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "citrus-bioflavonoids",
+    "studyCount": 4153,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "chlorophyllin",
+    "studyCount": 716,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "horsetail-powder",
+    "studyCount": 12,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "krill-oil",
+    "studyCount": 495,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-lemon-flavor",
+    "studyCount": 308,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "total-sugars",
+    "studyCount": 81762,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-alkalizer-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-detoxifier-blend",
+    "studyCount": 4,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "restore-systemic-enzyme-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mineral-enzyme-activators-combination",
+    "studyCount": 10,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bioflavonoid-complex-non-nutrient-non-botanical",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-acacia-fiber",
+    "studyCount": 17,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "coconut-oil",
+    "studyCount": 3725,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "potato-starch",
+    "studyCount": 4541,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-pineapple-flavor",
+    "studyCount": 32,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bacillus-subtilis",
+    "studyCount": 47484,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "coconut-cream",
+    "studyCount": 119,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-gum-acacia",
+    "studyCount": 145,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-stevia",
+    "studyCount": 69,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-vanilla-flavor",
+    "studyCount": 127,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-coconut-medium-chain-triglycerides",
+    "studyCount": 5,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-vanilla-flavors",
+    "studyCount": 127,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "elevatp",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-chaga-mushroom",
+    "studyCount": 18,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "paleo-digestive-enzyme-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "non-gmo-vegetable-cellulose",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "women-s-probiotic-blend",
+    "studyCount": 13,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "raw-certified-organic-protein-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "raw-certified-organic-weight-loss-stress-management-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "raw-certified-organic-superfood-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bioflavonoid-complex",
+    "studyCount": 14253,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mineral-enzyme-activators",
+    "studyCount": 79,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cat-s-claw",
+    "studyCount": 234,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "dietary-fiber",
+    "studyCount": 43877,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-brown-rice",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "probiotic-microorganisms",
+    "studyCount": 7303,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "rm-10-poten-zyme-r-organic-mushroom-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "antioxidant-beverage-spice-blend",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "poten-zyme-r-veggie-juice-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "poten-zyme-r-sea-veggie-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "poten-zyme-r-mushroom-blend",
+    "studyCount": 3,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-antioxidant-fruit-and-veggie-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "calories-from-fat",
+    "studyCount": 10990,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "microcrystaline-cellulose",
+    "studyCount": 4150,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "oat-fiber",
+    "studyCount": 1308,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "superoxide-dismutase",
+    "studyCount": 119839,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lactobacillus-bulgaricus",
+    "studyCount": 2812,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "raw-enzyme-blend",
+    "studyCount": 69,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "nattokinase",
+    "studyCount": 338,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mineral-enzyme-acivators",
+    "studyCount": 49230,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "enzyme-generating-probiotic-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "carbohydrate-digesting-enzymes",
+    "studyCount": 93,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fat-digesting-enzymes",
+    "studyCount": 8,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "perfect-whole-food-matrix",
+    "studyCount": 5,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "protein-mineral-blend",
+    "studyCount": 478,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "ionic-plant-based-minerals",
+    "studyCount": 113,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "hso-probiotic-enzyme-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "proprietary-cleansing-raw-fiber-blend",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "dextrose",
+    "studyCount": 780080,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "chicken-collagen-extract",
+    "studyCount": 283,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "phytonutrient-blend",
+    "studyCount": 232,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-coating",
+    "studyCount": 17906,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "poten-zyme-botanical-blend",
+    "studyCount": 260,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "systemic-enzyme-blend",
+    "studyCount": 31,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-gum-arabic",
+    "studyCount": 135,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "oregano-origanum-vulgare-stem-leaf-extract",
+    "studyCount": 12,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-energy-blend",
+    "studyCount": 1874,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-pomegranate-flavor",
+    "studyCount": 32,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "diosmin",
+    "studyCount": 963,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "povidone",
+    "studyCount": 13169,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "fiber",
+    "studyCount": 508155,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "magnesium-stearates",
+    "studyCount": 994,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vitamin-b2",
+    "studyCount": 25261,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "betaine",
+    "studyCount": 11423,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bone-support-blend",
+    "studyCount": 791,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "vital-mineral-matrix",
+    "studyCount": 477,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "homocystein-balance-complex",
+    "studyCount": 52,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "coconut-medium-chain-triglyceride-oil",
+    "studyCount": 182,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "marine-collagen-peptides-hydrolyzed",
+    "studyCount": 48,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bovine-collagen-peptides-hydrolyzed",
+    "studyCount": 53,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-flavor",
+    "studyCount": 24622,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "luo-han-guo-fruit-extract",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "stevia-leaf-extract",
+    "studyCount": 264,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cocoa-powder",
+    "studyCount": 7774,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "matcha-green-tea-powder",
+    "studyCount": 78,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "complete-protein-blend",
+    "studyCount": 420,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "inulin",
+    "studyCount": 13994,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "omega-3-efa-blend-flaxseed-powder",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "spectra-orac-4-000",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "digestive-enzyme-blend",
+    "studyCount": 423,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "greens-blend",
+    "studyCount": 2448,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "stevia",
+    "studyCount": 1487,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bacopa-extract",
+    "studyCount": 505,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "soluble-corn-fiber",
+    "studyCount": 763,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "ashwagandha-extract",
+    "studyCount": 1324,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "gum-blend",
+    "studyCount": 612,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "unique-is-2",
+    "studyCount": 555,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-histidine",
+    "studyCount": 61949,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-lysine",
+    "studyCount": 119409,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-valine",
+    "studyCount": 39657,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-leucine",
+    "studyCount": 100358,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-methionine",
+    "studyCount": 89913,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-phenylalanine",
+    "studyCount": 106078,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-threonine",
+    "studyCount": 154640,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-isoleucine",
+    "studyCount": 19689,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "zeaxanthin",
+    "studyCount": 4906,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "grape-seed-extract",
+    "studyCount": 2009,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mixed-tocotrienols",
+    "studyCount": 71,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "phyto2x-antioxidant-blend",
+    "studyCount": 2498,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "standardized-ginkgo-biloba-extract",
+    "studyCount": 376,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "standardized-green-tea-extract",
+    "studyCount": 1384,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "standardized-bilberry-extract",
+    "studyCount": 25,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "standardized-fruit-extract-polyphenol-blend",
+    "studyCount": 5,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "standardized-turmeric-extract",
+    "studyCount": 72,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "paprika",
+    "studyCount": 7843,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "megasorb-coenzyme-q-10",
+    "studyCount": 17369,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "d-ribose",
+    "studyCount": 52047,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "liver-powder",
+    "studyCount": 3308,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "grapeskin",
+    "studyCount": 20,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-cherry-flavor",
+    "studyCount": 60,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-proline",
+    "studyCount": 88693,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "organic-cold-milled-flax",
+    "studyCount": 150,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "5-hydroxytryptophan",
+    "studyCount": 5796,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "valerian-extract",
+    "studyCount": 74,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "multi-acidophilus-complex",
+    "studyCount": 2597270,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "nac",
+    "studyCount": 38222,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "l-ornithine",
+    "studyCount": 24156,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "suntheanine-l-theanine",
+    "studyCount": 1261,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "natural-orange-flavor",
+    "studyCount": 228,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "thymocid-tm-organic-black-cumin-seed-oil",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "purified-water",
+    "studyCount": 14996,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "luo-han-guo-extract",
+    "studyCount": 0,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "n-acetyl-cysteine",
+    "studyCount": 27154,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "green-tea-leaf-extract-decaffeinated",
+    "studyCount": 10,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "acerola-berry-extract",
+    "studyCount": 67,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "biovin",
+    "studyCount": 7,
+    "filled": 3,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "lycobeads",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "cherrypure",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "sensoril",
+    "studyCount": 2,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "pomella",
+    "studyCount": 106,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "orange-flavor-natural",
+    "studyCount": 228,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "food-starch-modified",
+    "studyCount": 4275,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "bitter-orange-citrus-bioflavonoid",
+    "studyCount": 4153,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "olive-fruit-extract",
+    "studyCount": 924,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "blueberry-fruit-extract-wild",
+    "studyCount": 54,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "mirtoselect",
+    "studyCount": 14,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "leucoselect",
+    "studyCount": 14,
+    "filled": 4,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "beta-hydroxybutyrate",
+    "studyCount": 12923,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "docosahexaenoic-acid",
+    "studyCount": 21576,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "betaine-anhydrous",
+    "studyCount": 32,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "meriva",
+    "studyCount": 38,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "ubiqsome",
+    "studyCount": 4,
+    "filled": 2,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "flavors",
+    "studyCount": 335080,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "carboxymethylcellulose-gum",
+    "studyCount": 272,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "nicotinamide-riboside-hydrogen-malate",
+    "studyCount": 1,
+    "filled": 1,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "trans-resveratrol",
+    "studyCount": 21435,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
+  },
+  {
+    "ingredientId": "glutathione-reduced",
+    "studyCount": 205343,
+    "filled": 5,
+    "sub": "Summary pending editorial review.",
+    "studiedAmount": "Not yet reviewed",
+    "chips": [],
+    "src": "PubMed (NCBI E-utilities), live count"
   }
 ]
