@@ -1,0 +1,269 @@
+[
+  {
+    "id": "nature-made-turmeric-curcumin-500mg",
+    "brand": "Nature Made",
+    "name": "Turmeric Curcumin 500mg",
+    "sub": "60 softgels · with black pepper extract",
+    "initials": "NM",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "curcumin", "amount": "475 mg", "active": true },
+      { "ingredientId": "black-pepper-extract", "amount": "5 mg", "active": true },
+      { "ingredientId": "gelatin-capsule", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "nature-made-vitamin-d3-2000-iu",
+    "brand": "Nature Made",
+    "name": "Vitamin D3 2000 IU",
+    "sub": "100 softgels · softgel",
+    "initials": "NM",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "vitamin-d3", "amount": "2000 IU", "active": true },
+      { "ingredientId": "fish-gelatin-glycerin", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "now-foods-ashwagandha-450mg",
+    "brand": "NOW Foods",
+    "name": "Ashwagandha 450mg",
+    "sub": "90 veg capsules · root extract",
+    "initials": "NF",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "ashwagandha", "amount": "450 mg", "active": true },
+      { "ingredientId": "vegetable-cellulose-capsule", "amount": "capsule shell", "active": false },
+      { "ingredientId": "rice-flour", "amount": "filler", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "now-foods-magnesium-glycinate-200mg",
+    "brand": "NOW Foods",
+    "name": "Magnesium Glycinate 200mg",
+    "sub": "180 tablets · chelated, gentler on digestion",
+    "initials": "NF",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "magnesium-glycinate", "amount": "200 mg", "active": true },
+      { "ingredientId": "tablet-coating-fillers", "amount": "inactive", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "natures-bounty-fish-oil-1200mg",
+    "brand": "Nature's Bounty",
+    "name": "Fish Oil 1200mg",
+    "sub": "130 softgels · double strength omega-3",
+    "initials": "NB",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "fish-oil-omega3", "amount": "360 mg EPA/DHA", "active": true },
+      { "ingredientId": "fish-gelatin-glycerin", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "natures-bounty-melatonin-5mg",
+    "brand": "Nature's Bounty",
+    "name": "Melatonin 5mg",
+    "sub": "120 tablets · quick dissolve",
+    "initials": "NB",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "melatonin", "amount": "5 mg", "active": true },
+      { "ingredientId": "tablet-coating-fillers", "amount": "inactive", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "garden-of-life-probiotics-once-daily",
+    "brand": "Garden of Life",
+    "name": "Dr. Formulated Probiotics Once Daily",
+    "sub": "30 veg capsules · 50 billion CFU, 16 strains",
+    "initials": "GL",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "probiotics-blend", "amount": "50 billion CFU", "active": true },
+      { "ingredientId": "vegetable-cellulose-capsule", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "garden-of-life-vitamin-code-raw-vitamin-c",
+    "brand": "Garden of Life",
+    "name": "Vitamin Code Raw Vitamin C",
+    "sub": "120 veg capsules · whole food blend",
+    "initials": "GL",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "vitamin-c", "amount": "500 mg", "active": true },
+      { "ingredientId": "vegetable-cellulose-capsule", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "sports-research-triple-strength-omega-3",
+    "brand": "Sports Research",
+    "name": "Triple Strength Omega-3 Fish Oil",
+    "sub": "150 softgels · 1,250 mg fish oil concentrate per softgel",
+    "initials": "SR",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "fish-oil-omega3", "amount": "1000 mg EPA/DHA", "active": true },
+      { "ingredientId": "mixed-tocopherols", "amount": "added", "active": false },
+      { "ingredientId": "fish-gelatin-glycerin", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "sports-research-vitamin-d3-k2",
+    "brand": "Sports Research",
+    "name": "Vitamin D3 + K2",
+    "sub": "60 softgels · with organic coconut oil",
+    "initials": "SR",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "vitamin-d3", "amount": "5000 IU", "active": true },
+      { "ingredientId": "vitamin-k2", "amount": "90 mcg", "active": true },
+      { "ingredientId": "fish-gelatin-glycerin", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "solgar-coq10-100mg",
+    "brand": "Solgar",
+    "name": "CoQ10 100mg",
+    "sub": "60 softgels · ubiquinone form",
+    "initials": "SG",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "coq10", "amount": "100 mg", "active": true },
+      { "ingredientId": "carrier-oil-lecithin", "amount": "carrier", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "solgar-vitamin-b12-1000mcg",
+    "brand": "Solgar",
+    "name": "Vitamin B12 1000mcg",
+    "sub": "100 nuggets · methylcobalamin, chewable",
+    "initials": "SG",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "vitamin-b12", "amount": "1000 mcg", "active": true },
+      { "ingredientId": "tablet-coating-fillers", "amount": "inactive", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "life-extension-super-omega-3",
+    "brand": "Life Extension",
+    "name": "Super Omega-3",
+    "sub": "120 softgels · EPA/DHA with sesame lignans and olive extract",
+    "initials": "LE",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "fish-oil-omega3", "amount": "700 mg EPA/DHA", "active": true },
+      { "ingredientId": "fish-gelatin-glycerin", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "life-extension-calcium-vitamin-d3",
+    "brand": "Life Extension",
+    "name": "Calcium & Vitamin D3",
+    "sub": "120 capsules · calcium citrate with vitamin D3",
+    "initials": "LE",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "calcium-citrate", "amount": "630 mg", "active": true },
+      { "ingredientId": "vitamin-d3", "amount": "500 IU", "active": true },
+      { "ingredientId": "vegetable-cellulose-capsule", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "thorne-basic-b-complex",
+    "brand": "Thorne",
+    "name": "Basic B Complex",
+    "sub": "60 capsules · active B vitamin forms",
+    "initials": "TH",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "vitamin-b-complex", "amount": "varies by B vitamin", "active": true },
+      { "ingredientId": "vegetable-cellulose-capsule", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "thorne-zinc-picolinate-30mg",
+    "brand": "Thorne",
+    "name": "Zinc Picolinate 30mg",
+    "sub": "60 capsules · highly absorbable form",
+    "initials": "TH",
+    "kind": "supplement",
+    "ingredients": [
+      { "ingredientId": "zinc-picolinate", "amount": "30 mg", "active": true },
+      { "ingredientId": "vegetable-cellulose-capsule", "amount": "capsule shell", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "tylenol-extra-strength-acetaminophen-500mg",
+    "brand": "Tylenol",
+    "name": "Extra Strength Acetaminophen 500mg",
+    "sub": "Caplets · pain reliever / fever reducer",
+    "initials": "TY",
+    "kind": "otc",
+    "ingredients": [
+      { "ingredientId": "acetaminophen", "amount": "500 mg", "active": true },
+      { "ingredientId": "tablet-coating-fillers", "amount": "inactive", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "advil-ibuprofen-200mg",
+    "brand": "Advil",
+    "name": "Ibuprofen 200mg Tablets",
+    "sub": "Tablets · pain reliever / fever reducer (NSAID)",
+    "initials": "AD",
+    "kind": "otc",
+    "ingredients": [
+      { "ingredientId": "ibuprofen", "amount": "200 mg", "active": true },
+      { "ingredientId": "tablet-coating-fillers", "amount": "inactive", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "aleve-naproxen-sodium-220mg",
+    "brand": "Aleve",
+    "name": "Naproxen Sodium 220mg",
+    "sub": "Caplets · pain reliever / fever reducer (NSAID), 12-hour",
+    "initials": "AL",
+    "kind": "otc",
+    "ingredients": [
+      { "ingredientId": "naproxen", "amount": "220 mg", "active": true },
+      { "ingredientId": "tablet-coating-fillers", "amount": "inactive", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  },
+  {
+    "id": "excedrin-extra-strength",
+    "brand": "Excedrin",
+    "name": "Extra Strength (Acetaminophen/Aspirin/Caffeine)",
+    "sub": "Caplets · pain reliever for migraine and headache",
+    "initials": "EX",
+    "kind": "otc",
+    "ingredients": [
+      { "ingredientId": "acetaminophen", "amount": "250 mg", "active": true },
+      { "ingredientId": "aspirin", "amount": "250 mg", "active": true },
+      { "ingredientId": "caffeine", "amount": "65 mg", "active": true },
+      { "ingredientId": "tablet-coating-fillers", "amount": "inactive", "active": false }
+    ],
+    "source": { "provider": "seed", "lastVerified": "2026-07-01" }
+  }
+]

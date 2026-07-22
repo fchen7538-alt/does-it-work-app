@@ -1,0 +1,13 @@
+[
+  { "id": "warfarin", "label": "Warfarin", "rxcui": "11289", "brandNames": ["Coumadin", "Jantoven"] },
+  { "id": "apixaban", "label": "Apixaban (Eliquis)", "rxcui": "1364430", "brandNames": ["Eliquis"] },
+  { "id": "sertraline", "label": "Sertraline (Zoloft)", "rxcui": "36437", "brandNames": ["Zoloft"] },
+  { "id": "atorvastatin", "label": "Atorvastatin (Lipitor)", "rxcui": "83367", "brandNames": ["Lipitor"] },
+  { "id": "levothyroxine", "label": "Levothyroxine (Synthroid)", "rxcui": "10582", "brandNames": ["Synthroid", "Levoxyl"] },
+  { "id": "lisinopril", "label": "Lisinopril", "rxcui": "29046", "brandNames": ["Prinivil", "Zestril"] },
+  { "id": "amlodipine", "label": "Amlodipine", "rxcui": "17767", "brandNames": ["Norvasc"] },
+  { "id": "zolpidem", "label": "Zolpidem (Ambien)", "rxcui": "39968", "brandNames": ["Ambien"] },
+  { "id": "lorazepam", "label": "Lorazepam (Ativan)", "rxcui": "6470", "brandNames": ["Ativan"] },
+  { "id": "ciprofloxacin", "label": "Ciprofloxacin", "rxcui": "2551", "brandNames": ["Cipro"] },
+  { "id": "doxycycline", "label": "Doxycycline", "rxcui": "3640", "brandNames": ["Vibramycin"] }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "ingredientId": "curcumin",
+    "studyCount": 4,
+    "filled": 2,
+    "sub": "Most studies looked at joint pain and stiffness",
+    "studiedAmount": "1,000 mg or more per day",
+    "chips": ["3 larger studies", "1 smaller study"],
+    "src": "NIH supplement database, published research",
+    "reviewVerdict": {
+      "text": "A 2026 review that combined 10 earlier reviews on curcumin for knee osteoarthritis found meaningful improvement in pain and stiffness, similar to common anti-inflammatory drugs, with fewer side effects reported.",
+      "caveat": "only 3 of the 10 reviews were rated high quality",
+      "source": "Frontiers in Pharmacology, umbrella review, Jan 2026"
+    }
+  },
+  {
+    "ingredientId": "black-pepper-extract",
+    "studyCount": 3,
+    "filled": 1,
+    "sub": "Studied mostly as an absorption enhancer added to other supplements, not as a supplement on its own",
+    "studiedAmount": "5-20 mg alongside another compound",
+    "chips": ["Small human trials", "Lab/animal studies"],
+    "src": "Published pharmacology research"
+  },
+  {
+    "ingredientId": "vitamin-d3",
+    "studyCount": 9,
+    "filled": 4,
+    "sub": "Strong evidence for correcting low levels; mixed evidence for other uses",
+    "studiedAmount": "600-4,000 IU per day, depending on your starting level",
+    "chips": ["6 larger studies", "3 combined reviews"],
+    "src": "NIH supplement database, published research",
+    "reviewVerdict": {
+      "text": "A Cochrane review of vitamin D supplementation trials found it does not clearly reduce the risk of fractures or falls in generally healthy older adults who aren't already deficient — the clearest benefit shows up in people who start out with low levels.",
+      "caveat": "trials used different doses and forms of vitamin D, and results were more positive for people with confirmed deficiency",
+      "source": "Cochrane Database of Systematic Reviews, vitamin D for prevention of fractures and falls"
+    }
+  },
+  {
+    "ingredientId": "vitamin-k2",
+    "studyCount": 5,
+    "filled": 2,
+    "sub": "Studied mostly for bone density and arterial health, separate from its role in blood clotting",
+    "studiedAmount": "45-180 mcg per day",
+    "chips": ["Several clinical trials", "Smaller sample sizes"],
+    "src": "Published research"
+  },
+  {
+    "ingredientId": "ashwagandha",
+    "studyCount": 5,
+    "filled": 2,
+    "sub": "Studied mostly for stress and lowering cortisol",
+    "studiedAmount": "300-600 mg per day in most studies",
+    "chips": ["3 studies", "2 small trials"],
+    "src": "NIH supplement database, published research"
+  },
+  {
+    "ingredientId": "magnesium-glycinate",
+    "studyCount": 5,
+    "filled": 2,
+    "sub": "Best evidence is for people with a real magnesium shortage",
+    "studiedAmount": "200-400 mg per day",
+    "chips": ["3 larger studies", "2 smaller studies"],
+    "src": "NIH supplement database, published research"
+  },
+  {
+    "ingredientId": "fish-oil-omega3",
+    "studyCount": 6,
+    "filled": 3,
+    "sub": "Best evidence is for lowering triglycerides (a type of fat in the blood)",
+    "studiedAmount": "1,000-4,000 mg per day",
+    "chips": ["4 larger studies", "2 combined reviews"],
+    "src": "NIH supplement database, published research",
+    "reviewVerdict": {
+      "text": "A 2020 Cochrane review pooling dozens of trials found that omega-3 supplements probably have little or no effect on the risk of heart attack, stroke, or cardiovascular death overall, though they do reliably lower triglyceride levels.",
+      "caveat": "the benefit was more solid for triglycerides than for actual heart attack or stroke outcomes",
+      "source": "Cochrane Database of Systematic Reviews, omega-3 fatty acids for cardiovascular disease prevention"
+    }
+  },
+  {
+    "ingredientId": "melatonin",
+    "studyCount": 8,
+    "filled": 3,
+    "sub": "Best evidence is for jet lag and shifting sleep timing",
+    "studiedAmount": "0.5-5 mg — timing matters more than the amount",
+    "chips": ["5 larger studies", "3 combined reviews"],
+    "src": "NIH supplement database, published research",
+    "reviewVerdict": {
+      "text": "A Cochrane review of melatonin for jet lag concluded it's remarkably effective at reducing jet lag symptoms and speeding recovery when timed correctly around the destination's night-time, and that it appears safe for occasional short-term use.",
+      "caveat": "timing mattered more than dose, and results were less consistent for east-to-west travel",
+      "source": "Cochrane Database of Systematic Reviews, melatonin for jet lag"
+    }
+  },
+  {
+    "ingredientId": "probiotics-blend",
+    "studyCount": 7,
+    "filled": 3,
+    "sub": "Best evidence is for preventing diarrhea from antibiotic use",
+    "studiedAmount": "1-10 billion CFU per day in most trials; this product is higher",
+    "chips": ["Several combined reviews", "Strain-dependent results"],
+    "src": "Published research",
+    "reviewVerdict": {
+      "text": "A Cochrane review of probiotics for preventing antibiotic-associated diarrhea found a moderate protective effect, mainly in trials using Lactobacillus- or Saccharomyces-containing strains.",
+      "caveat": "benefits varied a lot by which strains were used, so results don't automatically apply to every probiotic product",
+      "source": "Cochrane Database of Systematic Reviews, probiotics for antibiotic-associated diarrhea"
+    }
+  },
+  {
+    "ingredientId": "vitamin-b12",
+    "studyCount": 6,
+    "filled": 2,
+    "sub": "Best evidence is for correcting a real B12 deficiency",
+    "studiedAmount": "500-1,000 mcg per day for supplementation",
+    "chips": ["Clinical studies in deficient populations", "Weaker evidence otherwise"],
+    "src": "Published research"
+  },
+  {
+    "ingredientId": "coq10",
+    "studyCount": 6,
+    "filled": 2,
+    "sub": "Mixed evidence for statin-related muscle aches; also studied for heart failure and migraine",
+    "studiedAmount": "100-300 mg per day",
+    "chips": ["Several clinical trials", "Mixed results"],
+    "src": "Published research"
+  },
+  {
+    "ingredientId": "calcium-citrate",
+    "studyCount": 8,
+    "filled": 3,
+    "sub": "Best evidence is for bone health when paired with vitamin D, especially in older adults",
+    "studiedAmount": "500-1,200 mg per day",
+    "chips": ["Several large trials", "Mixed results on fracture prevention"],
+    "src": "Published research"
+  },
+  {
+    "ingredientId": "vitamin-b-complex",
+    "studyCount": 4,
+    "filled": 2,
+    "sub": "Best evidence is for correcting a real deficiency of one of the B vitamins",
+    "studiedAmount": "Varies by vitamin",
+    "chips": ["Clinical studies in deficient populations"],
+    "src": "Published research"
+  },
+  {
+    "ingredientId": "zinc-picolinate",
+    "studyCount": 5,
+    "filled": 2,
+    "sub": "Best evidence is for shortening the common cold when started early",
+    "studiedAmount": "75 mg or more per day, started within 24 hours of symptoms",
+    "chips": ["Several clinical trials", "Mixed results"],
+    "src": "Published research",
+    "reviewVerdict": {
+      "text": "A systematic review of zinc for the common cold found that lozenges or syrup started within a day of symptoms starting may shorten how long a cold lasts by roughly a day, though results varied a lot between individual trials.",
+      "caveat": "most trials used zinc lozenges or syrup rather than capsules like this one, so how well the finding carries over to this form isn't fully clear",
+      "source": "Systematic review, zinc for the common cold"
+    }
+  },
+  {
+    "ingredientId": "vitamin-c",
+    "studyCount": 10,
+    "filled": 3,
+    "sub": "Doesn't prevent colds for most people, but may modestly shorten how long one lasts",
+    "studiedAmount": "200 mg or more per day",
+    "chips": ["Many trials", "Large combined reviews"],
+    "src": "Published research",
+    "reviewVerdict": {
+      "text": "A Cochrane review of vitamin C trials found that regularly taking it doesn't reduce how often the average person catches a cold, but it modestly shortens how long a cold lasts once you have one.",
+      "caveat": "a reduced-incidence effect was only seen in people under major physical stress, like marathon runners or soldiers in cold climates",
+      "source": "Cochrane Database of Systematic Reviews, vitamin C for preventing and treating the common cold"
+    }
+  },
+  {
+    "ingredientId": "acetaminophen",
+    "studyCount": 12,
+    "filled": 5,
+    "sub": "Well-established for pain and fever; one of the most studied OTC drugs",
+    "studiedAmount": "500-1,000 mg per dose, up to 3,000-4,000 mg per day max",
+    "chips": ["Many RCTs", "Decades of use"],
+    "src": "FDA drug label, published research"
+  },
+  {
+    "ingredientId": "ibuprofen",
+    "studyCount": 10,
+    "filled": 5,
+    "sub": "Well-established for pain, fever, and inflammation",
+    "studiedAmount": "200-400 mg per dose, up to 1,200 mg per day (OTC max)",
+    "chips": ["Many RCTs", "Decades of use"],
+    "src": "FDA drug label, published research"
+  },
+  {
+    "ingredientId": "naproxen",
+    "studyCount": 9,
+    "filled": 5,
+    "sub": "Well-established for pain and inflammation; longer-acting than ibuprofen",
+    "studiedAmount": "220 mg per dose, up to 660 mg per day (OTC max)",
+    "chips": ["Many RCTs", "Decades of use"],
+    "src": "FDA drug label, published research"
+  },
+  {
+    "ingredientId": "aspirin",
+    "studyCount": 14,
+    "filled": 5,
+    "sub": "One of the most studied drugs in existence, for pain, fever, and (at low daily doses) heart protection",
+    "studiedAmount": "250-500 mg per dose for pain relief; 81 mg per day for heart protection",
+    "chips": ["Many RCTs", "Over a century of use"],
+    "src": "FDA drug label, published research"
+  },
+  {
+    "ingredientId": "caffeine",
+    "studyCount": 11,
+    "filled": 4,
+    "sub": "Well-studied stimulant; here it's added to boost the pain relievers' effect",
+    "studiedAmount": "65-200 mg per dose",
+    "chips": ["Many RCTs", "Long history of use"],
+    "src": "FDA drug label, published research"
+  }
+]
