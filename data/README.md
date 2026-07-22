@@ -44,33 +44,55 @@ real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
   `pipeline/sources/pubmed.ts`), so uncurated ingredients get an honest
   `sub: "Summary pending editorial review."` placeholder instead of a
   fabricated summary.
-- `drugs.json` — 27 individual drugs (not classes) a user can select as
-  "currently taking": the original 11; a first expansion covering diabetes,
-  a second statin, additional blood-pressure drug types (ARB, beta-blocker,
-  two diuretic mechanisms), a PPI, and a corticosteroid (metformin,
-  simvastatin, losartan, metoprolol, omeprazole, hydrochlorothiazide,
-  furosemide, prednisone); and a second expansion adding an antiplatelet, a
-  second SSRI, a benzodiazepine, a non-fluoroquinolone antibiotic, a cardiac
-  glycoside, an opioid combination product, a nerve-pain drug, and an SNRI
-  (clopidogrel, escitalopram, alprazolam, amoxicillin, digoxin, hydrocodone,
-  gabapentin, duloxetine). RxCUIs verified live against RxNorm, not guessed.
-- `interactions.json` — 80 rows, a maintained clinical dataset by design,
-  not something the pipeline generates — see `pipeline/README.md`. Every
-  interaction is either well-documented (vitamin K vs. warfarin, mineral
-  chelation of fluoroquinolones/tetracyclines/PPI-affected absorption, NSAID
-  + anticoagulant bleeding risk, ARB/thiazide + potassium or calcium,
-  ginkgo/vitamin E/curcumin + antiplatelets, digoxin's narrow safety margin
-  with potassium/magnesium/calcium) or explicitly hedged where the evidence
-  is thinner (CoQ10 + statins: framed as "not a safety risk, evidence for
-  the claimed benefit is mixed," not a danger warning). Several rows
-  describe a medication *depleting* a nutrient (metformin/B12, PPIs/
-  magnesium and iron, loop diuretics/potassium) or an *intentional* clinical
-  combination worth flagging rather than avoiding (aspirin + clopidogrel
-  dual antiplatelet therapy; probiotics alongside amoxicillin) rather than a
-  supplement simply causing harm — included with informational, not
-  alarmist, framing since that's the honest shape of the interaction.
+- `drugs.json` — 72 individual drugs (not classes) a user can select as
+  "currently taking," built up over three rounds: the original 11; a batch
+  covering diabetes, a second statin, additional blood-pressure drug types,
+  a PPI, and a corticosteroid; a batch adding an antiplatelet, more
+  psych meds, an antibiotic, digoxin, an opioid, and gabapentin; and a large
+  batch spanning more statins/blood-pressure drugs (including
+  spironolactone, a potassium-sparing diuretic), diabetes drugs, psych meds,
+  more PPIs/H2 blockers, more antibiotics, opioids, both remaining major
+  DOACs (rivaroxaban, dabigatran), a seizure drug, an antihistamine,
+  methotrexate, and a bisphosphonate. RxCUIs verified live against RxNorm
+  for every single one, not guessed. **Not every drug here has curated
+  interaction rows yet** — some (e.g. bupropion, buspirone, azithromycin,
+  cephalexin, sitagliptin, cetirizine) were added to the selectable list
+  without a matching interaction row because a solid, checkable
+  supplement/OTC interaction against this app's current ingredient catalog
+  wasn't there to write honestly. This is deliberate: the "currently taking"
+  list and the interaction dataset are allowed to grow at different rates,
+  and the UI already handles "nothing on file" as a normal, honest state
+  rather than an error.
+- `interactions.json` — 159 rows, a maintained clinical dataset by design,
+  not something the pipeline generates or an external interactions API
+  produces (there isn't a reliable free one anymore — NLM retired their old
+  Interaction API) — see `pipeline/README.md`. Every interaction is either
+  well-documented (vitamin K vs. warfarin, mineral chelation of
+  fluoroquinolones/tetracyclines/bisphosphonates/PPI-affected absorption,
+  NSAID + anticoagulant bleeding risk, ARB/ACE-inhibitor/potassium-sparing
+  diuretic + potassium, ginkgo/vitamin E/curcumin + antiplatelets,
+  digoxin's narrow safety margin, phenytoin's effect on folate/vitamin D)
+  or explicitly hedged where the evidence is thinner (CoQ10 + statins:
+  framed as "not a safety risk, evidence for the claimed benefit is mixed,"
+  not a danger warning). Several rows describe a medication *depleting* a
+  nutrient (metformin/B12, PPIs/magnesium and iron, loop diuretics/
+  potassium) or an *intentional* clinical combination worth flagging rather
+  than avoiding (aspirin + clopidogrel dual antiplatelet therapy;
+  probiotics alongside amoxicillin/clindamycin; folic acid alongside
+  low-dose methotrexate) rather than a supplement simply causing harm —
+  included with informational, not alarmist, framing since that's the
+  honest shape of the interaction.
 
 Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live
 data; curated `evidence.json` fields (`sub`, `studiedAmount`, `chips`,
 `reviewVerdict`) and all of `interactions.json` are preserved rather than
 overwritten — see the merge logic in `pipeline/build.ts`.
+
+## UI note: the med list is now large
+
+`src/components/MedBar.tsx` collapses the "currently taking" chip list to
+12 by default with a "+N more" toggle (any already-selected drug stays
+visible even when collapsed) — with 72 drugs, rendering every chip
+unconditionally pushed the med bar to over 1200px tall, well past the
+product list below it. This is UI-only; `listDrugs()` and the API still
+return the full set.

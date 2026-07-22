@@ -25,5 +25,61 @@
   { "id": "digoxin", "label": "Digoxin", "rxcui": "3407", "brandNames": ["Lanoxin"] },
   { "id": "hydrocodone", "label": "Hydrocodone/Acetaminophen (Vicodin)", "rxcui": "5489", "brandNames": ["Vicodin", "Norco"] },
   { "id": "gabapentin", "label": "Gabapentin (Neurontin)", "rxcui": "25480", "brandNames": ["Neurontin"] },
-  { "id": "duloxetine", "label": "Duloxetine (Cymbalta)", "rxcui": "72625", "brandNames": ["Cymbalta"] }
+  { "id": "duloxetine", "label": "Duloxetine (Cymbalta)", "rxcui": "72625", "brandNames": ["Cymbalta"] },
+
+  { "id": "rosuvastatin", "label": "Rosuvastatin (Crestor)", "rxcui": "301542", "brandNames": ["Crestor"] },
+  { "id": "pravastatin", "label": "Pravastatin (Pravachol)", "rxcui": "42463", "brandNames": ["Pravachol"] },
+  { "id": "diltiazem", "label": "Diltiazem (Cardizem)", "rxcui": "3443", "brandNames": ["Cardizem"] },
+  { "id": "carvedilol", "label": "Carvedilol (Coreg)", "rxcui": "20352", "brandNames": ["Coreg"] },
+  { "id": "valsartan", "label": "Valsartan (Diovan)", "rxcui": "69749", "brandNames": ["Diovan"] },
+  { "id": "enalapril", "label": "Enalapril (Vasotec)", "rxcui": "3827", "brandNames": ["Vasotec"] },
+  { "id": "spironolactone", "label": "Spironolactone (Aldactone)", "rxcui": "9997", "brandNames": ["Aldactone"] },
+  { "id": "propranolol", "label": "Propranolol (Inderal)", "rxcui": "8787", "brandNames": ["Inderal"] },
+  { "id": "verapamil", "label": "Verapamil (Calan)", "rxcui": "11170", "brandNames": ["Calan"] },
+
+  { "id": "glipizide", "label": "Glipizide (Glucotrol)", "rxcui": "4821", "brandNames": ["Glucotrol"] },
+  { "id": "glyburide", "label": "Glyburide (DiaBeta)", "rxcui": "4815", "brandNames": ["DiaBeta"] },
+  { "id": "sitagliptin", "label": "Sitagliptin (Januvia)", "rxcui": "593411", "brandNames": ["Januvia"] },
+  { "id": "insulin-glargine", "label": "Insulin Glargine (Lantus)", "rxcui": "274783", "brandNames": ["Lantus"] },
+
+  { "id": "fluoxetine", "label": "Fluoxetine (Prozac)", "rxcui": "4493", "brandNames": ["Prozac"] },
+  { "id": "paroxetine", "label": "Paroxetine (Paxil)", "rxcui": "32937", "brandNames": ["Paxil"] },
+  { "id": "venlafaxine", "label": "Venlafaxine (Effexor)", "rxcui": "39786", "brandNames": ["Effexor"] },
+  { "id": "citalopram", "label": "Citalopram (Celexa)", "rxcui": "2556", "brandNames": ["Celexa"] },
+  { "id": "bupropion", "label": "Bupropion (Wellbutrin)", "rxcui": "42347", "brandNames": ["Wellbutrin"] },
+  { "id": "trazodone", "label": "Trazodone", "rxcui": "10737", "brandNames": ["Desyrel"] },
+  { "id": "clonazepam", "label": "Clonazepam (Klonopin)", "rxcui": "2598", "brandNames": ["Klonopin"] },
+  { "id": "diazepam", "label": "Diazepam (Valium)", "rxcui": "3322", "brandNames": ["Valium"] },
+  { "id": "buspirone", "label": "Buspirone (Buspar)", "rxcui": "1827", "brandNames": ["Buspar"] },
+
+  { "id": "methimazole", "label": "Methimazole (Tapazole)", "rxcui": "6835", "brandNames": ["Tapazole"] },
+
+  { "id": "pantoprazole", "label": "Pantoprazole (Protonix)", "rxcui": "40790", "brandNames": ["Protonix"] },
+  { "id": "famotidine", "label": "Famotidine (Pepcid)", "rxcui": "4278", "brandNames": ["Pepcid"] },
+  { "id": "lansoprazole", "label": "Lansoprazole (Prevacid)", "rxcui": "17128", "brandNames": ["Prevacid"] },
+
+  { "id": "azithromycin", "label": "Azithromycin (Zithromax)", "rxcui": "18631", "brandNames": ["Zithromax", "Z-Pak"] },
+  { "id": "levofloxacin", "label": "Levofloxacin (Levaquin)", "rxcui": "82122", "brandNames": ["Levaquin"] },
+  { "id": "clindamycin", "label": "Clindamycin", "rxcui": "2582", "brandNames": ["Cleocin"] },
+  { "id": "cephalexin", "label": "Cephalexin (Keflex)", "rxcui": "2231", "brandNames": ["Keflex"] },
+  { "id": "sulfamethoxazole-trimethoprim", "label": "Sulfamethoxazole/Trimethoprim (Bactrim)", "rxcui": "10831", "brandNames": ["Bactrim", "Septra"] },
+  { "id": "metronidazole", "label": "Metronidazole (Flagyl)", "rxcui": "6922", "brandNames": ["Flagyl"] },
+
+  { "id": "tramadol", "label": "Tramadol", "rxcui": "10689", "brandNames": ["Ultram"] },
+  { "id": "oxycodone", "label": "Oxycodone", "rxcui": "7804", "brandNames": ["OxyContin", "Percocet"] },
+  { "id": "celecoxib", "label": "Celecoxib (Celebrex)", "rxcui": "140587", "brandNames": ["Celebrex"] },
+
+  { "id": "rivaroxaban", "label": "Rivaroxaban (Xarelto)", "rxcui": "1114195", "brandNames": ["Xarelto"] },
+  { "id": "dabigatran", "label": "Dabigatran (Pradaxa)", "rxcui": "1546356", "brandNames": ["Pradaxa"] },
+
+  { "id": "pregabalin", "label": "Pregabalin (Lyrica)", "rxcui": "187832", "brandNames": ["Lyrica"] },
+  { "id": "levetiracetam", "label": "Levetiracetam (Keppra)", "rxcui": "114477", "brandNames": ["Keppra"] },
+  { "id": "phenytoin", "label": "Phenytoin (Dilantin)", "rxcui": "8183", "brandNames": ["Dilantin"] },
+
+  { "id": "cetirizine", "label": "Cetirizine (Zyrtec)", "rxcui": "20610", "brandNames": ["Zyrtec"] },
+  { "id": "loratadine", "label": "Loratadine (Claritin)", "rxcui": "28889", "brandNames": ["Claritin"] },
+  { "id": "diphenhydramine", "label": "Diphenhydramine (Benadryl)", "rxcui": "3498", "brandNames": ["Benadryl"] },
+
+  { "id": "methotrexate", "label": "Methotrexate", "rxcui": "6851", "brandNames": ["Trexall"] },
+  { "id": "alendronate", "label": "Alendronate (Fosamax)", "rxcui": "46041", "brandNames": ["Fosamax"] }
 ]
