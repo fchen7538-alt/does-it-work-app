@@ -104,10 +104,14 @@
   {
     "id": "coq10",
     "name": "Coenzyme Q10 (ubiquinone)",
-    "rxcui": null,
+    "rxcui": "21406",
     "category": "supplement",
     "synonyms": [
       "CoQ10",
+      "Coenzyme Q-10",
+      "Coenzyme Q10",
+      "Megasorb Coenzyme Q-10",
+      "Q-Sorb Coenzyme Q-10",
       "Ubiquinone"
     ]
   },
@@ -381,15 +385,6 @@
     "category": "supplement",
     "synonyms": [
       "Sodium Starch Glycolate"
-    ]
-  },
-  {
-    "id": "coenzyme-q-10",
-    "name": "Coenzyme Q-10",
-    "rxcui": "21406",
-    "category": "supplement",
-    "synonyms": [
-      "Coenzyme Q-10"
     ]
   },
   {
@@ -1932,15 +1927,6 @@
     ]
   },
   {
-    "id": "coenzyme-q10",
-    "name": "Coenzyme Q10",
-    "rxcui": "21406",
-    "category": "supplement",
-    "synonyms": [
-      "Coenzyme Q10"
-    ]
-  },
-  {
     "id": "mannitol",
     "name": "Mannitol",
     "rxcui": "6628",
@@ -2577,15 +2563,6 @@
     "category": "supplement",
     "synonyms": [
       "Rice Bran Oil"
-    ]
-  },
-  {
-    "id": "q-sorb-coenzyme-q-10",
-    "name": "Q-Sorb Coenzyme Q-10",
-    "rxcui": null,
-    "category": "supplement",
-    "synonyms": [
-      "Q-Sorb Coenzyme Q-10"
     ]
   },
   {
@@ -3828,15 +3805,6 @@
     "category": "supplement",
     "synonyms": [
       "Paprika"
-    ]
-  },
-  {
-    "id": "megasorb-coenzyme-q-10",
-    "name": "Megasorb Coenzyme Q-10",
-    "rxcui": null,
-    "category": "supplement",
-    "synonyms": [
-      "Megasorb Coenzyme Q-10"
     ]
   },
   {

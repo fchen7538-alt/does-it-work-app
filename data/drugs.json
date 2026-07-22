@@ -9,5 +9,13 @@
   { "id": "zolpidem", "label": "Zolpidem (Ambien)", "rxcui": "39968", "brandNames": ["Ambien"] },
   { "id": "lorazepam", "label": "Lorazepam (Ativan)", "rxcui": "6470", "brandNames": ["Ativan"] },
   { "id": "ciprofloxacin", "label": "Ciprofloxacin", "rxcui": "2551", "brandNames": ["Cipro"] },
-  { "id": "doxycycline", "label": "Doxycycline", "rxcui": "3640", "brandNames": ["Vibramycin"] }
+  { "id": "doxycycline", "label": "Doxycycline", "rxcui": "3640", "brandNames": ["Vibramycin"] },
+  { "id": "metformin", "label": "Metformin (Glucophage)", "rxcui": "6809", "brandNames": ["Glucophage"] },
+  { "id": "simvastatin", "label": "Simvastatin (Zocor)", "rxcui": "36567", "brandNames": ["Zocor"] },
+  { "id": "losartan", "label": "Losartan (Cozaar)", "rxcui": "52175", "brandNames": ["Cozaar"] },
+  { "id": "metoprolol", "label": "Metoprolol (Lopressor)", "rxcui": "6918", "brandNames": ["Lopressor", "Toprol-XL"] },
+  { "id": "omeprazole", "label": "Omeprazole (Prilosec)", "rxcui": "7646", "brandNames": ["Prilosec"] },
+  { "id": "hydrochlorothiazide", "label": "Hydrochlorothiazide", "rxcui": "5487", "brandNames": ["Microzide"] },
+  { "id": "furosemide", "label": "Furosemide (Lasix)", "rxcui": "4603", "brandNames": ["Lasix"] },
+  { "id": "prednisone", "label": "Prednisone", "rxcui": "8640", "brandNames": ["Deltasone", "Rayos"] }
 ]

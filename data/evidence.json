@@ -40,7 +40,7 @@
     ],
     "src": "PubMed (NCBI E-utilities), live count",
     "reviewVerdict": {
-      "text": "A Cochrane review of vitamin D supplementation trials found it does not clearly reduce the risk of fractures or falls in generally healthy older adults who aren't already deficient — the clearest benefit shows up in people who start out with low levels.",
+      "text": "A Cochrane review of vitamin D supplementation trials found it does not clearly reduce the risk of fractures or falls in generally healthy older adults who aren't already deficient \u2014 the clearest benefit shows up in people who start out with low levels.",
       "caveat": "trials used different doses and forms of vitamin D, and results were more positive for people with confirmed deficiency",
       "source": "Cochrane Database of Systematic Reviews, vitamin D for prevention of fractures and falls"
     }
@@ -103,7 +103,7 @@
     "studyCount": 37501,
     "filled": 5,
     "sub": "Best evidence is for jet lag and shifting sleep timing",
-    "studiedAmount": "0.5-5 mg — timing matters more than the amount",
+    "studiedAmount": "0.5-5 mg \u2014 timing matters more than the amount",
     "chips": [
       "5 larger studies",
       "3 combined reviews"
@@ -474,15 +474,6 @@
   {
     "ingredientId": "sodium-starch-glycolate",
     "studyCount": 311,
-    "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "coenzyme-q-10",
-    "studyCount": 17369,
     "filled": 5,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",
@@ -2029,15 +2020,6 @@
     "src": "PubMed (NCBI E-utilities), live count"
   },
   {
-    "ingredientId": "coenzyme-q10",
-    "studyCount": 19123,
-    "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
     "ingredientId": "mannitol",
     "studyCount": 26981,
     "filled": 5,
@@ -2671,15 +2653,6 @@
     "ingredientId": "rice-bran-oil",
     "studyCount": 998,
     "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "q-sorb-coenzyme-q-10",
-    "studyCount": 1,
-    "filled": 1,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",
     "chips": [],
@@ -3921,15 +3894,6 @@
   {
     "ingredientId": "paprika",
     "studyCount": 7843,
-    "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "megasorb-coenzyme-q-10",
-    "studyCount": 17369,
     "filled": 5,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",

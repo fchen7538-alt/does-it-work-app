@@ -6,7 +6,7 @@ the schema the pipeline in `/pipeline` produces (see `pipeline/README.md`), so
 access to the source APIs.
 
 **Current status: live** (`meta.json` → `"status": "live"`, with per-source
-`lastSynced` timestamps). 171 products and 476 ingredients, pulled from the
+`lastSynced` timestamps). 171 products and 472 ingredients, pulled from the
 real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
 
 - `products.json` — supplement products live-pulled from DSLD across 7 of
@@ -34,9 +34,24 @@ real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
   `pipeline/sources/pubmed.ts`), so uncurated ingredients get an honest
   `sub: "Summary pending editorial review."` placeholder instead of a
   fabricated summary.
-- `interactions.json` — unchanged from the original curated set (38 rows
-  across the 11 specified drugs). This is a maintained clinical dataset by
-  design, not something the pipeline generates — see `pipeline/README.md`.
+- `drugs.json` — 19 individual drugs (not classes) a user can select as
+  "currently taking": the original 11, plus metformin, simvastatin,
+  losartan, metoprolol, omeprazole, hydrochlorothiazide, furosemide, and
+  prednisone — chosen to broaden coverage across diabetes, an additional
+  statin, additional blood-pressure drug types (ARB, beta-blocker, two
+  diuretic mechanisms), a PPI, and a corticosteroid. RxCUIs verified live
+  against RxNorm, not guessed.
+- `interactions.json` — 58 rows, a maintained clinical dataset by design,
+  not something the pipeline generates — see `pipeline/README.md`. Every
+  interaction is either well-documented (vitamin K vs. warfarin, mineral
+  chelation of fluoroquinolones/tetracyclines/PPI-affected absorption, NSAID
+  + anticoagulant bleeding risk, ARB/thiazide + potassium or calcium) or
+  explicitly hedged where the evidence is thinner (CoQ10 + statins: framed
+  as "not a safety risk, evidence for the claimed benefit is mixed," not a
+  danger warning). Several rows describe a medication *depleting* a
+  nutrient (metformin/B12, PPIs/magnesium, loop diuretics/potassium) rather
+  than a supplement causing harm — worth knowing either way, so they're
+  included with informational rather than alarmist framing.
 
 Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live
 data; curated `evidence.json` fields (`sub`, `studiedAmount`, `chips`,

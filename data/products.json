@@ -3,7 +3,7 @@
     "id": "nature-made-turmeric-curcumin-500mg",
     "brand": "Nature Made",
     "name": "Turmeric Curcumin 500mg",
-    "sub": "60 softgels · with black pepper extract",
+    "sub": "60 softgels \u00b7 with black pepper extract",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -32,7 +32,7 @@
     "id": "nature-made-vitamin-d3-2000-iu",
     "brand": "Nature Made",
     "name": "Vitamin D3 2000 IU",
-    "sub": "100 softgels · softgel",
+    "sub": "100 softgels \u00b7 softgel",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -56,7 +56,7 @@
     "id": "now-foods-ashwagandha-450mg",
     "brand": "NOW Foods",
     "name": "Ashwagandha 450mg",
-    "sub": "90 veg capsules · root extract",
+    "sub": "90 veg capsules \u00b7 root extract",
     "initials": "NF",
     "kind": "supplement",
     "ingredients": [
@@ -85,7 +85,7 @@
     "id": "now-foods-magnesium-glycinate-200mg",
     "brand": "NOW Foods",
     "name": "Magnesium Glycinate 200mg",
-    "sub": "180 tablets · chelated, gentler on digestion",
+    "sub": "180 tablets \u00b7 chelated, gentler on digestion",
     "initials": "NF",
     "kind": "supplement",
     "ingredients": [
@@ -109,7 +109,7 @@
     "id": "natures-bounty-fish-oil-1200mg",
     "brand": "Nature's Bounty",
     "name": "Fish Oil 1200mg",
-    "sub": "130 softgels · double strength omega-3",
+    "sub": "130 softgels \u00b7 double strength omega-3",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -133,7 +133,7 @@
     "id": "natures-bounty-melatonin-5mg",
     "brand": "Nature's Bounty",
     "name": "Melatonin 5mg",
-    "sub": "120 tablets · quick dissolve",
+    "sub": "120 tablets \u00b7 quick dissolve",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -157,7 +157,7 @@
     "id": "garden-of-life-probiotics-once-daily",
     "brand": "Garden of Life",
     "name": "Dr. Formulated Probiotics Once Daily",
-    "sub": "30 veg capsules · 50 billion CFU, 16 strains",
+    "sub": "30 veg capsules \u00b7 50 billion CFU, 16 strains",
     "initials": "GL",
     "kind": "supplement",
     "ingredients": [
@@ -181,7 +181,7 @@
     "id": "garden-of-life-vitamin-code-raw-vitamin-c",
     "brand": "Garden of Life",
     "name": "Vitamin Code Raw Vitamin C",
-    "sub": "120 veg capsules · whole food blend",
+    "sub": "120 veg capsules \u00b7 whole food blend",
     "initials": "GL",
     "kind": "supplement",
     "ingredients": [
@@ -205,7 +205,7 @@
     "id": "sports-research-triple-strength-omega-3",
     "brand": "Sports Research",
     "name": "Triple Strength Omega-3 Fish Oil",
-    "sub": "150 softgels · 1,250 mg fish oil concentrate per softgel",
+    "sub": "150 softgels \u00b7 1,250 mg fish oil concentrate per softgel",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -234,7 +234,7 @@
     "id": "sports-research-vitamin-d3-k2",
     "brand": "Sports Research",
     "name": "Vitamin D3 + K2",
-    "sub": "60 softgels · with organic coconut oil",
+    "sub": "60 softgels \u00b7 with organic coconut oil",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -263,7 +263,7 @@
     "id": "solgar-coq10-100mg",
     "brand": "Solgar",
     "name": "CoQ10 100mg",
-    "sub": "60 softgels · ubiquinone form",
+    "sub": "60 softgels \u00b7 ubiquinone form",
     "initials": "SG",
     "kind": "supplement",
     "ingredients": [
@@ -287,7 +287,7 @@
     "id": "solgar-vitamin-b12-1000mcg",
     "brand": "Solgar",
     "name": "Vitamin B12 1000mcg",
-    "sub": "100 nuggets · methylcobalamin, chewable",
+    "sub": "100 nuggets \u00b7 methylcobalamin, chewable",
     "initials": "SG",
     "kind": "supplement",
     "ingredients": [
@@ -311,7 +311,7 @@
     "id": "life-extension-super-omega-3",
     "brand": "Life Extension",
     "name": "Super Omega-3",
-    "sub": "120 softgels · EPA/DHA with sesame lignans and olive extract",
+    "sub": "120 softgels \u00b7 EPA/DHA with sesame lignans and olive extract",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -335,7 +335,7 @@
     "id": "life-extension-calcium-vitamin-d3",
     "brand": "Life Extension",
     "name": "Calcium & Vitamin D3",
-    "sub": "120 capsules · calcium citrate with vitamin D3",
+    "sub": "120 capsules \u00b7 calcium citrate with vitamin D3",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -364,7 +364,7 @@
     "id": "thorne-basic-b-complex",
     "brand": "Thorne",
     "name": "Basic B Complex",
-    "sub": "60 capsules · active B vitamin forms",
+    "sub": "60 capsules \u00b7 active B vitamin forms",
     "initials": "TH",
     "kind": "supplement",
     "ingredients": [
@@ -388,7 +388,7 @@
     "id": "thorne-zinc-picolinate-30mg",
     "brand": "Thorne",
     "name": "Zinc Picolinate 30mg",
-    "sub": "60 capsules · highly absorbable form",
+    "sub": "60 capsules \u00b7 highly absorbable form",
     "initials": "TH",
     "kind": "supplement",
     "ingredients": [
@@ -412,7 +412,7 @@
     "id": "nature-made-calcium-500-mg-supplement",
     "brand": "Nature Made",
     "name": "Calcium 500 mg Supplement",
-    "sub": "serving size: 1 Tablet(s) · 275 Premium Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 275 Premium Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -477,7 +477,7 @@
     "id": "nature-made-calcium-600-mg-supplement",
     "brand": "Nature Made",
     "name": "Calcium 600 mg Supplement",
-    "sub": "serving size: 1 Tablet(s) · 100 Premium Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Premium Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -532,7 +532,7 @@
     "id": "nature-made-calcium-600-mg-supplement-with-vitamin-d",
     "brand": "Nature Made",
     "name": "Calcium 600 mg Supplement With Vitamin D",
-    "sub": "serving size: 1 Tablet(s) · 75 Premium Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 75 Premium Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -597,7 +597,7 @@
     "id": "nature-made-calcium-citrate-supplement-with-vitamin-d",
     "brand": "Nature Made",
     "name": "Calcium Citrate Supplement With Vitamin D",
-    "sub": "serving size: 2 Tablet(s) · 60 Premium Tablet(s)",
+    "sub": "serving size: 2 Tablet(s) \u00b7 60 Premium Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -687,12 +687,12 @@
     "id": "nature-made-coq10-100-mg-supplement",
     "brand": "Nature Made",
     "name": "CoQ10 100 mg Supplement",
-    "sub": "serving size: 1 Softgel(s) · 90 Coenzyme Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 90 Coenzyme Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
       {
-        "ingredientId": "coenzyme-q-10",
+        "ingredientId": "coq10",
         "amount": "100 mg",
         "active": true
       },
@@ -737,7 +737,7 @@
     "id": "nature-made-b-complex-supplement-with-vitamin-c",
     "brand": "Nature Made",
     "name": "B-Complex Supplement With Vitamin C",
-    "sub": "serving size: 1 Caplet(s) · 125 Premium Caplet(s)",
+    "sub": "serving size: 1 Caplet(s) \u00b7 125 Premium Caplet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -837,7 +837,7 @@
     "id": "nature-s-bounty-calcium-magnesium-zinc",
     "brand": "Nature's Bounty",
     "name": "Calcium Magnesium Zinc",
-    "sub": "serving size: 3 Caplet(s) · 100 Caplet(s)",
+    "sub": "serving size: 3 Caplet(s) \u00b7 100 Caplet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -887,7 +887,7 @@
     "id": "nature-s-bounty-turmeric-450-mg-plus-turmeric-extract-50-mg",
     "brand": "Nature's Bounty",
     "name": "Turmeric 450 mg Plus Turmeric Extract 50 mg",
-    "sub": "serving size: 1 Capsule(s) · 60 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 60 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -967,7 +967,7 @@
     "id": "nature-s-bounty-ultra-soya-lecithin-1200-mg",
     "brand": "Nature's Bounty",
     "name": "Ultra Soya Lecithin 1200 mg",
-    "sub": "serving size: 1 Softgel(s) · 100 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 100 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1012,7 +1012,7 @@
     "id": "nature-s-bounty-turmeric-400-mg",
     "brand": "Nature's Bounty",
     "name": "Turmeric 400 mg",
-    "sub": "serving size: 1 Capsule(s) · 100 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 100 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1052,7 +1052,7 @@
     "id": "nature-s-bounty-natural-e-400-iu-with-selenium-50-mcg",
     "brand": "Nature's Bounty",
     "name": "Natural E-400 IU With Selenium 50 mcg",
-    "sub": "serving size: 1 Softgel(s) · 50 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 50 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1102,7 +1102,7 @@
     "id": "nature-s-bounty-abc-plus-senior",
     "brand": "Nature's Bounty",
     "name": "ABC Plus Senior",
-    "sub": "serving size: 1 Caplet(s) · 120 Caplet(s)",
+    "sub": "serving size: 1 Caplet(s) \u00b7 120 Caplet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1317,7 +1317,7 @@
     "id": "nature-s-bounty-ginkgo-biloba-120-mg",
     "brand": "Nature's Bounty",
     "name": "Ginkgo Biloba 120 mg",
-    "sub": "serving size: 1 Capsule(s) · 100 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 100 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1387,7 +1387,7 @@
     "id": "nature-s-bounty-maximum-strength-folic-acid-800-mcg",
     "brand": "Nature's Bounty",
     "name": "Maximum Strength Folic Acid 800 mcg",
-    "sub": "serving size: 1 Tablet(s) · 250 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 250 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1427,7 +1427,7 @@
     "id": "nature-s-bounty-grapeseed-extract-200-mg",
     "brand": "Nature's Bounty",
     "name": "Grapeseed Extract 200 mg",
-    "sub": "serving size: 2 Capsule(s) · 120 Capsule(s)",
+    "sub": "serving size: 2 Capsule(s) \u00b7 120 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1477,7 +1477,7 @@
     "id": "nature-s-bounty-vitamin-c-500-mg",
     "brand": "Nature's Bounty",
     "name": "Vitamin C-500 mg",
-    "sub": "serving size: 1 Tablet(s) · 250 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 250 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -1512,7 +1512,7 @@
     "id": "garden-of-life-raw-organic-perfect-food-green-superfood-chocolate",
     "brand": "Garden of Life",
     "name": "Raw Organic Perfect Food Green Superfood Chocolate",
-    "sub": "serving size: 1 Level Scoop(s) · 10.05 Oz(s)",
+    "sub": "serving size: 1 Level Scoop(s) \u00b7 10.05 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -1632,7 +1632,7 @@
     "id": "garden-of-life-raw-organic-perfect-food-apple",
     "brand": "Garden of Life",
     "name": "Raw Organic Perfect Food Apple",
-    "sub": "serving size: 1 Level Scoop(s) · 8.14 Oz(s)",
+    "sub": "serving size: 1 Level Scoop(s) \u00b7 8.14 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -1742,7 +1742,7 @@
     "id": "garden-of-life-living-vitamin-c",
     "brand": "Garden of Life",
     "name": "Living Vitamin C",
-    "sub": "serving size: 2 Caplet(s) · 60 Vegetarian Caplet(s)",
+    "sub": "serving size: 2 Caplet(s) \u00b7 60 Vegetarian Caplet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -1817,7 +1817,7 @@
     "id": "garden-of-life-super-seed-beyond-fiber",
     "brand": "Garden of Life",
     "name": "Super Seed Beyond Fiber",
-    "sub": "serving size: 20 Gram(s) · 7 oz.",
+    "sub": "serving size: 20 Gram(s) \u00b7 7 oz.",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -1892,7 +1892,7 @@
     "id": "garden-of-life-raw-cleanse-organ-detox",
     "brand": "Garden of Life",
     "name": "Raw Cleanse Organ Detox",
-    "sub": "serving size: 6 Capsule(s) · 42 Vegan Capsule(s)",
+    "sub": "serving size: 6 Capsule(s) \u00b7 42 Vegan Capsule(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -1972,7 +1972,7 @@
     "id": "garden-of-life-perfect-food-super-green-formula",
     "brand": "Garden of Life",
     "name": "Perfect Food Super Green Formula",
-    "sub": "serving size: 5 Caplet(s) · 75 Vegetarian Caplet(s)",
+    "sub": "serving size: 5 Caplet(s) \u00b7 75 Vegetarian Caplet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -2072,7 +2072,7 @@
     "id": "garden-of-life-oceans-3-beyond-omega-3-with-omegaxanthin",
     "brand": "Garden of Life",
     "name": "Oceans 3 Beyond Omega-3 with OmegaXanthin",
-    "sub": "serving size: 2 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 2 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -2142,7 +2142,7 @@
     "id": "garden-of-life-organic-fit-vanilla-flavor",
     "brand": "Garden of Life",
     "name": "Organic Fit Vanilla Flavor",
-    "sub": "serving size: 1 Level Scoop(s) · 16.04 Oz(s)",
+    "sub": "serving size: 1 Level Scoop(s) \u00b7 16.04 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -2267,7 +2267,7 @@
     "id": "garden-of-life-olde-world-icelandic-cod-liver-oil-lemon-mint-flavor",
     "brand": "Garden of Life",
     "name": "Olde World Icelandic Cod Liver Oil Lemon Mint Flavor",
-    "sub": "serving size: 1 tsp · 8 Fluid Ounce(s)",
+    "sub": "serving size: 1 tsp \u00b7 8 Fluid Ounce(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -2332,7 +2332,7 @@
     "id": "garden-of-life-grass-fed-collagen-peptides-unflavored",
     "brand": "Garden of Life",
     "name": "Grass Fed Collagen Peptides Unflavored",
-    "sub": "serving size: 20 Gram(s) · 9.87 Oz(s)",
+    "sub": "serving size: 20 Gram(s) \u00b7 9.87 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -2382,7 +2382,7 @@
     "id": "sports-research-cla-1250",
     "brand": "Sports Research",
     "name": "CLA 1250",
-    "sub": "serving size: 1 Softgel(s) · 90 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 90 Softgel(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -2432,7 +2432,7 @@
     "id": "sports-research-vitamin-d3-250-mcg-10-000-iu",
     "brand": "Sports Research",
     "name": "Vitamin D3 250 mcg (10,000 IU)",
-    "sub": "serving size: 1 Softgel(s) · 120 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 120 Softgel(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -2472,7 +2472,7 @@
     "id": "sports-research-omega-3-240-mg-krill-oil-1000-mg",
     "brand": "Sports Research",
     "name": "Omega-3 240 mg Krill Oil 1000 mg",
-    "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -2527,7 +2527,7 @@
     "id": "sports-research-biotin-10-000-mcg",
     "brand": "Sports Research",
     "name": "Biotin 10,000 mcg",
-    "sub": "serving size: 1 Veggie Softgel(s) · 120 Veggie Softgel(s)",
+    "sub": "serving size: 1 Veggie Softgel(s) \u00b7 120 Veggie Softgel(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -2572,7 +2572,7 @@
     "id": "sports-research-biotin-5000-mcg",
     "brand": "Sports Research",
     "name": "Biotin 5000 mcg",
-    "sub": "serving size: 1 Veggie Softgel(s) · 120 Veggie Softgel(s)",
+    "sub": "serving size: 1 Veggie Softgel(s) \u00b7 120 Veggie Softgel(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -2617,7 +2617,7 @@
     "id": "sports-research-organic-mct-oil-c8-c10-c12",
     "brand": "Sports Research",
     "name": "Organic MCT Oil C8 + C10 + C12",
-    "sub": "serving size: 15 mL · 32 Fluid Ounce(s)",
+    "sub": "serving size: 15 mL \u00b7 32 Fluid Ounce(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -2652,7 +2652,7 @@
     "id": "solgar-solgar-whey-to-go-natural-strawberry-flavor",
     "brand": "Solgar",
     "name": "Solgar Whey To Go Natural Strawberry Flavor",
-    "sub": "serving size: 34 Gram(s) · 16 Oz(s)",
+    "sub": "serving size: 34 Gram(s) \u00b7 16 Oz(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -2752,7 +2752,7 @@
     "id": "solgar-calcium-magnesium-plus-zinc",
     "brand": "Solgar",
     "name": "Calcium Magnesium plus Zinc",
-    "sub": "serving size: 3 Tablet(s) · 250 Tablet(s)",
+    "sub": "serving size: 3 Tablet(s) \u00b7 250 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -2817,7 +2817,7 @@
     "id": "solgar-alpha-lipoic-acid-60-mg",
     "brand": "Solgar",
     "name": "Alpha-Lipoic Acid 60 mg",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 30 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 30 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -2852,7 +2852,7 @@
     "id": "solgar-vitamin-b1-thiamin-100-mg",
     "brand": "Solgar",
     "name": "Vitamin B1 (Thiamin) 100 mg",
-    "sub": "serving size: 1 Vegetarian Capsule(s) · 100 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetarian Capsule(s) \u00b7 100 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -2892,7 +2892,7 @@
     "id": "solgar-b-complex-100",
     "brand": "Solgar",
     "name": "B-Complex \"100\"",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 133 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 133 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -2972,7 +2972,7 @@
     "id": "solgar-maxepa-1000-mg-omega-3-fish-oil",
     "brand": "Solgar",
     "name": "MaxEPA 1000 mg Omega 3 Fish Oil",
-    "sub": "serving size: 2 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 2 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -3022,7 +3022,7 @@
     "id": "solgar-niacin-vitamin-b3-100-mg",
     "brand": "Solgar",
     "name": "Niacin (Vitamin B3) 100 mg",
-    "sub": "serving size: 1 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -3067,7 +3067,7 @@
     "id": "solgar-b-complex-with-vitamin-c-stress-formula",
     "brand": "Solgar",
     "name": "B-Complex With Vitamin C Stress Formula",
-    "sub": "serving size: 2 Tablet(s) · 250 Tablet(s)",
+    "sub": "serving size: 2 Tablet(s) \u00b7 250 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -3187,7 +3187,7 @@
     "id": "solgar-north-atlantic-kelp",
     "brand": "Solgar",
     "name": "North Atlantic Kelp",
-    "sub": "serving size: 1 Tablet(s) · 250 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 250 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -3237,7 +3237,7 @@
     "id": "life-extension-life-extension-mix-tablets",
     "brand": "Life Extension",
     "name": "Life Extension Mix Tablets",
-    "sub": "serving size: 3 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 3 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -3557,7 +3557,7 @@
     "id": "life-extension-children-s-formula-life-extension-mix-natural-berry-flavor",
     "brand": "Life Extension",
     "name": "Children's Formula Life Extension Mix Natural Berry Flavor",
-    "sub": "serving size: 2 Tablet(s) · 100 Chewable Tablet(s)",
+    "sub": "serving size: 2 Tablet(s) \u00b7 100 Chewable Tablet(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -3682,7 +3682,7 @@
         "active": true
       },
       {
-        "ingredientId": "coenzyme-q10",
+        "ingredientId": "coq10",
         "amount": "1 mg",
         "active": true
       },
@@ -3772,7 +3772,7 @@
     "id": "life-extension-life-extension-mix-capsules-without-copper",
     "brand": "Life Extension",
     "name": "Life Extension Mix Capsules Without Copper",
-    "sub": "serving size: 7 Capsule(s) · 490 Capsule(s)",
+    "sub": "serving size: 7 Capsule(s) \u00b7 490 Capsule(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -4077,7 +4077,7 @@
     "id": "life-extension-life-extension-mix-tablets-without-copper",
     "brand": "Life Extension",
     "name": "Life Extension Mix Tablets Without Copper",
-    "sub": "serving size: 3 Tablet(s) · 315 Tablet(s)",
+    "sub": "serving size: 3 Tablet(s) \u00b7 315 Tablet(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -4387,7 +4387,7 @@
     "id": "thorne-perfusia-sr",
     "brand": "Thorne",
     "name": "Perfusia-SR",
-    "sub": "serving size: 2 Capsule(s) · 120 Capsule(s)",
+    "sub": "serving size: 2 Capsule(s) \u00b7 120 Capsule(s)",
     "initials": "T",
     "kind": "supplement",
     "ingredients": [
@@ -4437,7 +4437,7 @@
     "id": "thorne-l-arginine",
     "brand": "Thorne",
     "name": "L-Arginine",
-    "sub": "serving size: 2 Capsule(s) · 120 Capsule(s)",
+    "sub": "serving size: 2 Capsule(s) \u00b7 120 Capsule(s)",
     "initials": "T",
     "kind": "supplement",
     "ingredients": [
@@ -4487,7 +4487,7 @@
     "id": "thorne-curcumin-phytosome-500-mg",
     "brand": "Thorne",
     "name": "Curcumin Phytosome 500 mg",
-    "sub": "serving size: 1 Capsule(s) · 120 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 120 Capsule(s)",
     "initials": "T",
     "kind": "supplement",
     "ingredients": [
@@ -4542,7 +4542,7 @@
     "id": "nature-made-fish-oil-500-mg-360-mg-omega-3",
     "brand": "Nature Made",
     "name": "Fish Oil 500 mg 360 mg Omega-3",
-    "sub": "serving size: 2 Softgel(s) · 60 Liquid Softgel(s)",
+    "sub": "serving size: 2 Softgel(s) \u00b7 60 Liquid Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -4657,7 +4657,7 @@
     "id": "nature-made-prenatal-multi-dha-200mg",
     "brand": "Nature Made",
     "name": "Prenatal Multi + DHA 200mg",
-    "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -4822,7 +4822,7 @@
     "id": "nature-made-melatonin-5-mg",
     "brand": "Nature Made",
     "name": "Melatonin 5 mg",
-    "sub": "serving size: 1 Tablet(s) · 103 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 103 Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -4862,7 +4862,7 @@
     "id": "nature-made-vitamin-e-400-iu",
     "brand": "Nature Made",
     "name": "Vitamin E 400 IU",
-    "sub": "serving size: 1 Softgel(s) · 100 Liquid Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 100 Liquid Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -4902,7 +4902,7 @@
     "id": "nature-made-maximum-strength-d3-10-000-iu",
     "brand": "Nature Made",
     "name": "Maximum Strength D3 10,000 IU",
-    "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -4952,7 +4952,7 @@
     "id": "nature-made-biotin-adult-gummies-3000-mcg",
     "brand": "Nature Made",
     "name": "Biotin Adult Gummies 3000 mcg",
-    "sub": "serving size: 2 Gummie(s) · 180 Gummie(s)",
+    "sub": "serving size: 2 Gummie(s) \u00b7 180 Gummie(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5047,7 +5047,7 @@
     "id": "nature-made-maximin-pack",
     "brand": "Nature Made",
     "name": "Maximin Pack",
-    "sub": "serving size: 1 Packet(s) · 30 Packet(s)",
+    "sub": "serving size: 1 Packet(s) \u00b7 30 Packet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5307,7 +5307,7 @@
     "id": "nature-made-fish-oil-pearls",
     "brand": "Nature Made",
     "name": "Fish Oil Pearls",
-    "sub": "serving size: 3 Softgel(s) · 300 Softgel(s)",
+    "sub": "serving size: 3 Softgel(s) \u00b7 300 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5367,7 +5367,7 @@
     "id": "nature-made-burp-less-fish-oil-minis-1400-mg",
     "brand": "Nature Made",
     "name": "Burp-less Fish Oil Minis 1400 mg",
-    "sub": "serving size: 2 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 2 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5417,7 +5417,7 @@
     "id": "nature-made-vitamin-d3-adult-gummies",
     "brand": "Nature Made",
     "name": "Vitamin D3 Adult Gummies",
-    "sub": "serving size: 2 Gummie(s) · 190 Gummie(s)",
+    "sub": "serving size: 2 Gummie(s) \u00b7 190 Gummie(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5507,7 +5507,7 @@
     "id": "nature-made-postnatal-multi-dha",
     "brand": "Nature Made",
     "name": "Postnatal Multi + DHA",
-    "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5677,7 +5677,7 @@
     "id": "nature-made-vitamin-e-180-mg-400-iu",
     "brand": "Nature Made",
     "name": "Vitamin E 180 mg (400 IU)",
-    "sub": "serving size: 1 Softgel(s) · 180 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 180 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5712,7 +5712,7 @@
     "id": "nature-made-prenatal-multi",
     "brand": "Nature Made",
     "name": "Prenatal Multi",
-    "sub": "serving size: 1 Tablet(s) · 250 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 250 Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
     "ingredients": [
@@ -5872,7 +5872,7 @@
     "id": "nature-s-bounty-vitamin-b-6-100-mg",
     "brand": "Nature's Bounty",
     "name": "Vitamin B-6 100 mg",
-    "sub": "serving size: 1 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -5912,7 +5912,7 @@
     "id": "nature-s-bounty-omega-3-norwegian-cod-liver-oil",
     "brand": "Nature's Bounty",
     "name": "Omega-3 Norwegian Cod Liver Oil",
-    "sub": "serving size: 1 Softgel(s) · 100 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 100 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -5957,7 +5957,7 @@
     "id": "nature-s-bounty-iron-28-mg",
     "brand": "Nature's Bounty",
     "name": "Iron 28 mg",
-    "sub": "serving size: 1 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -5992,7 +5992,7 @@
     "id": "nature-s-bounty-flush-free-niacin-inositol-hexanicotinate-500-mg",
     "brand": "Nature's Bounty",
     "name": "Flush Free Niacin Inositol Hexanicotinate 500 mg",
-    "sub": "serving size: 1 Capsule(s) · 50 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 50 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6037,7 +6037,7 @@
     "id": "nature-s-bounty-e-400iu-pure-dl-alpha",
     "brand": "Nature's Bounty",
     "name": "E-400IU Pure Dl-Alpha",
-    "sub": "serving size: 1 Softgel(s) · 250 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 250 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6072,12 +6072,12 @@
     "id": "nature-s-bounty-extra-strength-co-q10-200-mg-q-sorb",
     "brand": "Nature's Bounty",
     "name": "Extra Strength Co-Q10 200 mg Q-Sorb",
-    "sub": "serving size: 1 Softgel(s) · 30 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 30 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
       {
-        "ingredientId": "q-sorb-coenzyme-q-10",
+        "ingredientId": "coq10",
         "amount": "200 mg",
         "active": true
       },
@@ -6117,7 +6117,7 @@
     "id": "nature-s-bounty-vitamins-for-the-hair",
     "brand": "Nature's Bounty",
     "name": "Vitamins For The Hair",
-    "sub": "serving size: 1 Tablet(s) · 65 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 65 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6232,7 +6232,7 @@
     "id": "nature-s-bounty-acidophilus-probiotic",
     "brand": "Nature's Bounty",
     "name": "Acidophilus Probiotic",
-    "sub": "serving size: 1 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6277,7 +6277,7 @@
     "id": "nature-s-bounty-time-released-high-potency-b-100-balanced-b-complex",
     "brand": "Nature's Bounty",
     "name": "Time-Released High Potency B-100 Balanced B-Complex",
-    "sub": "serving size: 1 Tablet(s) · 60 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 60 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6372,7 +6372,7 @@
     "id": "nature-s-bounty-calcium-600-with-vitamin-d3",
     "brand": "Nature's Bounty",
     "name": "Calcium 600 With Vitamin D3",
-    "sub": "serving size: 1 Tablet(s) · 250 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 250 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6407,7 +6407,7 @@
     "id": "nature-s-bounty-cranberry-plus-vitamin-c",
     "brand": "Nature's Bounty",
     "name": "Cranberry Plus Vitamin C",
-    "sub": "serving size: 2 Softgel(s) · 250 Softgel(s)",
+    "sub": "serving size: 2 Softgel(s) \u00b7 250 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6457,7 +6457,7 @@
     "id": "nature-s-bounty-colon-cleanser",
     "brand": "Nature's Bounty",
     "name": "Colon Cleanser",
-    "sub": "serving size: 6 Capsule(s) · 180 Capsule(s)",
+    "sub": "serving size: 6 Capsule(s) \u00b7 180 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6537,7 +6537,7 @@
     "id": "nature-s-bounty-standardized-extract-milk-thistle-250-mg",
     "brand": "Nature's Bounty",
     "name": "Standardized Extract Milk Thistle 250 mg",
-    "sub": "serving size: 1 Capsule(s) · 200 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 200 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6577,7 +6577,7 @@
     "id": "nature-s-bounty-cla-conjugated-linoleic-acid-1000-mg",
     "brand": "Nature's Bounty",
     "name": "CLA Conjugated Linoleic Acid 1000 mg",
-    "sub": "serving size: 2 Softgel(s) · 50 Softgel(s)",
+    "sub": "serving size: 2 Softgel(s) \u00b7 50 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6622,7 +6622,7 @@
     "id": "nature-s-bounty-standardized-extract-double-strength-st-john-s-wort-300-mg",
     "brand": "Nature's Bounty",
     "name": "Standardized Extract Double Strength St. John's Wort 300 mg",
-    "sub": "serving size: 1 Capsule(s) · 100 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 100 Capsule(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6657,7 +6657,7 @@
     "id": "nature-s-bounty-hair-skin-nails",
     "brand": "Nature's Bounty",
     "name": "Hair, Skin & Nails",
-    "sub": "serving size: 3 Caplet(s) · 60 Coated Caplet(s)",
+    "sub": "serving size: 3 Caplet(s) \u00b7 60 Coated Caplet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6832,7 +6832,7 @@
     "id": "nature-s-bounty-triple-strength-melatonin-3-mg",
     "brand": "Nature's Bounty",
     "name": "Triple Strength Melatonin 3 mg",
-    "sub": "serving size: 1 Tablet(s) · 240 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 240 Tablet(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6867,7 +6867,7 @@
     "id": "nature-s-bounty-triple-strength-red-krill-oil-1000-mg",
     "brand": "Nature's Bounty",
     "name": "Triple Strength Red Krill Oil 1000 mg",
-    "sub": "serving size: 1 Softgel(s) · 30 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 30 Softgel(s)",
     "initials": "NB",
     "kind": "supplement",
     "ingredients": [
@@ -6907,7 +6907,7 @@
     "id": "garden-of-life-raw-organic-perfect-food-alkalizer-detoxifier-lemon-ginger",
     "brand": "Garden of Life",
     "name": "Raw Organic Perfect Food Alkalizer & Detoxifier Lemon - Ginger",
-    "sub": "serving size: 9.4 Gram(s) · 9.94 Oz(s)",
+    "sub": "serving size: 9.4 Gram(s) \u00b7 9.94 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7052,7 +7052,7 @@
     "id": "garden-of-life-fyi-restore",
     "brand": "Garden of Life",
     "name": "FYI Restore",
-    "sub": "serving size: 1 Capsule(s) · 60 Enteric Coated Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 60 Enteric Coated Capsule(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7097,7 +7097,7 @@
     "id": "garden-of-life-raw-organic-perfect-food-original",
     "brand": "Garden of Life",
     "name": "Raw Organic Perfect Food Original",
-    "sub": "serving size: 6.9 Gram(s) · 14.6 Oz(s)",
+    "sub": "serving size: 6.9 Gram(s) \u00b7 14.6 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7202,7 +7202,7 @@
     "id": "garden-of-life-grass-fed-collagen-coconut-mct-vanilla-flavor",
     "brand": "Garden of Life",
     "name": "Grass Fed Collagen Coconut MCT Vanilla Flavor",
-    "sub": "serving size: 1 Scoop(s) · 14.39 Ounce(s)",
+    "sub": "serving size: 1 Scoop(s) \u00b7 14.39 Ounce(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7292,7 +7292,7 @@
     "id": "garden-of-life-grass-fed-collagen-creamer-creamy-vanilla-flavor",
     "brand": "Garden of Life",
     "name": "Grass Fed Collagen Creamer Creamy Vanilla Flavor",
-    "sub": "serving size: 27.5 Gram(s) · 11.64 Ounce(s)",
+    "sub": "serving size: 27.5 Gram(s) \u00b7 11.64 Ounce(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7382,7 +7382,7 @@
     "id": "garden-of-life-paleo-defense-women",
     "brand": "Garden of Life",
     "name": "Paleo Defense Women",
-    "sub": "serving size: 1 Capsule(s) · 30 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 30 Capsule(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7432,7 +7432,7 @@
     "id": "garden-of-life-raw-organic-perfect-food-chocolate",
     "brand": "Garden of Life",
     "name": "Raw Organic Perfect Food Chocolate",
-    "sub": "serving size: 9.5 Gram(s) · 15 Packet(s)",
+    "sub": "serving size: 9.5 Gram(s) \u00b7 15 Packet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7552,7 +7552,7 @@
     "id": "garden-of-life-raw-organic-fit-vanilla",
     "brand": "Garden of Life",
     "name": "Raw Organic Fit Vanilla",
-    "sub": "serving size: 46.5 Gram(s) · 32.8 Ounce(s)",
+    "sub": "serving size: 46.5 Gram(s) \u00b7 32.8 Ounce(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7682,7 +7682,7 @@
     "id": "garden-of-life-rm-10",
     "brand": "Garden of Life",
     "name": "RM-10",
-    "sub": "serving size: 1 Caplet(s) · 120 Vegetarian Caplet(s)",
+    "sub": "serving size: 1 Caplet(s) \u00b7 120 Vegetarian Caplet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -7757,7 +7757,7 @@
     "id": "garden-of-life-living-multi-optimal-formula",
     "brand": "Garden of Life",
     "name": "Living Multi Optimal Formula",
-    "sub": "serving size: 6 Caplet(s) · 126 Vegetarian Caplet(s)",
+    "sub": "serving size: 6 Caplet(s) \u00b7 126 Vegetarian Caplet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8012,7 +8012,7 @@
     "id": "garden-of-life-raw-enzymes-men",
     "brand": "Garden of Life",
     "name": "RAW Enzymes Men",
-    "sub": "serving size: 1 Capsule(s) · 90 Vegetarian Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 90 Vegetarian Capsule(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8127,7 +8127,7 @@
     "id": "garden-of-life-raw-enzymes-men-50-wiser",
     "brand": "Garden of Life",
     "name": "RAW Enzymes Men 50 & Wiser",
-    "sub": "serving size: 1 Capsule(s) · 90 Vegetarian Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 90 Vegetarian Capsule(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8252,7 +8252,7 @@
     "id": "garden-of-life-perfect-food-original",
     "brand": "Garden of Life",
     "name": "Perfect Food Original",
-    "sub": "serving size: 0.5 Gram(s) · 10.58 oz.",
+    "sub": "serving size: 0.5 Gram(s) \u00b7 10.58 oz.",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8342,7 +8342,7 @@
     "id": "garden-of-life-digestion-elimination",
     "brand": "Garden of Life",
     "name": "Digestion & Elimination",
-    "sub": "serving size: 21 Gram(s) · 5.1 Oz(s)",
+    "sub": "serving size: 21 Gram(s) \u00b7 5.1 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8402,7 +8402,7 @@
     "id": "garden-of-life-fyi",
     "brand": "Garden of Life",
     "name": "FYI",
-    "sub": "serving size: 1 Caplet(s) · 90 Caplet(s)",
+    "sub": "serving size: 1 Caplet(s) \u00b7 90 Caplet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8462,7 +8462,7 @@
     "id": "garden-of-life-raw-organic-perfect-food-yerba-mate-pomegranate",
     "brand": "Garden of Life",
     "name": "Raw Organic Perfect Food Yerba Mate - Pomegranate",
-    "sub": "serving size: 9.2 Gram(s) · 9.73 Oz(s)",
+    "sub": "serving size: 9.2 Gram(s) \u00b7 9.73 Oz(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8602,7 +8602,7 @@
     "id": "garden-of-life-lovely-legs",
     "brand": "Garden of Life",
     "name": "Lovely Legs",
-    "sub": "serving size: 1 Caplet(s) · 30 Vegan Caplet(s)",
+    "sub": "serving size: 1 Caplet(s) \u00b7 30 Vegan Caplet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8637,7 +8637,7 @@
     "id": "garden-of-life-living-calcium-advanced",
     "brand": "Garden of Life",
     "name": "Living Calcium Advanced",
-    "sub": "serving size: 2 Caplet(s) · 120 Caplet(s)",
+    "sub": "serving size: 2 Caplet(s) \u00b7 120 Caplet(s)",
     "initials": "GO",
     "kind": "supplement",
     "ingredients": [
@@ -8782,7 +8782,7 @@
     "id": "sports-research-vitamin-d3-125-mcg-5000-iu",
     "brand": "Sports Research",
     "name": "Vitamin D3 125 mcg (5000 IU)",
-    "sub": "serving size: 1 Softgel(s) · 30 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 30 Softgel(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -8822,7 +8822,7 @@
     "id": "sports-research-marine-collagen-unflavored",
     "brand": "Sports Research",
     "name": "Marine Collagen Unflavored",
-    "sub": "serving size: 10 Gram(s) · 12 Ounce(s)",
+    "sub": "serving size: 10 Gram(s) \u00b7 12 Ounce(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -8862,7 +8862,7 @@
     "id": "sports-research-collagen-peptides-unflavored",
     "brand": "Sports Research",
     "name": "Collagen Peptides Unflavored",
-    "sub": "serving size: 11 Gram(s) · 32 Ounce(s)",
+    "sub": "serving size: 11 Gram(s) \u00b7 32 Ounce(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -8902,7 +8902,7 @@
     "id": "sports-research-collagen-peptides-vanilla",
     "brand": "Sports Research",
     "name": "Collagen Peptides Vanilla",
-    "sub": "serving size: 12 Gram(s) · 16.93 Ounce(s)",
+    "sub": "serving size: 12 Gram(s) \u00b7 16.93 Ounce(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -8947,7 +8947,7 @@
     "id": "sports-research-collagen-peptides-dark-chocolate",
     "brand": "Sports Research",
     "name": "Collagen Peptides Dark Chocolate",
-    "sub": "serving size: 16 Gram(s) · 22.58 Ounce(s)",
+    "sub": "serving size: 16 Gram(s) \u00b7 22.58 Ounce(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -9032,7 +9032,7 @@
     "id": "sports-research-collagen-peptides-matcha-10g",
     "brand": "Sports Research",
     "name": "Collagen Peptides Matcha 10g",
-    "sub": "serving size: 12 Gram(s) · 10.2 Ounce(s)",
+    "sub": "serving size: 12 Gram(s) \u00b7 10.2 Ounce(s)",
     "initials": "SR",
     "kind": "supplement",
     "ingredients": [
@@ -9082,7 +9082,7 @@
     "id": "solgar-spoonfuls-chocolate-coconut-flavor",
     "brand": "Solgar",
     "name": "Spoonfuls Chocolate Coconut Flavor",
-    "sub": "serving size: 49 Gram(s) · 1.7 oz.",
+    "sub": "serving size: 49 Gram(s) \u00b7 1.7 oz.",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9327,7 +9327,7 @@
     "id": "solgar-essential-amino-complex",
     "brand": "Solgar",
     "name": "Essential Amino Complex",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 60 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 60 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9397,7 +9397,7 @@
     "id": "solgar-antioxidant-free-radical-formula",
     "brand": "Solgar",
     "name": "Antioxidant Free Radical Formula",
-    "sub": "serving size: 2 Vegetable Capsule(s) · 60 Vegetable Capsule(s)",
+    "sub": "serving size: 2 Vegetable Capsule(s) \u00b7 60 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9532,7 +9532,7 @@
     "id": "solgar-super-potency-biotin-5000-mcg",
     "brand": "Solgar",
     "name": "Super Potency Biotin 5000 mcg",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 100 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 100 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9582,12 +9582,12 @@
     "id": "solgar-megasorb-coq-10-100-mg",
     "brand": "Solgar",
     "name": "Megasorb CoQ-10 100 mg",
-    "sub": "serving size: 1 Softgel(s) · 90 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 90 Softgel(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
       {
-        "ingredientId": "megasorb-coenzyme-q-10",
+        "ingredientId": "coq10",
         "amount": "100 mg",
         "active": true
       },
@@ -9632,7 +9632,7 @@
     "id": "solgar-d-ribose-powder",
     "brand": "Solgar",
     "name": "D-Ribose Powder",
-    "sub": "serving size: 1 tsp · 5.3 oz.",
+    "sub": "serving size: 1 tsp \u00b7 5.3 oz.",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9667,7 +9667,7 @@
     "id": "solgar-folate-666-mcg-dfe-folic-acid-400-mcg",
     "brand": "Solgar",
     "name": "Folate 666 mcg DFE Folic Acid 400 mcg",
-    "sub": "serving size: 1 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9712,7 +9712,7 @@
     "id": "solgar-hematinic-formula",
     "brand": "Solgar",
     "name": "Hematinic Formula",
-    "sub": "serving size: 3 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 3 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9792,7 +9792,7 @@
     "id": "solgar-magnesium-citrate",
     "brand": "Solgar",
     "name": "Magnesium Citrate",
-    "sub": "serving size: 2 Tablet(s) · 120 Tablet(s)",
+    "sub": "serving size: 2 Tablet(s) \u00b7 120 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9847,7 +9847,7 @@
     "id": "solgar-folate-1-333-mcg-dfe-metafolin-800-mcg",
     "brand": "Solgar",
     "name": "Folate 1,333 mcg DFE (Metafolin 800 mcg)",
-    "sub": "serving size: 1 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9897,7 +9897,7 @@
     "id": "solgar-sublingual-methylcobalamin-vitamon-b12-5000-mcg",
     "brand": "Solgar",
     "name": "Sublingual Methylcobalamin (Vitamon B12) 5000 mcg",
-    "sub": "serving size: 1 nugget(s) · 30 nugget(s)",
+    "sub": "serving size: 1 nugget(s) \u00b7 30 nugget(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9952,7 +9952,7 @@
     "id": "solgar-l-proline-500-mg",
     "brand": "Solgar",
     "name": "L-Proline 500 mg",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 100 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 100 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -9982,7 +9982,7 @@
     "id": "solgar-vitamin-b6-50-mg",
     "brand": "Solgar",
     "name": "Vitamin B6 50 mg",
-    "sub": "serving size: 1 Tablet(s) · 100 Tablet(s)",
+    "sub": "serving size: 1 Tablet(s) \u00b7 100 Tablet(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10027,7 +10027,7 @@
     "id": "solgar-earth-source-organic-cold-milled-flax",
     "brand": "Solgar",
     "name": "Earth Source Organic Cold-Milled Flax",
-    "sub": "serving size: 7.5 Gram(s) · 15 Oz(s)",
+    "sub": "serving size: 7.5 Gram(s) \u00b7 15 Oz(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10112,7 +10112,7 @@
     "id": "solgar-5-htp-100-mg",
     "brand": "Solgar",
     "name": "5-HTP 100 mg",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 90 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 90 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10162,7 +10162,7 @@
     "id": "solgar-multi-acidophilus-powder",
     "brand": "Solgar",
     "name": "Multi-Acidophilus Powder",
-    "sub": "serving size: 1.5 tsp · 4 Oz(s)",
+    "sub": "serving size: 1.5 tsp \u00b7 4 Oz(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10207,7 +10207,7 @@
     "id": "solgar-nac-600-mg",
     "brand": "Solgar",
     "name": "NAC 600 mg",
-    "sub": "serving size: 1 Vegetarian Capsule(s) · 60 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetarian Capsule(s) \u00b7 60 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10242,7 +10242,7 @@
     "id": "solgar-l-ornithine-500-mg",
     "brand": "Solgar",
     "name": "L-Ornithine 500 mg",
-    "sub": "serving size: 1 Vegetarian Capsule(s) · 100 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetarian Capsule(s) \u00b7 100 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10287,7 +10287,7 @@
     "id": "solgar-taurine-500-mg",
     "brand": "Solgar",
     "name": "Taurine 500 mg",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 50 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 50 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10322,7 +10322,7 @@
     "id": "solgar-l-theanine-150-mg",
     "brand": "Solgar",
     "name": "L-Theanine 150 mg",
-    "sub": "serving size: 1 Vegetable Capsule(s) · 60 Vegetable Capsule(s)",
+    "sub": "serving size: 1 Vegetable Capsule(s) \u00b7 60 Vegetable Capsule(s)",
     "initials": "S",
     "kind": "supplement",
     "ingredients": [
@@ -10362,7 +10362,7 @@
     "id": "life-extension-life-extension-mix-powder-without-copper",
     "brand": "Life Extension",
     "name": "Life Extension Mix Powder Without Copper",
-    "sub": "serving size: 4 Gram(s) · 0.92 lbs",
+    "sub": "serving size: 4 Gram(s) \u00b7 0.92 lbs",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -10662,7 +10662,7 @@
     "id": "life-extension-life-extension-mix-tablets-with-extra-niacin",
     "brand": "Life Extension",
     "name": "Life Extension Mix Tablets With Extra Niacin",
-    "sub": "serving size: 3 Tablet(s) · 315 Tablet(s)",
+    "sub": "serving size: 3 Tablet(s) \u00b7 315 Tablet(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -10992,7 +10992,7 @@
     "id": "life-extension-life-extension-mix-tablets-with-extra-niacin-without-copper",
     "brand": "Life Extension",
     "name": "Life Extension Mix Tablets With Extra Niacin & Without Copper",
-    "sub": "serving size: 3 Tablet(s) · 315 Tablet(s)",
+    "sub": "serving size: 3 Tablet(s) \u00b7 315 Tablet(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -11302,7 +11302,7 @@
     "id": "life-extension-life-extension-mix-capsules",
     "brand": "Life Extension",
     "name": "Life Extension Mix Capsules",
-    "sub": "serving size: 7 Capsule(s) · 490 Capsule(s)",
+    "sub": "serving size: 7 Capsule(s) \u00b7 490 Capsule(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -11612,7 +11612,7 @@
     "id": "life-extension-black-cumin-seed-oil",
     "brand": "Life Extension",
     "name": "Black Cumin Seed Oil",
-    "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
+    "sub": "serving size: 1 Softgel(s) \u00b7 60 Softgel(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -11647,7 +11647,7 @@
     "id": "life-extension-life-extension-mix-powder",
     "brand": "Life Extension",
     "name": "Life Extension Mix Powder",
-    "sub": "serving size: 12 Gram(s) · 360 Gram(s)",
+    "sub": "serving size: 12 Gram(s) \u00b7 360 Gram(s)",
     "initials": "LE",
     "kind": "supplement",
     "ingredients": [
@@ -11947,7 +11947,7 @@
     "id": "thorne-meriva-500-sf",
     "brand": "Thorne",
     "name": "Meriva 500-SF",
-    "sub": "serving size: 1 Capsule(s) · 120 Capsule(s)",
+    "sub": "serving size: 1 Capsule(s) \u00b7 120 Capsule(s)",
     "initials": "T",
     "kind": "supplement",
     "ingredients": [
@@ -12002,7 +12002,7 @@
     "id": "thorne-synaquell",
     "brand": "Thorne",
     "name": "SynaQuell",
-    "sub": "serving size: 7.7 Gram(s) · 8.17 Ounce(s)",
+    "sub": "serving size: 7.7 Gram(s) \u00b7 8.17 Ounce(s)",
     "initials": "T",
     "kind": "supplement",
     "ingredients": [
