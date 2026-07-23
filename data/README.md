@@ -63,25 +63,36 @@ real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
   list and the interaction dataset are allowed to grow at different rates,
   and the UI already handles "nothing on file" as a normal, honest state
   rather than an error.
-- `interactions.json` — 159 rows, a maintained clinical dataset by design,
-  not something the pipeline generates or an external interactions API
-  produces (there isn't a reliable free one anymore — NLM retired their old
-  Interaction API) — see `pipeline/README.md`. Every interaction is either
+- `interactions.json` — 195 rows across 31 distinct ingredients, a
+  maintained clinical dataset by design, not something the pipeline
+  generates or an external interactions API produces (there isn't a
+  reliable free one anymore — NLM retired their old Interaction API, and a
+  licensed clinical tool like Lexicomp is contractually restricted to
+  interactive point-of-care use, not automated extraction into another
+  product) — see `pipeline/README.md`. Every interaction is either
   well-documented (vitamin K vs. warfarin, mineral chelation of
   fluoroquinolones/tetracyclines/bisphosphonates/PPI-affected absorption,
   NSAID + anticoagulant bleeding risk, ARB/ACE-inhibitor/potassium-sparing
   diuretic + potassium, ginkgo/vitamin E/curcumin + antiplatelets,
-  digoxin's narrow safety margin, phenytoin's effect on folate/vitamin D)
-  or explicitly hedged where the evidence is thinner (CoQ10 + statins:
-  framed as "not a safety risk, evidence for the claimed benefit is mixed,"
-  not a danger warning). Several rows describe a medication *depleting* a
-  nutrient (metformin/B12, PPIs/magnesium and iron, loop diuretics/
-  potassium) or an *intentional* clinical combination worth flagging rather
-  than avoiding (aspirin + clopidogrel dual antiplatelet therapy;
-  probiotics alongside amoxicillin/clindamycin; folic acid alongside
-  low-dose methotrexate) rather than a supplement simply causing harm —
-  included with informational, not alarmist, framing since that's the
-  honest shape of the interaction.
+  digoxin's narrow safety margin, phenytoin's effect on folate/vitamin D,
+  St. John's Wort's broad CYP3A4/P-gp induction and serotonin syndrome risk,
+  valerian's additive sedation) or explicitly hedged where the evidence is
+  thinner (CoQ10 + statins: framed as "not a safety risk, evidence for the
+  claimed benefit is mixed," not a danger warning). Several rows describe a
+  medication *depleting* a nutrient (metformin/B12, PPIs/magnesium and
+  iron, loop diuretics/potassium) or an *intentional* clinical combination
+  worth flagging rather than avoiding (aspirin + clopidogrel dual
+  antiplatelet therapy; probiotics alongside amoxicillin/clindamycin; folic
+  acid alongside low-dose methotrexate) rather than a supplement simply
+  causing harm — included with informational, not alarmist, framing since
+  that's the honest shape of the interaction. St. John's Wort's rows
+  deliberately exclude lorazepam (glucuronidated, not a CYP3A4 substrate,
+  unlike the other benzodiazepines here) and metoprolol (a CYP2D6
+  substrate, not the CYP3A4/P-gp pathway St. John's Wort mainly induces) —
+  the mechanism doesn't apply to those two, so nothing is asserted there.
+  Ingredient-side coverage is still the bigger gap: 283 distinct active
+  ingredients exist across the live-pulled product catalog, and only 31 of
+  them have any interaction row yet.
 
 Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live
 data; curated `evidence.json` fields (`sub`, `studiedAmount`, `chips`,

@@ -556,10 +556,18 @@
     "ingredientId": "niacin",
     "studyCount": 15287,
     "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
+    "sub": "Best evidence is for improving cholesterol levels, though newer drugs have largely replaced it for that use",
+    "studiedAmount": "500-2000 mg per day in trials (well above the RDA)",
+    "chips": [
+      "Large clinical trials",
+      "Flushing is a common side effect"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
+    "reviewVerdict": {
+      "text": "Large clinical trials (AIM-HIGH and HPS2-THRIVE) tested adding niacin to statin therapy and found it improved cholesterol numbers but did not reduce heart attacks, strokes, or death compared to statin therapy alone.",
+      "caveat": "these trials looked at niacin added on top of statins, not niacin used by itself in people not already on cholesterol medication",
+      "source": "AIM-HIGH and HPS2-THRIVE trials, New England Journal of Medicine"
+    }
   },
   {
     "ingredientId": "pantothenic-acid",
@@ -2725,10 +2733,18 @@
     "ingredientId": "cranberry-concentrate",
     "studyCount": 546,
     "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
+    "sub": "Best evidence is for reducing recurrent urinary tract infections",
+    "studiedAmount": "36-72 mg proanthocyanidins (PACs) per day in most trials",
+    "chips": [
+      "Several combined reviews",
+      "Effect is modest"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
+    "reviewVerdict": {
+      "text": "A Cochrane review of cranberry products for preventing urinary tract infections found a modest protective effect, most consistent in women with recurrent UTIs.",
+      "caveat": "the effect size shrank in more recent, larger trials compared to older ones, and juice vs. capsule forms were not equally studied",
+      "source": "Cochrane Database of Systematic Reviews, cranberries for preventing UTIs"
+    }
   },
   {
     "ingredientId": "contains-2-of",
@@ -2833,10 +2849,18 @@
     "ingredientId": "st-john-s-wort-extract",
     "studyCount": 2262,
     "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
+    "sub": "Most studies looked at mild to moderate depression",
+    "studiedAmount": "300 mg, 2-3 times per day (900 mg total) in most studies",
+    "chips": [
+      "Many RCTs",
+      "Combined reviews"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
+    "reviewVerdict": {
+      "text": "A Cochrane review of St. John's Wort for major depression found it more effective than placebo and similarly effective to standard antidepressants for mild-to-moderate depression, with fewer side effects reported in the trials.",
+      "caveat": "product standardization varies a lot between brands, and this is also one of the most interaction-prone herbal supplements \u2014 the same properties that make it effective also affect how the liver processes many prescription drugs",
+      "source": "Cochrane Database of Systematic Reviews, St. John's Wort for major depression"
+    }
   },
   {
     "ingredientId": "betaine-hydrochloride",
@@ -3850,9 +3874,12 @@
     "ingredientId": "standardized-green-tea-extract",
     "studyCount": 1384,
     "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
+    "sub": "Studied mostly for metabolism and antioxidant effects",
+    "studiedAmount": "Varies widely \u2014 often standardized to EGCG content, 300-800 mg per day",
+    "chips": [
+      "Many trials",
+      "Mixed results for weight loss"
+    ],
     "src": "PubMed (NCBI E-utilities), live count"
   },
   {
@@ -3958,10 +3985,18 @@
     "ingredientId": "valerian-extract",
     "studyCount": 74,
     "filled": 5,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
+    "sub": "Studied mostly for sleep quality and time to fall asleep",
+    "studiedAmount": "300-600 mg before bedtime in most studies",
+    "chips": [
+      "Several clinical trials",
+      "Mixed results"
+    ],
+    "src": "PubMed (NCBI E-utilities), live count",
+    "reviewVerdict": {
+      "text": "A systematic review of valerian for sleep found people often reported feeling their sleep improved, but more objective measures (like time to fall asleep recorded in sleep labs) did not show a clear, consistent benefit across studies.",
+      "caveat": "trials varied a lot in dose, preparation, and how sleep was measured, making the studies hard to compare directly",
+      "source": "Systematic review, valerian for sleep quality"
+    }
   },
   {
     "ingredientId": "multi-acidophilus-complex",
