@@ -76,14 +76,24 @@ async function main() {
   if (runStage("dsld")) {
     console.log(`\n[dsld] pulling supplement products for ${SUPPLEMENT_BRANDS.length} brands...`);
     for (const brand of SUPPLEMENT_BRANDS) {
+      let hits: Awaited<ReturnType<typeof dsld.searchProductsByBrand>> = [];
       try {
-        const hits = await dsld.searchProductsByBrand(brand, PER_BRAND_SEARCH_SIZE);
+        hits = await dsld.searchProductsByBrand(brand, PER_BRAND_SEARCH_SIZE);
         console.log(`  ${brand}: ${hits.length} products found`);
-        for (const hit of hits) {
+      } catch (err) {
+        console.error(`  [dsld] search failed for brand "${brand}": ${(err as Error).message}`);
+        continue;
+      }
+
+      // Per-hit try/catch: one failed label fetch (e.g. a transient 429 that
+      // outlasts fetchJson's built-in retries) should skip that product, not
+      // abort every remaining product for the brand.
+      for (const hit of hits) {
+        try {
           const label = await dsld.getProductLabel(hit.id);
           if (!label) continue;
           const rawNames: string[] = [];
-          const { product } = dsld.mapDsldLabelToProduct(label, (name) => {
+          const { product } = dsld.mapDsldLabelToProduct(label, brand, (name) => {
             rawNames.push(name);
             return name; // placeholder id, replaced below once we resolve async
           });
@@ -94,9 +104,9 @@ async function main() {
             })),
           );
           products = upsertBy<Product>(products, { ...product, ingredients: resolvedIngredients });
+        } catch (err) {
+          console.error(`  [dsld] failed for "${brand}" product ${hit.id}: ${(err as Error).message}`);
         }
-      } catch (err) {
-        console.error(`  [dsld] failed for brand "${brand}": ${(err as Error).message}`);
       }
     }
     meta.lastSynced.dsld = new Date().toISOString();

@@ -30,8 +30,11 @@ import { slugify } from "../lib/slug";
 const DSLD_BASE = "https://api.ods.od.nih.gov/dsld/v9";
 
 // DSLD does not require an API key for search/label reads as of the v9 guide.
-// Be a polite client regardless: cap at ~2 req/sec.
-const throttle = createRateLimiter(500);
+// Be a polite client regardless. Verified live: a sustained run at 2 req/sec
+// (500ms) starts drawing 429s a few hundred requests in — looks like a
+// rolling-window rate limit, not a per-request one, so build.ts's retry
+// backoff alone doesn't recover from it. 1 req/sec has run clean.
+const throttle = createRateLimiter(1000);
 
 export interface DsldSearchHit {
   id: string; // DSLD product id (dsld_id)
@@ -143,12 +146,21 @@ export async function getProductLabel(dsldId: string): Promise<DsldLabel | null>
 
 /**
  * Converts a fetched DSLD label into our Product + IngredientRef[] shape.
+ * `canonicalBrand` is the brand we searched for (e.g. "Garden of Life"),
+ * kept distinct from `label.brandName` — individual DSLD label submissions
+ * are user-entered and sometimes carry inconsistent capitalization (seen
+ * live: "Garden Of Life" and "Now" alongside the far more common "Garden of
+ * Life" and "NOW"). Using the raw per-label value as `product.brand` would
+ * fragment one real brand into multiple visually-distinct facets in the UI
+ * — same class of issue fixed for openFDA's per-label brand facets, see
+ * `pipeline/sources/openfda.ts`.
  * `resolveIngredientId` is injected so the caller can run each raw
  * ingredient name through RxNorm-backed canonicalization (see rxnorm.ts)
  * before we decide whether it's a new ingredient or matches an existing one.
  */
 export function mapDsldLabelToProduct(
   label: DsldLabel,
+  canonicalBrand: string,
   resolveIngredientId: (rawName: string) => string,
 ): { product: Product; ingredientNames: string[] } {
   const ingredients: IngredientRef[] = label.ingredientRows.map((row) => ({
@@ -157,7 +169,7 @@ export function mapDsldLabelToProduct(
     active: row.partOf === "supplement_facts",
   }));
 
-  const initials = label.brandName
+  const initials = canonicalBrand
     .split(/\s+/)
     .map((w) => w[0])
     .join("")
@@ -169,8 +181,8 @@ export function mapDsldLabelToProduct(
     .join(" · ");
 
   const product: Product = {
-    id: `${slugify(label.brandName)}-${slugify(label.fullName)}`,
-    brand: label.brandName,
+    id: `${slugify(canonicalBrand)}-${slugify(label.fullName)}`,
+    brand: canonicalBrand,
     name: label.fullName,
     sub,
     initials: initials || "SP",
