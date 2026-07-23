@@ -38,10 +38,37 @@ npm scripts already set it, so this only matters if you invoke
   post-filtered client-side to an exact brand match. That works well for
   distinctive brand names, but DSLD registers "NOW Foods" products under the
   bare brand `"NOW"`; a quoted `q="NOW"` search still ranks by full-text
-  relevance, and "now" is common enough in ordinary label text that the top
-  N results rarely include actual NOW-brand products. Fix would be paging
-  through with a much larger `size` and filtering, which trades a lot more
-  API load for a marginal-brand's coverage — not done by default.
+  relevance, and "now" is common enough in ordinary label text that a small
+  page size returns zero real NOW-brand hits. **Fixed**: verified live that
+  size 100 reliably surfaces real matches (0 at size 50, 45 at size 100) —
+  `PER_BRAND_SEARCH_SIZE` in `build.ts` is set to 100 for every brand, which
+  also gives everyone deeper coverage, not just NOW.
+- **DSLD's rate limit is a rolling/cumulative quota, not a simple per-request
+  one.** At `PER_BRAND_SEARCH_SIZE=100` across 18 brands, brands searched
+  later in a run started getting 429s — even their initial search call, not
+  just individual label fetches — while earlier brands in the same run
+  succeeded cleanly. Slowing the throttle from 500ms to 1000ms between
+  requests pushed the wall further out (more brands completed) but didn't
+  eliminate it; two brands (Doctor's Best, New Chapter) still came back
+  empty across two separate runs about 30 minutes apart. `getProductLabel`
+  failures are now caught per-product rather than aborting the rest of the
+  brand's products (see `build.ts`), so a mid-run 429 no longer costs more
+  than the one product it hit — but there's currently no logic to detect
+  "we're rate-limited, stop and wait" versus just retrying with backoff,
+  which would be the real fix for finishing a brand-list this size in one
+  run. Re-running `npm run sync:dsld` later (the pipeline is idempotent —
+  `upsertBy` just fills in whatever was missing) is the practical workaround
+  today.
+- **DSLD label submissions aren't consistently capitalized.** The same real
+  brand shows up with different casing across individual label entries —
+  seen live: `"Garden Of Life"` and `"Now"` alongside the far more common
+  `"Garden of Life"` and `"NOW"`. Using the raw per-label brand string as
+  `product.brand` would fragment one real brand into multiple visually
+  distinct facets in the search/med-bar UI. Fixed the same way as the
+  openFDA per-label brand-name issue below: `mapDsldLabelToProduct` takes
+  the canonical brand we searched for and uses that for `product.brand`
+  and the product id, not whatever casing that specific label happened to
+  use.
 - **openFDA's `active_ingredient` and `purpose` fields are free-text prose,
   not structured data**, and combo products (e.g. Excedrin's 3-ingredient
   formula) concatenate multiple ingredients/purposes into one string with no
@@ -79,8 +106,9 @@ npm scripts already set it, so this only matters if you invoke
 
 The `data/*.json` files currently checked in are **live** (`data/meta.json`,
 `status: "live"`) — pulled for real from DSLD, openFDA, RxNorm, and PubMed
-E-utilities: 171 products (147 supplement, 24 OTC) and 471 ingredients. See
-`data/README.md` for the full breakdown, including the NOW Foods gap noted
+E-utilities: 840 products (816 supplement across 16 of 18 configured
+brands, 24 OTC) and 1376 ingredients. See `data/README.md` for the full
+breakdown, including the Doctor's Best/New Chapter rate-limit gap noted
 above. Re-run `npm run sync` any time to refresh — curated `sub`,
 `studiedAmount`, `chips`, and `reviewVerdict` fields in `data/evidence.json`,
 and all of `data/interactions.json`, are preserved rather than clobbered

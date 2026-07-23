@@ -6,20 +6,32 @@ the schema the pipeline in `/pipeline` produces (see `pipeline/README.md`), so
 access to the source APIs.
 
 **Current status: live** (`meta.json` → `"status": "live"`, with per-source
-`lastSynced` timestamps). 171 products and 471 ingredients, pulled from the
-real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
+`lastSynced` timestamps). 840 products and 1376 ingredients (774 of them
+active in at least one product), pulled from the real DSLD, openFDA,
+RxNorm, and PubMed E-utilities APIs:
 
-- `products.json` — supplement products live-pulled from DSLD across 7 of
-  the 8 requested brands (Nature Made, Nature's Bounty, Garden of Life,
-  Sports Research, Solgar, Life Extension, Thorne), plus OTC products
-  live-pulled from openFDA (Tylenol, Advil, Motrin, Aleve, Excedrin). **NOW
-  Foods is a known gap**: DSLD registers their products under the brand
-  `"NOW"`, not `"NOW Foods"` — a single common English word, which DSLD's
-  relevance-ranked search doesn't reliably surface in the first page of
-  results even with an exact-phrase query. The 2 NOW Foods products present
-  are the original hand-curated seed entries, left in place rather than
-  dropped. A future fix: page through DSLD with a much larger `size` and
-  post-filter, or search by an ID/UPC range instead of brand text.
+- `products.json` — supplement products live-pulled from DSLD across 16 of
+  the 18 configured brands (the original 8 — Nature Made, NOW, Nature's
+  Bounty, Garden of Life, Sports Research, Solgar, Life Extension, Thorne —
+  plus Nordic Naturals, Puritan's Pride, Kirkland Signature, Centrum, Jarrow
+  Formulas, MegaFood, Optimum Nutrition, Nature's Way), plus OTC products
+  live-pulled from openFDA (Tylenol, Advil, Motrin, Aleve, Excedrin). **The
+  original NOW Foods gap is fixed**: DSLD registers their products under
+  the brand `"NOW"`, not `"NOW Foods"`, and a small page size wasn't
+  enough to surface real matches in DSLD's relevance-ranked search — bumping
+  the per-brand search size from 30 to 100 fixed it (0 matches at size 50,
+  45 at size 100), and now benefits every brand with deeper coverage, not
+  just NOW.
+  **Doctor's Best and New Chapter are a known gap**: both hit DSLD's rate
+  limit hard enough across two separate sync runs (~30 min apart) that even
+  their initial search call came back 429, while brands searched earlier in
+  the same run succeeded. The pattern across both runs — slowing the
+  per-request throttle from 500ms to 1000ms pushed the wall further out but
+  didn't eliminate it — points to a rolling/cumulative quota rather than a
+  simple per-request limit, so per-hit retry/backoff alone doesn't recover
+  from it. A later `npm run sync:dsld` run, after more cooldown time, should
+  be able to pick these two up — the pipeline is idempotent and designed for
+  exactly this kind of incremental resumption.
 - `ingredients.json` — canonical ingredient list, including every "other
   ingredient" (fillers, capsule shells, etc.) DSLD/openFDA returned, not
   just active ones. RxCUI is filled in live via RxNorm where a concept
@@ -44,26 +56,29 @@ real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
   `pipeline/sources/pubmed.ts`), so uncurated ingredients get an honest
   `sub: "Summary pending editorial review."` placeholder instead of a
   fabricated summary.
-- `drugs.json` — 72 individual drugs (not classes) a user can select as
-  "currently taking," built up over three rounds: the original 11; a batch
+- `drugs.json` — 83 individual drugs (not classes) a user can select as
+  "currently taking," built up over four rounds: the original 11; a batch
   covering diabetes, a second statin, additional blood-pressure drug types,
   a PPI, and a corticosteroid; a batch adding an antiplatelet, more
-  psych meds, an antibiotic, digoxin, an opioid, and gabapentin; and a large
+  psych meds, an antibiotic, digoxin, an opioid, and gabapentin; a large
   batch spanning more statins/blood-pressure drugs (including
   spironolactone, a potassium-sparing diuretic), diabetes drugs, psych meds,
   more PPIs/H2 blockers, more antibiotics, opioids, both remaining major
   DOACs (rivaroxaban, dabigatran), a seizure drug, an antihistamine,
-  methotrexate, and a bisphosphonate. RxCUIs verified live against RxNorm
-  for every single one, not guessed. **Not every drug here has curated
-  interaction rows yet** — some (e.g. bupropion, buspirone, azithromycin,
-  cephalexin, sitagliptin, cetirizine) were added to the selectable list
-  without a matching interaction row because a solid, checkable
-  supplement/OTC interaction against this app's current ingredient catalog
-  wasn't there to write honestly. This is deliberate: the "currently taking"
-  list and the interaction dataset are allowed to grow at different rates,
-  and the UI already handles "nothing on file" as a normal, honest state
-  rather than an error.
-- `interactions.json` — 195 rows across 31 distinct ingredients, a
+  methotrexate, and a bisphosphonate; and a round adding two more NSAIDs,
+  lithium, isotretinoin, tamoxifen, two transplant immunosuppressants
+  (cyclosporine, tacrolimus), an antipsychotic, two ADHD stimulants, and
+  another beta-blocker. RxCUIs verified live against RxNorm for every
+  single one, not guessed. **Not every drug here has curated interaction
+  rows yet** — some (e.g. bupropion, azithromycin, cephalexin, sitagliptin,
+  cetirizine) were added to the selectable list without a matching
+  interaction row because a solid, checkable supplement/OTC interaction
+  against this app's current ingredient catalog wasn't there to write
+  honestly. This is deliberate: the "currently taking" list and the
+  interaction dataset are allowed to grow at different rates, and the UI
+  already handles "nothing on file" as a normal, honest state rather than
+  an error.
+- `interactions.json` — 215 rows across 32 distinct ingredients, a
   maintained clinical dataset by design, not something the pipeline
   generates or an external interactions API produces (there isn't a
   reliable free one anymore — NLM retired their old Interaction API, and a
@@ -75,24 +90,27 @@ real DSLD, openFDA, RxNorm, and PubMed E-utilities APIs:
   NSAID + anticoagulant bleeding risk, ARB/ACE-inhibitor/potassium-sparing
   diuretic + potassium, ginkgo/vitamin E/curcumin + antiplatelets,
   digoxin's narrow safety margin, phenytoin's effect on folate/vitamin D,
-  St. John's Wort's broad CYP3A4/P-gp induction and serotonin syndrome risk,
-  valerian's additive sedation) or explicitly hedged where the evidence is
-  thinner (CoQ10 + statins: framed as "not a safety risk, evidence for the
-  claimed benefit is mixed," not a danger warning). Several rows describe a
-  medication *depleting* a nutrient (metformin/B12, PPIs/magnesium and
-  iron, loop diuretics/potassium) or an *intentional* clinical combination
-  worth flagging rather than avoiding (aspirin + clopidogrel dual
-  antiplatelet therapy; probiotics alongside amoxicillin/clindamycin; folic
-  acid alongside low-dose methotrexate) rather than a supplement simply
-  causing harm — included with informational, not alarmist, framing since
-  that's the honest shape of the interaction. St. John's Wort's rows
-  deliberately exclude lorazepam (glucuronidated, not a CYP3A4 substrate,
-  unlike the other benzodiazepines here) and metoprolol (a CYP2D6
-  substrate, not the CYP3A4/P-gp pathway St. John's Wort mainly induces) —
-  the mechanism doesn't apply to those two, so nothing is asserted there.
-  Ingredient-side coverage is still the bigger gap: 283 distinct active
-  ingredients exist across the live-pulled product catalog, and only 31 of
-  them have any interaction row yet.
+  St. John's Wort's broad CYP3A4/P-gp induction and serotonin syndrome risk
+  (including its dramatic, transplant-rejection-documented effect on
+  cyclosporine/tacrolimus), isotretinoin + vitamin A (both are retinoids,
+  additive toxicity), NSAIDs raising lithium levels, valerian's additive
+  sedation) or explicitly hedged where the evidence is thinner (CoQ10 +
+  statins: framed as "not a safety risk, evidence for the claimed benefit
+  is mixed," not a danger warning). Several rows describe a medication
+  *depleting* a nutrient (metformin/B12, PPIs/magnesium and iron, loop
+  diuretics/potassium) or an *intentional* clinical combination worth
+  flagging rather than avoiding (aspirin + clopidogrel dual antiplatelet
+  therapy; probiotics alongside amoxicillin/clindamycin; folic acid
+  alongside low-dose methotrexate) rather than a supplement simply causing
+  harm — included with informational, not alarmist, framing since that's
+  the honest shape of the interaction. St. John's Wort's rows deliberately
+  exclude lorazepam (glucuronidated, not a CYP3A4 substrate, unlike the
+  other benzodiazepines here) and metoprolol (a CYP2D6 substrate, not the
+  CYP3A4/P-gp pathway St. John's Wort mainly induces) — the mechanism
+  doesn't apply to those two, so nothing is asserted there. Ingredient-side
+  coverage is still the much bigger gap now that the catalog has grown:
+  774 distinct active ingredients exist across the live-pulled product
+  catalog, and only 32 of them have any interaction row yet.
 
 Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live
 data; curated `evidence.json` fields (`sub`, `studiedAmount`, `chips`,
@@ -103,7 +121,7 @@ overwritten — see the merge logic in `pipeline/build.ts`.
 
 `src/components/MedBar.tsx` collapses the "currently taking" chip list to
 12 by default with a "+N more" toggle (any already-selected drug stays
-visible even when collapsed) — with 72 drugs, rendering every chip
-unconditionally pushed the med bar to over 1200px tall, well past the
-product list below it. This is UI-only; `listDrugs()` and the API still
-return the full set.
+visible even when collapsed) — with over 80 drugs now, rendering every
+chip unconditionally would push the med bar to well over 1200px tall,
+past the product list below it. This is UI-only; `listDrugs()` and the
+API still return the full set.

@@ -53,13 +53,17 @@ from, so it's clear which claim is about which ingredient.
 ## Data pipeline status
 
 **`data/*.json` is live data**, pulled for real from DSLD, openFDA, RxNorm,
-and PubMed E-utilities: 171 products (147 supplement across 7 of the 8
-requested brands, 24 OTC) and 471 ingredients, with real PubMed study counts
-as of `data/meta.json`'s `lastSynced` timestamps. Curated content (interaction
-records, and reviewer verdicts for the original ~20 core ingredients) is
-preserved rather than overwritten by the pipeline — see `data/README.md` for
-the full breakdown and known gaps (e.g. NOW Foods under-coverage), and
-`pipeline/README.md` for what's automated vs. editorially curated and why.
+and PubMed E-utilities: 840 products (816 supplement across 16 of 18
+configured brands — the original 8 plus Nordic Naturals, Puritan's Pride,
+Kirkland Signature, Centrum, Jarrow Formulas, MegaFood, Optimum Nutrition,
+and Nature's Way — 24 OTC) and 1376 ingredients, with real PubMed study
+counts as of `data/meta.json`'s `lastSynced` timestamps. 83 individual
+drugs and 215 interaction records are hand-curated (see below). Curated
+content (interaction records, and reviewer verdicts for the original ~30
+core ingredients) is preserved rather than overwritten by the pipeline —
+see `data/README.md` for the full breakdown and known gaps (e.g. two
+brands still empty due to a DSLD rate-limit wall), and `pipeline/README.md`
+for what's automated vs. editorially curated and why.
 
 Re-run any time with `npm run sync` (or a `sync:<source>` stage for just one
 API) once you have network access to `api.ods.od.nih.gov`, `api.fda.gov`,
