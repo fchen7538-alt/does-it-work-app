@@ -10530,5 +10530,1859 @@
     "synonyms": [
       "Acetyl-L-Carnitine Taurinate Hydrochloride"
     ]
+  },
+  {
+    "id": "bioresponse-dim",
+    "name": "BioResponse DIM",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "BioResponse DIM"
+    ]
+  },
+  {
+    "id": "gamma-tocopherol",
+    "name": "Gamma-Tocopherol",
+    "rxcui": "2368126",
+    "category": "supplement",
+    "synonyms": [
+      "Gamma-Tocopherol"
+    ]
+  },
+  {
+    "id": "phosphatidylserine-phosphatidic-acid-complex",
+    "name": "Phosphatidylserine Phosphatidic Acid Complex",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Phosphatidylserine Phosphatidic Acid Complex"
+    ]
+  },
+  {
+    "id": "uridine-5-monophosphate-disodium-salt",
+    "name": "Uridine 5’-Monophosphate Disodium Salt",
+    "rxcui": "236785",
+    "category": "supplement",
+    "synonyms": [
+      "Uridine 5’-Monophosphate Disodium Salt"
+    ]
+  },
+  {
+    "id": "inulin-fos",
+    "name": "Inulin-FOS",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Inulin-FOS"
+    ]
+  },
+  {
+    "id": "natural-mk-7",
+    "name": "Natural MK-7",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Natural MK-7"
+    ]
+  },
+  {
+    "id": "organic-rebiana-stevia-extract",
+    "name": "organic Rebiana (Stevia) extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Rebiana (Stevia) extract"
+    ]
+  },
+  {
+    "id": "glutathione",
+    "name": "Glutathione",
+    "rxcui": "4890",
+    "category": "supplement",
+    "synonyms": [
+      "Glutathione"
+    ]
+  },
+  {
+    "id": "creapure-creatine-monohydrate",
+    "name": "CreaPure Creatine Monohydrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "CreaPure Creatine Monohydrate"
+    ]
+  },
+  {
+    "id": "mastic-gum",
+    "name": "Mastic Gum",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Mastic Gum"
+    ]
+  },
+  {
+    "id": "chrysin",
+    "name": "Chrysin",
+    "rxcui": "1362888",
+    "category": "supplement",
+    "synonyms": [
+      "Chrysin"
+    ]
+  },
+  {
+    "id": "total-krill-oil",
+    "name": "total Krill oil",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "total Krill oil"
+    ]
+  },
+  {
+    "id": "phospholipid-omega-3-complex",
+    "name": "Phospholipid-Omega-3 Complex",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Phospholipid-Omega-3 Complex"
+    ]
+  },
+  {
+    "id": "swedish-bilberry-100-1-extract",
+    "name": "Swedish Bilberry 100:1 extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Swedish Bilberry 100:1 extract"
+    ]
+  },
+  {
+    "id": "grapeskin-extract",
+    "name": "Grapeskin extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Grapeskin extract"
+    ]
+  },
+  {
+    "id": "vitamin-b5",
+    "name": "Vitamin B5",
+    "rxcui": "7891",
+    "category": "supplement",
+    "synonyms": [
+      "Vitamin B5"
+    ]
+  },
+  {
+    "id": "eucalyptus-leaf-extract",
+    "name": "Eucalyptus leaf extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Eucalyptus leaf extract"
+    ]
+  },
+  {
+    "id": "bitter-melon",
+    "name": "Bitter Melon",
+    "rxcui": "1306885",
+    "category": "supplement",
+    "synonyms": [
+      "Bitter Melon"
+    ]
+  },
+  {
+    "id": "modified-cellulose-gum",
+    "name": "modified Cellulose Gum",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "modified Cellulose Gum"
+    ]
+  },
+  {
+    "id": "gymnema-sylvestre",
+    "name": "Gymnema sylvestre",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Gymnema sylvestre"
+    ]
+  },
+  {
+    "id": "green-tea-5-1-extract",
+    "name": "Green Tea 5:1 extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Green Tea 5:1 extract"
+    ]
+  },
+  {
+    "id": "fenugreek-fiber-extract",
+    "name": "Fenugreek Fiber extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Fenugreek Fiber extract"
+    ]
+  },
+  {
+    "id": "grapefruit-seed-extract",
+    "name": "Grapefruit seed extract",
+    "rxcui": "259449",
+    "category": "supplement",
+    "synonyms": [
+      "Grapefruit seed extract"
+    ]
+  },
+  {
+    "id": "natural-lemon-lime-flavor",
+    "name": "natural Lemon-Lime flavor",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "natural Lemon-Lime flavor"
+    ]
+  },
+  {
+    "id": "yaeyama-chlorella",
+    "name": "Yaeyama Chlorella",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Yaeyama Chlorella"
+    ]
+  },
+  {
+    "id": "rosmarinic-acid",
+    "name": "Rosmarinic Acid",
+    "rxcui": "2531311",
+    "category": "supplement",
+    "synonyms": [
+      "Rosmarinic Acid"
+    ]
+  },
+  {
+    "id": "alpha-carotene",
+    "name": "Alpha Carotene",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Alpha Carotene"
+    ]
+  },
+  {
+    "id": "vinpocetine",
+    "name": "Vinpocetine",
+    "rxcui": "24506",
+    "category": "supplement",
+    "synonyms": [
+      "Vinpocetine"
+    ]
+  },
+  {
+    "id": "gamma-linolenic-acid",
+    "name": "Gamma-Linolenic Acid",
+    "rxcui": "25605",
+    "category": "supplement",
+    "synonyms": [
+      "Gamma-Linolenic Acid"
+    ]
+  },
+  {
+    "id": "quercetin",
+    "name": "Quercetin",
+    "rxcui": "9060",
+    "category": "supplement",
+    "synonyms": [
+      "Quercetin"
+    ]
+  },
+  {
+    "id": "green-tea",
+    "name": "Green Tea",
+    "rxcui": "659476",
+    "category": "supplement",
+    "synonyms": [
+      "Green Tea"
+    ]
+  },
+  {
+    "id": "devil-s-claw",
+    "name": "Devil's Claw",
+    "rxcui": "236279",
+    "category": "supplement",
+    "synonyms": [
+      "Devil's Claw"
+    ]
+  },
+  {
+    "id": "carob-extract",
+    "name": "Carob extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Carob extract"
+    ]
+  },
+  {
+    "id": "white-willow-bark",
+    "name": "White Willow Bark",
+    "rxcui": "1307749",
+    "category": "supplement",
+    "synonyms": [
+      "White Willow Bark"
+    ]
+  },
+  {
+    "id": "softgels",
+    "name": "Softgels",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Softgels"
+    ]
+  },
+  {
+    "id": "rice-powder",
+    "name": "Rice powder",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Rice powder"
+    ]
+  },
+  {
+    "id": "organic-ginger",
+    "name": "organic Ginger",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Ginger"
+    ]
+  },
+  {
+    "id": "milk-thistle-concentrate",
+    "name": "Milk Thistle concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Milk Thistle concentrate"
+    ]
+  },
+  {
+    "id": "citicoline",
+    "name": "Citicoline",
+    "rxcui": "997602",
+    "category": "supplement",
+    "synonyms": [
+      "Citicoline"
+    ]
+  },
+  {
+    "id": "total-fish-oil",
+    "name": "total Fish Oil",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "total Fish Oil"
+    ]
+  },
+  {
+    "id": "mixed-tocopherol-complex",
+    "name": "Mixed Tocopherol Complex",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Mixed Tocopherol Complex"
+    ]
+  },
+  {
+    "id": "blackcurrant-extract",
+    "name": "Blackcurrant extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Blackcurrant extract"
+    ]
+  },
+  {
+    "id": "eyebright",
+    "name": "Eyebright",
+    "rxcui": "259366",
+    "category": "supplement",
+    "synonyms": [
+      "Eyebright"
+    ]
+  },
+  {
+    "id": "ksm-66-ashwagandha-root-extract",
+    "name": "KSM-66 Ashwagandha root extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "KSM-66 Ashwagandha root extract"
+    ]
+  },
+  {
+    "id": "berbevis",
+    "name": "Berbevis",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Berbevis"
+    ]
+  },
+  {
+    "id": "pea-protein-isolate",
+    "name": "Pea Protein Isolate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Pea Protein Isolate"
+    ]
+  },
+  {
+    "id": "beet",
+    "name": "Beet",
+    "rxcui": "319826",
+    "category": "supplement",
+    "synonyms": [
+      "Beet"
+    ]
+  },
+  {
+    "id": "rice-protein",
+    "name": "Rice Protein",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Rice Protein"
+    ]
+  },
+  {
+    "id": "brown-rice",
+    "name": "Brown Rice",
+    "rxcui": "1311040",
+    "category": "supplement",
+    "synonyms": [
+      "Brown Rice"
+    ]
+  },
+  {
+    "id": "yeast",
+    "name": "Yeast",
+    "rxcui": "214355",
+    "category": "supplement",
+    "synonyms": [
+      "Yeast"
+    ]
+  },
+  {
+    "id": "food-blend",
+    "name": "Food Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Food Blend"
+    ]
+  },
+  {
+    "id": "autolyzed-yeast-extract",
+    "name": "Autolyzed Yeast Extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Autolyzed Yeast Extract"
+    ]
+  },
+  {
+    "id": "spinach",
+    "name": "Spinach",
+    "rxcui": "2099276",
+    "category": "supplement",
+    "synonyms": [
+      "Spinach"
+    ]
+  },
+  {
+    "id": "beetroot",
+    "name": "Beetroot",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Beetroot"
+    ]
+  },
+  {
+    "id": "organic-whole-orange-and-super-food-blend",
+    "name": "organic Whole Orange and Super Food blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Whole Orange and Super Food blend"
+    ]
+  },
+  {
+    "id": "organic-trace-mineral-blend",
+    "name": "Organic Trace Mineral Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Organic Trace Mineral Blend"
+    ]
+  },
+  {
+    "id": "potassium-glycinate",
+    "name": "Potassium Glycinate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Potassium Glycinate"
+    ]
+  },
+  {
+    "id": "ferment-media",
+    "name": "Ferment Media",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Ferment Media"
+    ]
+  },
+  {
+    "id": "gtf-chromium",
+    "name": "GTF Chromium",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "GTF Chromium"
+    ]
+  },
+  {
+    "id": "food-herb-blend",
+    "name": "Food & Herb Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Food & Herb Blend"
+    ]
+  },
+  {
+    "id": "yeast-extract",
+    "name": "Yeast Extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Yeast Extract"
+    ]
+  },
+  {
+    "id": "nourishing-food-herb-blend",
+    "name": "Nourishing Food & Herb Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Nourishing Food & Herb Blend"
+    ]
+  },
+  {
+    "id": "nettle",
+    "name": "Nettle",
+    "rxcui": "319816",
+    "category": "supplement",
+    "synonyms": [
+      "Nettle"
+    ]
+  },
+  {
+    "id": "autolyzed-yeast",
+    "name": "Autolyzed Yeast",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Autolyzed Yeast"
+    ]
+  },
+  {
+    "id": "food-starch",
+    "name": "Food Starch",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Food Starch"
+    ]
+  },
+  {
+    "id": "apple-juice-concentrate",
+    "name": "Apple juice concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Apple juice concentrate"
+    ]
+  },
+  {
+    "id": "pear-juice-concentrate",
+    "name": "Pear Juice Concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Pear Juice Concentrate"
+    ]
+  },
+  {
+    "id": "beet-root-juice-concentrate",
+    "name": "Beet Root Juice Concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Beet Root Juice Concentrate"
+    ]
+  },
+  {
+    "id": "citrus-peel-extract",
+    "name": "Citrus peel extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Citrus peel extract"
+    ]
+  },
+  {
+    "id": "tart-cherry-juice-concentrate",
+    "name": "Tart Cherry Juice Concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Tart Cherry Juice Concentrate"
+    ]
+  },
+  {
+    "id": "organic-cranberry",
+    "name": "organic Cranberry",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Cranberry"
+    ]
+  },
+  {
+    "id": "organic-spinach",
+    "name": "organic Spinach",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Spinach"
+    ]
+  },
+  {
+    "id": "organic-beet",
+    "name": "organic Beet",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Beet"
+    ]
+  },
+  {
+    "id": "vegetable-lubricant",
+    "name": "Vegetable Lubricant",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Vegetable Lubricant"
+    ]
+  },
+  {
+    "id": "cellulose-plant",
+    "name": "Cellulose, Plant",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Cellulose, Plant"
+    ]
+  },
+  {
+    "id": "foodstate-orange-vitamin-c",
+    "name": "FoodState Orange Vitamin C",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "FoodState Orange Vitamin C"
+    ]
+  },
+  {
+    "id": "foodstate-s-cerevisiae",
+    "name": "FoodState S. cerevisiae",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "FoodState S. cerevisiae"
+    ]
+  },
+  {
+    "id": "foodstate-ginger",
+    "name": "FoodState Ginger",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "FoodState Ginger"
+    ]
+  },
+  {
+    "id": "foodstate-black-elderberry",
+    "name": "FoodState Black Elderberry",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "FoodState Black Elderberry"
+    ]
+  },
+  {
+    "id": "foodstate-farm-fresh-fruit-blend",
+    "name": "FoodState Farm Fresh Fruit Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "FoodState Farm Fresh Fruit Blend"
+    ]
+  },
+  {
+    "id": "echinacea-whole-herb-extract",
+    "name": "Echinacea whole herb extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Echinacea whole herb extract"
+    ]
+  },
+  {
+    "id": "balancing-and-strengthening-blend",
+    "name": "Balancing and Strengthening Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Balancing and Strengthening Blend"
+    ]
+  },
+  {
+    "id": "immune-health-blend",
+    "name": "Immune Health Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Immune Health Blend"
+    ]
+  },
+  {
+    "id": "nourishing-food-blend",
+    "name": "Nourishing Food Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Nourishing Food Blend"
+    ]
+  },
+  {
+    "id": "lemon-balm-leaf-stem-extract",
+    "name": "Lemon Balm Leaf, Stem Extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Lemon Balm Leaf, Stem Extract"
+    ]
+  },
+  {
+    "id": "organic-bioflavonoid-complex-blend",
+    "name": "Organic Bioflavonoid Complex Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Organic Bioflavonoid Complex Blend"
+    ]
+  },
+  {
+    "id": "fruit-phenolic-blend",
+    "name": "Fruit Phenolic Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Fruit Phenolic Blend"
+    ]
+  },
+  {
+    "id": "blueberry",
+    "name": "Blueberry",
+    "rxcui": "1549329",
+    "category": "supplement",
+    "synonyms": [
+      "Blueberry"
+    ]
+  },
+  {
+    "id": "beet-root-juice",
+    "name": "Beet Root Juice",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Beet Root Juice"
+    ]
+  },
+  {
+    "id": "protective-phenolic-fruit-concentrate",
+    "name": "Protective Phenolic Fruit concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Protective Phenolic Fruit concentrate"
+    ]
+  },
+  {
+    "id": "rice-syrup",
+    "name": "Rice Syrup",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Rice Syrup"
+    ]
+  },
+  {
+    "id": "cane-sugar-raw",
+    "name": "Cane Sugar, Raw",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Cane Sugar, Raw"
+    ]
+  },
+  {
+    "id": "rosemary-leaf-extract",
+    "name": "Rosemary Leaf Extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Rosemary Leaf Extract"
+    ]
+  },
+  {
+    "id": "oraganic-rice-bran",
+    "name": "Oraganic Rice Bran",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Oraganic Rice Bran"
+    ]
+  },
+  {
+    "id": "pumpkin-seed-extract",
+    "name": "Pumpkin Seed Extract",
+    "rxcui": "126291",
+    "category": "supplement",
+    "synonyms": [
+      "Pumpkin Seed Extract"
+    ]
+  },
+  {
+    "id": "l-citrulline",
+    "name": "L-Citrulline",
+    "rxcui": "2567",
+    "category": "supplement",
+    "synonyms": [
+      "L-Citrulline"
+    ]
+  },
+  {
+    "id": "artificial-flavors",
+    "name": "Artificial flavors",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Artificial flavors"
+    ]
+  },
+  {
+    "id": "capsimax",
+    "name": "Capsimax",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Capsimax"
+    ]
+  },
+  {
+    "id": "dmae-bitartrate",
+    "name": "DMAE Bitartrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "DMAE Bitartrate"
+    ]
+  },
+  {
+    "id": "phytoblend",
+    "name": "PhytoBlend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "PhytoBlend"
+    ]
+  },
+  {
+    "id": "carnosyn",
+    "name": "CarnoSyn",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "CarnoSyn"
+    ]
+  },
+  {
+    "id": "cellulose-gum",
+    "name": "Cellulose Gum",
+    "rxcui": "491498",
+    "category": "supplement",
+    "synonyms": [
+      "Cellulose Gum"
+    ]
+  },
+  {
+    "id": "muscle-matrix",
+    "name": "Muscle Matrix",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Muscle Matrix"
+    ]
+  },
+  {
+    "id": "energy-focus-complex",
+    "name": "Energy & Focus Complex",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Energy & Focus Complex"
+    ]
+  },
+  {
+    "id": "blue-1",
+    "name": "Blue 1",
+    "rxcui": "1310605",
+    "category": "supplement",
+    "synonyms": [
+      "Blue 1"
+    ]
+  },
+  {
+    "id": "performance-composite",
+    "name": "Performance Composite",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Performance Composite"
+    ]
+  },
+  {
+    "id": "natural-artificial-flavors",
+    "name": "Natural & Artificial Flavors",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Natural & Artificial Flavors"
+    ]
+  },
+  {
+    "id": "glucose",
+    "name": "Glucose",
+    "rxcui": "4850",
+    "category": "supplement",
+    "synonyms": [
+      "Glucose"
+    ]
+  },
+  {
+    "id": "amino-blend",
+    "name": "Amino Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Amino Blend"
+    ]
+  },
+  {
+    "id": "fd-c-red-40",
+    "name": "FD&C Red #40",
+    "rxcui": "1310600",
+    "category": "supplement",
+    "synonyms": [
+      "FD&C Red #40"
+    ]
+  },
+  {
+    "id": "fd-c-blue-2",
+    "name": "FD&C Blue #2",
+    "rxcui": "227312",
+    "category": "supplement",
+    "synonyms": [
+      "FD&C Blue #2"
+    ]
+  },
+  {
+    "id": "energy-blend",
+    "name": "Energy Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Energy Blend"
+    ]
+  },
+  {
+    "id": "micellar-casein",
+    "name": "Micellar Casein",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Micellar Casein"
+    ]
+  },
+  {
+    "id": "aminogen",
+    "name": "Aminogen",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Aminogen"
+    ]
+  },
+  {
+    "id": "natural-and-artificial-flavors",
+    "name": "Natural and Artificial flavors",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Natural and Artificial flavors"
+    ]
+  },
+  {
+    "id": "creatine-monohydrate",
+    "name": "Creatine Monohydrate",
+    "rxcui": "1310467",
+    "category": "supplement",
+    "synonyms": [
+      "Creatine Monohydrate"
+    ]
+  },
+  {
+    "id": "natural-and-artificial-flavor",
+    "name": "Natural and Artificial flavor",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Natural and Artificial flavor"
+    ]
+  },
+  {
+    "id": "protein-blend",
+    "name": "Protein Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Protein Blend"
+    ]
+  },
+  {
+    "id": "whey-peptides",
+    "name": "Whey Peptides",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Whey Peptides"
+    ]
+  },
+  {
+    "id": "whey-protein-isolate",
+    "name": "Whey Protein Isolate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Whey Protein Isolate"
+    ]
+  },
+  {
+    "id": "coffee-powder",
+    "name": "Coffee, Powder",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Coffee, Powder"
+    ]
+  },
+  {
+    "id": "plant-derived-capsule",
+    "name": "plant-derived Capsule",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "plant-derived Capsule"
+    ]
+  },
+  {
+    "id": "aqueous-enteric-coating",
+    "name": "Aqueous enteric-coating",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Aqueous enteric-coating"
+    ]
+  },
+  {
+    "id": "nutraflora-scfos",
+    "name": "NutraFlora scFOS",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "NutraFlora scFOS"
+    ]
+  },
+  {
+    "id": "green-food-spirulina-blend",
+    "name": "Green Food/Spirulina Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Green Food/Spirulina Blend"
+    ]
+  },
+  {
+    "id": "garden-veggies-tm-blend",
+    "name": "Garden Veggies(TM) Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Garden Veggies(TM) Blend"
+    ]
+  },
+  {
+    "id": "myco-defense-mushroom-blend",
+    "name": "Myco Defense Mushroom Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Myco Defense Mushroom Blend"
+    ]
+  },
+  {
+    "id": "omega-fatty-acid-blend",
+    "name": "Omega Fatty Acid Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Omega Fatty Acid Blend"
+    ]
+  },
+  {
+    "id": "vegetable-modified-cellulose",
+    "name": "Vegetable Modified Cellulose",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Vegetable Modified Cellulose"
+    ]
+  },
+  {
+    "id": "amino-acids",
+    "name": "Amino Acids",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Amino Acids"
+    ]
+  },
+  {
+    "id": "vegetable-modified-cellulose-gum",
+    "name": "Vegetable Modified Cellulose Gum",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Vegetable Modified Cellulose Gum"
+    ]
+  },
+  {
+    "id": "orchard-fruits-tm-blend",
+    "name": "Orchard Fruits(TM) Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Orchard Fruits(TM) Blend"
+    ]
+  },
+  {
+    "id": "uva-ursi",
+    "name": "Uva Ursi",
+    "rxcui": "266364",
+    "category": "supplement",
+    "synonyms": [
+      "Uva Ursi"
+    ]
+  },
+  {
+    "id": "millet",
+    "name": "Millet",
+    "rxcui": "1310040",
+    "category": "supplement",
+    "synonyms": [
+      "Millet"
+    ]
+  },
+  {
+    "id": "gymnema-extract",
+    "name": "Gymnema extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Gymnema extract"
+    ]
+  },
+  {
+    "id": "blessed-thistle",
+    "name": "Blessed Thistle",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Blessed Thistle"
+    ]
+  },
+  {
+    "id": "damiana",
+    "name": "Damiana",
+    "rxcui": "236802",
+    "category": "supplement",
+    "synonyms": [
+      "Damiana"
+    ]
+  },
+  {
+    "id": "charcoal",
+    "name": "Charcoal",
+    "rxcui": "2296",
+    "category": "supplement",
+    "synonyms": [
+      "Charcoal"
+    ]
+  },
+  {
+    "id": "chlorophyllin-copper-complex",
+    "name": "Chlorophyllin Copper Complex",
+    "rxcui": "82242",
+    "category": "supplement",
+    "synonyms": [
+      "Chlorophyllin Copper Complex"
+    ]
+  },
+  {
+    "id": "natural-mint-flavor",
+    "name": "natural Mint flavor",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "natural Mint flavor"
+    ]
+  },
+  {
+    "id": "goji-berry-lycium-barbarum-whole-fruit-juice-powder",
+    "name": "Goji berry (Lycium barbarum) whole fruit juice powder",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Goji berry (Lycium barbarum) whole fruit juice powder"
+    ]
+  },
+  {
+    "id": "goji-berry-lycium-barbarum-extract",
+    "name": "Goji berry (Lycium barbarum) extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Goji berry (Lycium barbarum) extract"
+    ]
+  },
+  {
+    "id": "vegetable-acacia",
+    "name": "Vegetable Acacia",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Vegetable Acacia"
+    ]
+  },
+  {
+    "id": "garlic-powder",
+    "name": "Garlic powder",
+    "rxcui": "325524",
+    "category": "supplement",
+    "synonyms": [
+      "Garlic powder"
+    ]
+  },
+  {
+    "id": "modified-cellulose",
+    "name": "Modified Cellulose",
+    "rxcui": "27291",
+    "category": "supplement",
+    "synonyms": [
+      "Modified Cellulose"
+    ]
+  },
+  {
+    "id": "riboflavin-color",
+    "name": "Riboflavin color",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Riboflavin color"
+    ]
+  },
+  {
+    "id": "hawthorn-extract",
+    "name": "Hawthorn extract",
+    "rxcui": "155097",
+    "category": "supplement",
+    "synonyms": [
+      "Hawthorn extract"
+    ]
+  },
+  {
+    "id": "holy-basil-extract",
+    "name": "Holy Basil extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Holy Basil extract"
+    ]
+  },
+  {
+    "id": "wild-yam",
+    "name": "Wild Yam",
+    "rxcui": "237020",
+    "category": "supplement",
+    "synonyms": [
+      "Wild Yam"
+    ]
+  },
+  {
+    "id": "phosphatidylserine-complex",
+    "name": "Phosphatidylserine Complex",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Phosphatidylserine Complex"
+    ]
+  },
+  {
+    "id": "annatto-seed-extract",
+    "name": "Annatto (seed) extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Annatto (seed) extract"
+    ]
+  },
+  {
+    "id": "coqsol-coenzyme-q10",
+    "name": "CoQsol Coenzyme Q10",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "CoQsol Coenzyme Q10"
+    ]
+  },
+  {
+    "id": "horse-chestnut-extract",
+    "name": "Horse Chestnut extract",
+    "rxcui": "317825",
+    "category": "supplement",
+    "synonyms": [
+      "Horse Chestnut extract"
+    ]
+  },
+  {
+    "id": "calendula",
+    "name": "Calendula",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Calendula"
+    ]
+  },
+  {
+    "id": "black-cohosh",
+    "name": "Black Cohosh",
+    "rxcui": "236665",
+    "category": "supplement",
+    "synonyms": [
+      "Black Cohosh"
+    ]
+  },
+  {
+    "id": "dandelion",
+    "name": "Dandelion",
+    "rxcui": "124150",
+    "category": "supplement",
+    "synonyms": [
+      "Dandelion"
+    ]
+  },
+  {
+    "id": "lobelia",
+    "name": "Lobelia",
+    "rxcui": "1311398",
+    "category": "supplement",
+    "synonyms": [
+      "Lobelia"
+    ]
+  },
+  {
+    "id": "l-5-hydroxytryptophan",
+    "name": "L-5-Hydroxytryptophan",
+    "rxcui": "94",
+    "category": "supplement",
+    "synonyms": [
+      "L-5-Hydroxytryptophan"
+    ]
+  },
+  {
+    "id": "cramp-bark",
+    "name": "Cramp Bark",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Cramp Bark"
+    ]
+  },
+  {
+    "id": "oat-bran",
+    "name": "Oat Bran",
+    "rxcui": "253190",
+    "category": "supplement",
+    "synonyms": [
+      "Oat Bran"
+    ]
+  },
+  {
+    "id": "soy-isoflavones-extract",
+    "name": "Soy Isoflavones extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Soy Isoflavones extract"
+    ]
+  },
+  {
+    "id": "organic-burdock",
+    "name": "organic Burdock",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Burdock"
+    ]
+  },
+  {
+    "id": "butcher-s-broom",
+    "name": "Butcher's Broom",
+    "rxcui": "236614",
+    "category": "supplement",
+    "synonyms": [
+      "Butcher's Broom"
+    ]
+  },
+  {
+    "id": "organic-echinacea-purpurea",
+    "name": "organic Echinacea purpurea",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Echinacea purpurea"
+    ]
+  },
+  {
+    "id": "gotu-kola",
+    "name": "Gotu Kola",
+    "rxcui": "1310164",
+    "category": "supplement",
+    "synonyms": [
+      "Gotu Kola"
+    ]
+  },
+  {
+    "id": "corn",
+    "name": "Corn",
+    "rxcui": "892547",
+    "category": "supplement",
+    "synonyms": [
+      "Corn"
+    ]
+  },
+  {
+    "id": "oregon-grape",
+    "name": "Oregon Grape",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Oregon Grape"
+    ]
+  },
+  {
+    "id": "olive",
+    "name": "Olive",
+    "rxcui": "1307955",
+    "category": "supplement",
+    "synonyms": [
+      "Olive"
+    ]
+  },
+  {
+    "id": "peppermint-oil",
+    "name": "Peppermint Oil",
+    "rxcui": "33094",
+    "category": "supplement",
+    "synonyms": [
+      "Peppermint Oil"
+    ]
+  },
+  {
+    "id": "organic-soybean-oil",
+    "name": "organic Soybean oil",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "organic Soybean oil"
+    ]
+  },
+  {
+    "id": "aqueous-coating-solution",
+    "name": "Aqueous Coating Solution",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Aqueous Coating Solution"
+    ]
+  },
+  {
+    "id": "prickly-ash",
+    "name": "Prickly Ash",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Prickly Ash"
+    ]
+  },
+  {
+    "id": "tru-opcs-tm-grape-seed-extract",
+    "name": "Tru-OPCs(TM) Grape seed extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Tru-OPCs(TM) Grape seed extract"
+    ]
+  },
+  {
+    "id": "horse-chestnut-extrct",
+    "name": "Horse Chestnut extrct",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Horse Chestnut extrct"
+    ]
+  },
+  {
+    "id": "fenugreek",
+    "name": "Fenugreek",
+    "rxcui": "282436",
+    "category": "supplement",
+    "synonyms": [
+      "Fenugreek"
+    ]
+  },
+  {
+    "id": "valerian",
+    "name": "Valerian",
+    "rxcui": "253206",
+    "category": "supplement",
+    "synonyms": [
+      "Valerian"
+    ]
+  },
+  {
+    "id": "elderberry",
+    "name": "Elderberry",
+    "rxcui": "319834",
+    "category": "supplement",
+    "synonyms": [
+      "Elderberry"
+    ]
+  },
+  {
+    "id": "feverfew",
+    "name": "Feverfew",
+    "rxcui": "114203",
+    "category": "supplement",
+    "synonyms": [
+      "Feverfew"
+    ]
+  },
+  {
+    "id": "siberian-eleuthero",
+    "name": "Siberian Eleuthero",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Siberian Eleuthero"
+    ]
+  },
+  {
+    "id": "peppermint",
+    "name": "Peppermint",
+    "rxcui": "1010971",
+    "category": "supplement",
+    "synonyms": [
+      "Peppermint"
+    ]
+  },
+  {
+    "id": "juniper",
+    "name": "Juniper",
+    "rxcui": "6085",
+    "category": "supplement",
+    "synonyms": [
+      "Juniper"
+    ]
+  },
+  {
+    "id": "proprietary-blend-herb-botanical",
+    "name": "Proprietary Blend (Herb/Botanical)",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Proprietary Blend (Herb/Botanical)"
+    ]
+  },
+  {
+    "id": "red-wine-powder",
+    "name": "Red Wine powder",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Red Wine powder"
+    ]
+  },
+  {
+    "id": "japanese-knotweed",
+    "name": "Japanese Knotweed",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Japanese Knotweed"
+    ]
+  },
+  {
+    "id": "ginkgold-r-ginkgo-biloba-extract",
+    "name": "Ginkgold(R) Ginkgo biloba extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Ginkgold(R) Ginkgo biloba extract"
+    ]
+  },
+  {
+    "id": "wax",
+    "name": "Wax",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Wax"
+    ]
+  },
+  {
+    "id": "senna",
+    "name": "Senna",
+    "rxcui": "36387",
+    "category": "supplement",
+    "synonyms": [
+      "Senna"
+    ]
+  },
+  {
+    "id": "slippery-elm",
+    "name": "Slippery Elm",
+    "rxcui": "1372006",
+    "category": "supplement",
+    "synonyms": [
+      "Slippery Elm"
+    ]
+  },
+  {
+    "id": "systemic-immunity-blend",
+    "name": "Systemic Immunity Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Systemic Immunity Blend"
+    ]
+  },
+  {
+    "id": "rosemary",
+    "name": "Rosemary",
+    "rxcui": "1314597",
+    "category": "supplement",
+    "synonyms": [
+      "Rosemary"
+    ]
+  },
+  {
+    "id": "plantain",
+    "name": "Plantain",
+    "rxcui": "285246",
+    "category": "supplement",
+    "synonyms": [
+      "Plantain"
+    ]
+  },
+  {
+    "id": "guggul-extract",
+    "name": "Guggul extract",
+    "rxcui": "26346",
+    "category": "supplement",
+    "synonyms": [
+      "Guggul extract"
+    ]
+  },
+  {
+    "id": "digestive-immunity-blend",
+    "name": "Digestive Immunity Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Digestive Immunity Blend"
+    ]
+  },
+  {
+    "id": "circulatory-immunity-blend",
+    "name": "Circulatory Immunity Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Circulatory Immunity Blend"
+    ]
+  },
+  {
+    "id": "aloe-leaf-blend",
+    "name": "Aloe leaf blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Aloe leaf blend"
+    ]
+  },
+  {
+    "id": "cellular-immunity-blend",
+    "name": "Cellular Immunity Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Cellular Immunity Blend"
+    ]
+  },
+  {
+    "id": "respiratory-immunity-blend",
+    "name": "Respiratory Immunity Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Respiratory Immunity Blend"
+    ]
+  },
+  {
+    "id": "soy-protein",
+    "name": "Soy Protein",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Soy Protein"
+    ]
+  },
+  {
+    "id": "crystalline-fructose",
+    "name": "Crystalline Fructose",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Crystalline Fructose"
+    ]
+  },
+  {
+    "id": "multi-fiber-blend",
+    "name": "Multi-Fiber Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Multi-Fiber Blend"
+    ]
+  },
+  {
+    "id": "garden-veggies-tm-juice-powder-blend",
+    "name": "Garden Veggies(TM) Juice Powder Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Garden Veggies(TM) Juice Powder Blend"
+    ]
+  },
+  {
+    "id": "organic-mushroom-defense-blend",
+    "name": "Organic Mushroom Defense Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Organic Mushroom Defense Blend"
+    ]
+  },
+  {
+    "id": "omega-3-6-9-fatty-acid-seed-blend",
+    "name": "Omega 3/6/9 Fatty Acid Seed Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Omega 3/6/9 Fatty Acid Seed Blend"
+    ]
+  },
+  {
+    "id": "white-oak",
+    "name": "White Oak",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "White Oak"
+    ]
+  },
+  {
+    "id": "green-tea-polyphenol-catechin-extract",
+    "name": "Green Tea Polyphenol Catechin extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Green Tea Polyphenol Catechin extract"
+    ]
+  },
+  {
+    "id": "devil-s-claw-extract",
+    "name": "Devil's Claw extract",
+    "rxcui": "236279",
+    "category": "supplement",
+    "synonyms": [
+      "Devil's Claw extract"
+    ]
   }
 ]
