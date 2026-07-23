@@ -26,6 +26,12 @@ const args = new Set(process.argv.slice(2));
 const only = [...args].find((a) => a.startsWith("--only="))?.split("=")[1];
 const runStage = (stage: string) => !only || only === stage;
 
+// DSLD ranks by relevance, not an exact brand filter — some brand names
+// (e.g. "NOW") are common enough in ordinary label text that a small page
+// size returns zero real matches for that brand. 100 was verified live to
+// surface real NOW-brand hits; smaller brands just return fewer than 100.
+const PER_BRAND_SEARCH_SIZE = 100;
+
 async function main() {
   let ingredients = store.readIngredients();
   let products = store.readProducts();
@@ -71,7 +77,7 @@ async function main() {
     console.log(`\n[dsld] pulling supplement products for ${SUPPLEMENT_BRANDS.length} brands...`);
     for (const brand of SUPPLEMENT_BRANDS) {
       try {
-        const hits = await dsld.searchProductsByBrand(brand, 30);
+        const hits = await dsld.searchProductsByBrand(brand, PER_BRAND_SEARCH_SIZE);
         console.log(`  ${brand}: ${hits.length} products found`);
         for (const hit of hits) {
           const label = await dsld.getProductLabel(hit.id);

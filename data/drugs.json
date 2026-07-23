@@ -81,5 +81,17 @@
   { "id": "diphenhydramine", "label": "Diphenhydramine (Benadryl)", "rxcui": "3498", "brandNames": ["Benadryl"] },
 
   { "id": "methotrexate", "label": "Methotrexate", "rxcui": "6851", "brandNames": ["Trexall"] },
-  { "id": "alendronate", "label": "Alendronate (Fosamax)", "rxcui": "46041", "brandNames": ["Fosamax"] }
+  { "id": "alendronate", "label": "Alendronate (Fosamax)", "rxcui": "46041", "brandNames": ["Fosamax"] },
+
+  { "id": "meloxicam", "label": "Meloxicam (Mobic)", "rxcui": "41493", "brandNames": ["Mobic"] },
+  { "id": "diclofenac", "label": "Diclofenac (Voltaren)", "rxcui": "3355", "brandNames": ["Voltaren"] },
+  { "id": "lithium", "label": "Lithium", "rxcui": "6448", "brandNames": ["Lithobid"] },
+  { "id": "isotretinoin", "label": "Isotretinoin (Accutane)", "rxcui": "6064", "brandNames": ["Accutane", "Claravis"] },
+  { "id": "tamoxifen", "label": "Tamoxifen", "rxcui": "10324", "brandNames": ["Nolvadex"] },
+  { "id": "cyclosporine", "label": "Cyclosporine", "rxcui": "3008", "brandNames": ["Neoral", "Sandimmune"] },
+  { "id": "tacrolimus", "label": "Tacrolimus", "rxcui": "42316", "brandNames": ["Prograf"] },
+  { "id": "quetiapine", "label": "Quetiapine (Seroquel)", "rxcui": "51272", "brandNames": ["Seroquel"] },
+  { "id": "methylphenidate", "label": "Methylphenidate (Ritalin)", "rxcui": "6901", "brandNames": ["Ritalin", "Concerta"] },
+  { "id": "amphetamine-dextroamphetamine", "label": "Amphetamine/Dextroamphetamine (Adderall)", "rxcui": "253146", "brandNames": ["Adderall"] },
+  { "id": "bisoprolol", "label": "Bisoprolol (Zebeta)", "rxcui": "19484", "brandNames": ["Zebeta"] }
 ]
