@@ -6,7 +6,7 @@ the schema the pipeline in `/pipeline` produces (see `pipeline/README.md`), so
 access to the source APIs.
 
 **Current status: live** (`meta.json` → `"status": "live"`, with per-source
-`lastSynced` timestamps). 867 products and 1411 ingredients (792 of them
+`lastSynced` timestamps). 870 products and 1415 ingredients (795 of them
 active in at least one product), pulled from the real DSLD, openFDA,
 RxNorm, and PubMed E-utilities APIs:
 
@@ -124,7 +124,7 @@ RxNorm, and PubMed E-utilities APIs:
   CYP3A4/P-gp pathway St. John's Wort mainly induces) — the mechanism
   doesn't apply to those two, so nothing is asserted there. Ingredient-side
   coverage is still the much bigger gap now that the catalog has grown:
-  792 distinct active ingredients exist across the live-pulled product
+  795 distinct active ingredients exist across the live-pulled product
   catalog, and only 32 of them have any interaction row yet.
 
 Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live

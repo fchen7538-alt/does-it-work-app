@@ -12699,5 +12699,41 @@
     "synonyms": [
       "Oil of Mint"
     ]
+  },
+  {
+    "id": "hydrolyzed-bovine-collagen-peptides",
+    "name": "hydrolyzed Bovine Collagen Peptides",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "hydrolyzed Bovine Collagen Peptides"
+    ]
+  },
+  {
+    "id": "evening-primrose-oil",
+    "name": "Evening Primrose Oil",
+    "rxcui": "203219",
+    "category": "supplement",
+    "synonyms": [
+      "Evening Primrose Oil"
+    ]
+  },
+  {
+    "id": "polyunsaturated-fat",
+    "name": "Polyunsaturated Fat",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Polyunsaturated Fat"
+    ]
+  },
+  {
+    "id": "molecular-distilled-fish-oil-concentrate",
+    "name": "Molecular Distilled Fish Oil Concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Molecular Distilled Fish Oil Concentrate"
+    ]
   }
 ]

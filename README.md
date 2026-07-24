@@ -95,6 +95,16 @@ to backfill its UPCs; the remaining 9 supplement brands and all 24 OTC
 products predate this field and have no barcode to match against yet, which
 is expected and handled by the fallback note above, not a bug.
 
+**Barcode lookup is exact-match only, by design** — a real UPC ties to one
+specific pack size/count SKU, not a product line. DSLD's own record for a
+given product name isn't guaranteed to be the same SKU as the physical
+bottle in front of a user (e.g. a 15-count travel size vs. the 180-count
+DSLD has on file) — different real UPCs for what's otherwise the same
+product. Barcode scanning can't paper over that with fuzzy matching without
+risking a match to the wrong pack size's ingredient amounts; label-text
+capture (which searches by name, not exact SKU) is the intended fallback
+for exactly this case, not a lesser option.
+
 **Temporary**: the scanner currently shows a small green diagnostic line
 (status, video dimensions, track settings) at the bottom of the camera
 view — added to debug real-device-only failures that don't reproduce with
@@ -106,10 +116,10 @@ end-to-end on a real device.
 ## Data pipeline status
 
 **`data/*.json` is live data**, pulled for real from DSLD, openFDA, RxNorm,
-and PubMed E-utilities: 867 products (843 supplement across 16 of 18
+and PubMed E-utilities: 870 products (846 supplement across 16 of 18
 configured brands — the original 8 plus Nordic Naturals, Puritan's Pride,
 Kirkland Signature, Centrum, Jarrow Formulas, MegaFood, Optimum Nutrition,
-and Nature's Way — 24 OTC) and 1411 ingredients, with real PubMed study
+and Nature's Way — 24 OTC) and 1415 ingredients, with real PubMed study
 counts as of `data/meta.json`'s `lastSynced` timestamps. 83 individual
 drugs and 215 interaction records are hand-curated (see below). Curated
 content (interaction records, and reviewer verdicts for the original ~30

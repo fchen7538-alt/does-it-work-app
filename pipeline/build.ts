@@ -29,7 +29,9 @@ const runStage = (stage: string) => !only || only === stage;
 // re-syncing just the brands a previous run left empty (rate-limited, etc.)
 // without waiting through the full configured brand list again.
 const onlyBrand = [...args].find((a) => a.startsWith("--brand="))?.split("=")[1];
-const brandFilter = (brands: string[]) => (onlyBrand ? brands.filter((b) => b === onlyBrand) : brands);
+const brandFilterNamed = <T extends { name: string }>(brands: T[]) =>
+  onlyBrand ? brands.filter((b) => b.name === onlyBrand) : brands;
+const brandFilterPlain = (brands: string[]) => (onlyBrand ? brands.filter((b) => b === onlyBrand) : brands);
 
 // DSLD ranks by relevance, not an exact brand filter — some brand names
 // (e.g. "NOW") are common enough in ordinary label text that a small page
@@ -107,15 +109,26 @@ async function main() {
 
   if (runStage("dsld")) {
     console.log(`\n[dsld] pulling supplement products for ${SUPPLEMENT_BRANDS.length} brands...`);
-    for (const brand of brandFilter(SUPPLEMENT_BRANDS)) {
-      let hits: Awaited<ReturnType<typeof dsld.searchProductsByBrand>> = [];
-      try {
-        hits = await dsld.searchProductsByBrand(brand, PER_BRAND_SEARCH_SIZE);
-        console.log(`  ${brand}: ${hits.length} products found`);
-      } catch (err) {
-        console.error(`  [dsld] search failed for brand "${brand}": ${(err as Error).message}`);
-        continue;
+    for (const brand of brandFilterNamed(SUPPLEMENT_BRANDS)) {
+      // Search the canonical name and every known alias (e.g. Sports
+      // Research's own DSLD label submissions are filed under
+      // "SR SportsResearch", not "Sports Research") — DSLD has no concept
+      // of brand aliasing itself, so this is the only way to catch every
+      // real product from a manufacturer that files under more than one
+      // brandName string. Dedupe by hit id since the same product could in
+      // principle surface under more than one search term.
+      const searchTerms = [brand.name, ...(brand.aliases ?? [])];
+      const hitsById = new Map<string, Awaited<ReturnType<typeof dsld.searchProductsByBrand>>[number]>();
+      for (const term of searchTerms) {
+        try {
+          const termHits = await dsld.searchProductsByBrand(term, PER_BRAND_SEARCH_SIZE);
+          for (const hit of termHits) hitsById.set(hit.id, hit);
+        } catch (err) {
+          console.error(`  [dsld] search failed for "${brand.name}" (term "${term}"): ${(err as Error).message}`);
+        }
       }
+      const hits = [...hitsById.values()];
+      console.log(`  ${brand.name}: ${hits.length} products found`);
 
       // Per-hit try/catch: one failed label fetch (e.g. a transient 429 that
       // outlasts fetchJson's built-in retries) should skip that product, not
@@ -125,7 +138,10 @@ async function main() {
           const label = await dsld.getProductLabel(hit.id);
           if (!label) continue;
           const rawNames: string[] = [];
-          const { product } = dsld.mapDsldLabelToProduct(label, brand, (name) => {
+          // Always the canonical name, not whichever alias term matched —
+          // this is what groups e.g. "SR SportsResearch" label submissions
+          // under the same "Sports Research" brand facet in the app.
+          const { product } = dsld.mapDsldLabelToProduct(label, brand.name, (name) => {
             rawNames.push(name);
             return name; // placeholder id, replaced below once we resolve async
           });
@@ -141,7 +157,7 @@ async function main() {
           );
           products = upsertBy<Product>(products, { ...product, ingredients: resolvedIngredients });
         } catch (err) {
-          console.error(`  [dsld] failed for "${brand}" product ${hit.id}: ${(err as Error).message}`);
+          console.error(`  [dsld] failed for "${brand.name}" product ${hit.id}: ${(err as Error).message}`);
         }
       }
     }
@@ -150,7 +166,7 @@ async function main() {
 
   if (runStage("openfda")) {
     console.log(`\n[openfda] pulling OTC drug labels for ${OTC_BRANDS.length} brands...`);
-    for (const brand of brandFilter(OTC_BRANDS)) {
+    for (const brand of brandFilterPlain(OTC_BRANDS)) {
       try {
         const hits = await openfda.fetchLabelsByBrand(brand, 10);
         console.log(`  ${brand}: ${hits.length} labels found`);

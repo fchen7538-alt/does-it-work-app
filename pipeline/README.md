@@ -72,6 +72,21 @@ npm scripts already set it, so this only matters if you invoke
   the canonical brand we searched for and uses that for `product.brand`
   and the product id, not whatever casing that specific label happened to
   use.
+- **A brand can be registered in DSLD under a completely different
+  `brandName` string, not just different casing.** Sports Research's own
+  label submissions are filed under `"SR SportsResearch"`, not
+  `"Sports Research"` — the exact-match brand filter silently missed all 11
+  of their real products (including a fish oil a user scanned in and got a
+  genuine "not found" for, since the product wasn't in our catalog at all).
+  `SUPPLEMENT_BRANDS` in `pipeline/config.ts` is now `{name, aliases?}`
+  instead of a flat string list — `searchProductsByBrand` runs once per
+  alias term (deduped by hit id) and every hit still gets normalized to the
+  canonical `name` in `mapDsldLabelToProduct`, so aliased submissions group
+  under the same brand facet in the app rather than fragmenting. Only
+  Sports Research has a known alias today; other brands likely have the
+  same class of issue undiscovered, found opportunistically (as this one
+  was) rather than through a systematic audit of every brand's raw label
+  submissions.
 - **openFDA's `active_ingredient` and `purpose` fields are free-text prose,
   not structured data**, and combo products (e.g. Excedrin's 3-ingredient
   formula) concatenate multiple ingredients/purposes into one string with no
@@ -155,8 +170,8 @@ npm scripts already set it, so this only matters if you invoke
 
 The `data/*.json` files currently checked in are **live** (`data/meta.json`,
 `status: "live"`) — pulled for real from DSLD, openFDA, RxNorm, and PubMed
-E-utilities: 867 products (843 supplement across 16 of 18 configured
-brands, 24 OTC) and 1411 ingredients. See `data/README.md` for the full
+E-utilities: 870 products (846 supplement across 16 of 18 configured
+brands, 24 OTC) and 1415 ingredients. See `data/README.md` for the full
 breakdown, including the Doctor's Best/New Chapter rate-limit gap noted
 above. Re-run `npm run sync` any time to refresh — curated `sub`,
 `studiedAmount`, `chips`, and `reviewVerdict` fields in `data/evidence.json`,
