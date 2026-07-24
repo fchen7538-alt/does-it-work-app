@@ -71,20 +71,28 @@ The search box has a scan button that opens the camera in one of two modes:
   contiguous substring — noisy OCR output ("NATURE MADE CALCIU") and
   differently-ordered typed queries both need to land on the right product.
 
+Switching modes quickly (tap barcode → immediately tap label-text) used to
+leak a running barcode decode loop in the background — see the comments
+around the `mode === "barcode" && !cancelled` check in `ScannerModal.tsx`
+for the race and why a late-arriving `decodeFromStream` promise needs an
+explicit stop, not just a skipped ref assignment.
+
 **Barcode coverage**: `upc` is only populated for DSLD-sourced (supplement)
-products whose brand has been synced since the field was added to the
-pipeline — currently just Nature Made (39 UPCs on file). Re-sync a brand
-with `npm run sync:dsld -- --brand="Brand Name"` to backfill its UPCs; the
-rest of the catalog predates this field and has no barcode to match against
-yet, which is expected and handled by the fallback note above, not a bug.
+products whose brand has been re-synced since the field was added to the
+pipeline — currently 397 products across 7 brands (Nature's Bounty, Nature's
+Way, Jarrow Formulas, Sports Research, Kirkland Signature, Nature Made, Life
+Extension). Re-sync a brand with `npm run sync:dsld -- --brand="Brand Name"`
+to backfill its UPCs; the remaining 9 supplement brands and all 24 OTC
+products predate this field and have no barcode to match against yet, which
+is expected and handled by the fallback note above, not a bug.
 
 ## Data pipeline status
 
 **`data/*.json` is live data**, pulled for real from DSLD, openFDA, RxNorm,
-and PubMed E-utilities: 840 products (816 supplement across 16 of 18
+and PubMed E-utilities: 867 products (843 supplement across 16 of 18
 configured brands — the original 8 plus Nordic Naturals, Puritan's Pride,
 Kirkland Signature, Centrum, Jarrow Formulas, MegaFood, Optimum Nutrition,
-and Nature's Way — 24 OTC) and 1376 ingredients, with real PubMed study
+and Nature's Way — 24 OTC) and 1411 ingredients, with real PubMed study
 counts as of `data/meta.json`'s `lastSynced` timestamps. 83 individual
 drugs and 215 interaction records are hand-curated (see below). Curated
 content (interaction records, and reviewer verdicts for the original ~30

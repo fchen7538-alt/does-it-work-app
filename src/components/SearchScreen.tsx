@@ -1,5 +1,5 @@
 import type { Drug, ProductListItem } from "@/lib/types";
-import MedBar from "./MedBar";
+import MedSearch from "./MedSearch";
 
 export default function SearchScreen({
   drugs,
@@ -48,7 +48,7 @@ export default function SearchScreen({
 
       {scanNotice && <div className="note-strip">{scanNotice}</div>}
 
-      <MedBar drugs={drugs} selected={selectedMeds} onToggle={onToggleMed} />
+      <MedSearch drugs={drugs} selected={selectedMeds} onToggle={onToggleMed} />
 
       {items.length ? (
         items.map((item) => (

@@ -6,7 +6,7 @@ the schema the pipeline in `/pipeline` produces (see `pipeline/README.md`), so
 access to the source APIs.
 
 **Current status: live** (`meta.json` → `"status": "live"`, with per-source
-`lastSynced` timestamps). 840 products and 1376 ingredients (774 of them
+`lastSynced` timestamps). 867 products and 1411 ingredients (792 of them
 active in at least one product), pulled from the real DSLD, openFDA,
 RxNorm, and PubMed E-utilities APIs:
 
@@ -34,11 +34,13 @@ RxNorm, and PubMed E-utilities APIs:
   exactly this kind of incremental resumption.
   **UPC coverage is partial**: `upc` (used by the barcode scanner, see
   `README.md`'s "Scanning" section) was added to the DSLD pipeline after
-  most of the catalog was already synced, so only Nature Made (39 products)
-  currently has a UPC on file. Re-syncing a brand with
-  `npm run sync:dsld -- --brand="Brand Name"` backfills its UPCs — openFDA
-  (OTC) label data doesn't expose a UPC field at all, so OTC products won't
-  get one from this pipeline.
+  most of the catalog was already synced. Re-syncing a brand backfills it —
+  currently done for 397 products across 7 brands (Nature's Bounty, Nature's
+  Way, Jarrow Formulas, Sports Research, Kirkland Signature, Nature Made,
+  Life Extension); the remaining 9 supplement brands haven't been re-synced
+  yet. `npm run sync:dsld -- --brand="Brand Name"` backfills any brand.
+  openFDA (OTC) label data doesn't expose a UPC field at all, so OTC
+  products won't get one from this pipeline.
 - `ingredients.json` — canonical ingredient list, including every "other
   ingredient" (fillers, capsule shells, etc.) DSLD/openFDA returned, not
   just active ones. RxCUI is filled in live via RxNorm where a concept
@@ -55,7 +57,13 @@ RxNorm, and PubMed E-utilities APIs:
   not been merged yet — some of them are genuinely distinct proprietary
   formulations, so a global fuzzy-merge isn't safe without review.
 - `evidence.json` — `studyCount` is a live PubMed esearch count as of the
-  `lastSynced.pubmed` timestamp in `meta.json`. `reviewVerdict` is only
+  `lastSynced.pubmed` timestamp in `meta.json`. **Excludes macronutrient
+  bookkeeping** (Calories, Total Fat, Cholesterol, Total Carbohydrates,
+  Protein, etc.) — DSLD's Supplement Facts panel marks these `active` the
+  same as real active ingredients, which pulled in meaningless PubMed
+  counts (a plain "protein" search returns ~9 million hits) that inflated
+  "Research found" on any product with a nutrition panel; see
+  `pipeline/README.md`'s known-limitations list for the fix. `reviewVerdict` is only
   present for the original curated set of ~20 ingredients — the pipeline
   finds review candidates for every ingredient (surfaced in `npm run sync`'s
   console output as "review candidate found... needs editorial write-up")
@@ -116,7 +124,7 @@ RxNorm, and PubMed E-utilities APIs:
   CYP3A4/P-gp pathway St. John's Wort mainly induces) — the mechanism
   doesn't apply to those two, so nothing is asserted there. Ingredient-side
   coverage is still the much bigger gap now that the catalog has grown:
-  774 distinct active ingredients exist across the live-pulled product
+  792 distinct active ingredients exist across the live-pulled product
   catalog, and only 32 of them have any interaction row yet.
 
 Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live
@@ -124,11 +132,12 @@ data; curated `evidence.json` fields (`sub`, `studiedAmount`, `chips`,
 `reviewVerdict`) and all of `interactions.json` are preserved rather than
 overwritten — see the merge logic in `pipeline/build.ts`.
 
-## UI note: the med list is now large
+## UI note: "currently taking" is search, not a tap-all list
 
-`src/components/MedBar.tsx` collapses the "currently taking" chip list to
-12 by default with a "+N more" toggle (any already-selected drug stays
-visible even when collapsed) — with over 80 drugs now, rendering every
-chip unconditionally would push the med bar to well over 1200px tall,
-past the product list below it. This is UI-only; `listDrugs()` and the
-API still return the full set.
+`src/components/MedSearch.tsx` replaced the old tap-all-that-apply chip grid
+(`MedBar.tsx`, removed) with a typeahead: type a few letters, pick from a
+dropdown, selected drugs show as removable chips below. This was a direct
+response to the med list growing past 80 drugs — rendering every one as a
+tappable chip either got very tall or needed an awkward collapse/expand
+toggle, where search scales to any list size without either problem. This is
+UI-only; `listDrugs()` and the API still return the full set.

@@ -590,14 +590,6 @@
     "src": "PubMed (NCBI E-utilities), live count"
   },
   {
-    "ingredientId": "total-carbohydrates",
-    "studyCount": 244242,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
     "ingredientId": "vegetable-magnesium-stearate",
     "studyCount": 165,
     "sub": "Summary pending editorial review.",
@@ -616,14 +608,6 @@
   {
     "ingredientId": "titanium-dioxide-color",
     "studyCount": 1731,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "sodium",
-    "studyCount": 652627,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",
     "chips": [],
@@ -662,14 +646,6 @@
     "src": "PubMed (NCBI E-utilities), live count"
   },
   {
-    "ingredientId": "total-fat",
-    "studyCount": 88976,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
     "ingredientId": "turmeric-curcuma-longa-extract",
     "studyCount": 736,
     "sub": "Summary pending editorial review.",
@@ -678,24 +654,8 @@
     "src": "PubMed (NCBI E-utilities), live count"
   },
   {
-    "ingredientId": "protein",
-    "studyCount": 9211092,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
     "ingredientId": "soya-lecithin",
     "studyCount": 645,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "calories",
-    "studyCount": 35573,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",
     "chips": [],
@@ -1336,14 +1296,6 @@
   {
     "ingredientId": "organic-erythritol",
     "studyCount": 156,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "cholesterol",
-    "studyCount": 367763,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",
     "chips": [],
@@ -2078,14 +2030,6 @@
     "src": "PubMed (NCBI E-utilities), live count"
   },
   {
-    "ingredientId": "total-calories",
-    "studyCount": 9685,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
     "ingredientId": "ethyl-cellulose",
     "studyCount": 2017,
     "sub": "Summary pending editorial review.",
@@ -2622,14 +2566,6 @@
     "src": "PubMed (NCBI E-utilities), live count"
   },
   {
-    "ingredientId": "total-sugars",
-    "studyCount": 81776,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
     "ingredientId": "organic-alkalizer-blend",
     "studyCount": 0,
     "sub": "Summary pending editorial review.",
@@ -2840,14 +2776,6 @@
   {
     "ingredientId": "cat-s-claw",
     "studyCount": 234,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "dietary-fiber",
-    "studyCount": 43887,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",
     "chips": [],
@@ -9291,14 +9219,6 @@
   {
     "ingredientId": "glucose-syrup",
     "studyCount": 1145,
-    "sub": "Summary pending editorial review.",
-    "studiedAmount": "Not yet reviewed",
-    "chips": [],
-    "src": "PubMed (NCBI E-utilities), live count"
-  },
-  {
-    "ingredientId": "sugar-alcohol",
-    "studyCount": 110198,
     "sub": "Summary pending editorial review.",
     "studiedAmount": "Not yet reviewed",
     "chips": [],

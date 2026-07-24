@@ -90,7 +90,16 @@ export default function ScannerModal({
         }
         setStatus("scanning");
 
-        if (mode === "barcode") {
+        // By the time execution reaches here, the getUserMedia/zoom/
+        // videoWidth-polling awaits above may have taken long enough that
+        // the mode already switched away (e.g. user tapped "Scan label
+        // text" before the camera even finished setting up) — cleanup for
+        // this effect instance already ran. Starting the barcode decode
+        // loop anyway just to stop it a moment later still lets it run
+        // (and burn CPU against the *new* stream on the same video element,
+        // since zxing reads live from the DOM element) for as long as
+        // decodeFromStream takes to resolve — skip it entirely instead.
+        if (mode === "barcode" && !cancelled) {
           const { BrowserMultiFormatReader } = await import("@zxing/browser");
           const reader = new BrowserMultiFormatReader();
           // Note: don't reference the `controls` returned below from inside
@@ -105,7 +114,14 @@ export default function ScannerModal({
               onResult({ type: "upc", value: result.getText() });
             }
           });
-          controlsRef.current = controls;
+          // Mode could still have switched away while decodeFromStream
+          // itself was resolving — same reasoning as above, stop rather
+          // than leak in that case too.
+          if (cancelled) {
+            controls.stop();
+          } else {
+            controlsRef.current = controls;
+          }
         }
       } catch (err) {
         if (!cancelled) {

@@ -73,6 +73,13 @@ interface DsldSearchResponse {
   }>;
 }
 
+interface DsldRawRow {
+  name?: string;
+  uniiCode?: string;
+  quantity?: Array<{ quantity?: number; unit?: string }>;
+  nestedRows?: DsldRawRow[];
+}
+
 /** Raw shape returned by GET /label/{id} — subset of fields we use. */
 interface DsldLabelResponse {
   id?: number | string;
@@ -81,13 +88,68 @@ interface DsldLabelResponse {
   upcSku?: string;
   netContents?: Array<{ quantity?: number; unit?: string; display?: string }>;
   servingSizes?: Array<{ minQuantity?: number; maxQuantity?: number; unit?: string }>;
-  ingredientRows?: Array<{
-    name?: string;
-    quantity?: Array<{ quantity?: number; unit?: string }>;
-  }>;
+  ingredientRows?: DsldRawRow[];
   otheringredients?: {
     ingredients?: Array<{ name?: string }>;
   };
+}
+
+// Stable UNII identifiers (don't vary with label wording, unlike `name`) for
+// the two omega-3 fatty acids DSLD breaks out as nested rows under a parent
+// like "Fish Oil" or "Cod Liver Oil" — see findByUnii below.
+const EPA_UNII = "AAN7QOV9EA";
+const DHA_UNII = "ZAD9OKH9JC";
+const TOTAL_OMEGA3_UNII = "71M78END5S";
+
+function findByUnii(row: DsldRawRow, unii: string): DsldRawRow | undefined {
+  if (row.uniiCode === unii) return row;
+  for (const child of row.nestedRows ?? []) {
+    const found = findByUnii(child, unii);
+    if (found) return found;
+  }
+  return undefined;
+}
+
+/**
+ * DSLD represents "not broken out on this label" as a quantity of 0 with
+ * unit "NP" ("not present"), not as a missing row — treating that as a real
+ * 0 mg would falsely claim the product contains no EPA/DHA when the label
+ * simply didn't itemize it separately from the omega-3 total.
+ */
+function realQuantity(row: DsldRawRow | undefined): { quantity: number; unit: string } | undefined {
+  const q = row?.quantity?.[0];
+  if (!q || q.quantity === undefined || !q.unit || q.unit.toUpperCase() === "NP") return undefined;
+  return { quantity: q.quantity, unit: q.unit };
+}
+
+/**
+ * DSLD's top-level "Fish Oil" (or "Cod Liver Oil", etc.) row reports the
+ * gross weight of the oil blend, not the actual omega-3 content — e.g. a
+ * label with "Fish Oil 2400 mg" nests "EPA 360 mg" and "DHA 240 mg" several
+ * levels down. Using the gross figure as this ingredient's amount is
+ * actively misleading (most of that 2400 mg isn't EPA or DHA at all), and
+ * collapsing EPA/DHA into one combined number loses a distinction that
+ * matters for anyone comparing products. Real per-label figures, not a
+ * single computed style choice.
+ */
+function omega3Amount(row: DsldRawRow): string | null {
+  const epa = realQuantity(findByUnii(row, EPA_UNII));
+  const dha = realQuantity(findByUnii(row, DHA_UNII));
+  if (epa || dha) {
+    const parts: string[] = [];
+    if (epa) parts.push(`EPA ${epa.quantity} ${epa.unit}`);
+    if (dha) parts.push(`DHA ${dha.quantity} ${dha.unit}`);
+    return parts.join(", ");
+  }
+
+  // Label reports the combined omega-3 total but doesn't itemize EPA vs.
+  // DHA individually — still far more accurate than the parent row's gross
+  // oil weight (e.g. "Fish Oil 1200 mg" when only 360 mg of that is
+  // actually omega-3), so use it rather than falling all the way back.
+  const total = realQuantity(findByUnii(row, TOTAL_OMEGA3_UNII));
+  if (total) return `${total.quantity} ${total.unit} total omega-3 (EPA/DHA not split on this label)`;
+
+  return null;
 }
 
 export async function searchProductsByBrand(brand: string, size = 25): Promise<DsldSearchHit[]> {
@@ -120,6 +182,10 @@ export async function getProductLabel(dsldId: string): Promise<DsldLabel | null>
   const activeRows: DsldLabelIngredient[] = (data.ingredientRows ?? [])
     .filter((row) => row.name)
     .map((row) => {
+      const omega3 = omega3Amount(row);
+      if (omega3) {
+        return { name: row.name!, quantity: omega3, unit: "", partOf: "supplement_facts" as const };
+      }
       const firstQty = row.quantity?.[0];
       return {
         name: row.name!,

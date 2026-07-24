@@ -81,6 +81,48 @@ npm scripts already set it, so this only matters if you invoke
   anything that doesn't parse cleanly rather than guess — so some real
   combo-product variants (e.g. certain liquigel or PM formulations) end up
   with 0 usable active ingredients and are skipped, not shown with wrong data.
+- **`getProductLabel` only reads the top level of `ingredientRows`** — DSLD
+  actually nests sub-nutrients several levels deep (`nestedRows`), and for
+  fish oil/cod liver oil products this meant the top-level "Fish Oil" row's
+  *gross oil weight* (e.g. 2400 mg) was used as the amount, when the real
+  EPA and DHA content nested underneath was only 360 mg + 240 mg — most of
+  that gross weight isn't omega-3 at all. Fixed with a targeted tree search
+  (`omega3Amount` in `pipeline/sources/dsld.ts`) that finds EPA/DHA by their
+  stable UNII codes anywhere in a row's subtree and reports the real
+  `"EPA 360 mg, DHA 240 mg"` instead — this is also why fish oil products
+  now show that split instead of one combined omega-3 number, since that's
+  what's actually on the label. Some labels only report the combined
+  omega-3 total without itemizing EPA vs. DHA; that shows as
+  `"360 mg total omega-3 (EPA/DHA not split on this label)"` rather than
+  guessing a split. DSLD represents "not broken out" as quantity `0`/unit
+  `"NP"` rather than omitting the row — `realQuantity` treats that as
+  absent, not a real zero, so products genuinely missing the split don't
+  show a false "0 mg EPA." This fix is narrow (fish/cod-liver oil only);
+  the general nested-row-ignored issue likely affects other multi-part
+  nutrients too (e.g. Total Fat's Saturated/Polyunsaturated/Monounsaturated
+  breakdown) but hasn't been audited beyond omega-3.
+  **Known remaining gap**: some labels report EPA/DHA in "ethyl ester" form
+  (a different UNII code than the plain/triglyceride form `omega3Amount`
+  looks for), which this fix doesn't catch — those products still fall back
+  to the gross "Fish Oil" weight (e.g. `kirkland-signature-fish-oil-1200-mg`).
+  Worse, on at least one live label checked (DSLD id 207311), the ethyl-ester
+  EPA row's own `name`/`ingredientId` fields are mislabeled as DHA in DSLD's
+  source data, with only the free-text `notes` field distinguishing them —
+  not safe to auto-extract without risking a wrong EPA/DHA swap, so it's left
+  alone rather than guessed at.
+- **DSLD marks every Supplement Facts row `active`, including macronutrient
+  bookkeeping** (Calories, Total Fat, Cholesterol, Total Carbohydrates,
+  Protein, etc.) alongside a product's real active ingredients — found while
+  verifying the omega-3 fix above, when a fish oil product's "Research
+  found" showed 9,949,141 studies because "Protein" was being treated as an
+  active ingredient worth its own PubMed count (a plain "protein" query is
+  about as generic as PubMed search gets). `NUTRITION_FACTS_PANEL_IDS` in
+  `build.ts` now forces these to `active: false` on ingest — still shown in
+  the ingredient list for label completeness, just excluded from research/
+  interaction evidence. Applied retroactively to the existing 867 products
+  (841 ingredient rows across 328 products) and removed the 10 now-orphaned
+  evidence.json entries for these ids, since re-syncing every brand just for
+  this would have meant re-pulling the whole catalog.
 
 ## What's automated vs. curated
 
@@ -113,8 +155,8 @@ npm scripts already set it, so this only matters if you invoke
 
 The `data/*.json` files currently checked in are **live** (`data/meta.json`,
 `status: "live"`) — pulled for real from DSLD, openFDA, RxNorm, and PubMed
-E-utilities: 840 products (816 supplement across 16 of 18 configured
-brands, 24 OTC) and 1376 ingredients. See `data/README.md` for the full
+E-utilities: 867 products (843 supplement across 16 of 18 configured
+brands, 24 OTC) and 1411 ingredients. See `data/README.md` for the full
 breakdown, including the Doctor's Best/New Chapter rate-limit gap noted
 above. Re-run `npm run sync` any time to refresh — curated `sub`,
 `studiedAmount`, `chips`, and `reviewVerdict` fields in `data/evidence.json`,

@@ -37,6 +37,33 @@ const brandFilter = (brands: string[]) => (onlyBrand ? brands.filter((b) => b ==
 // surface real NOW-brand hits; smaller brands just return fewer than 100.
 const PER_BRAND_SEARCH_SIZE = 100;
 
+// DSLD's Supplement Facts panel always includes these macronutrient
+// bookkeeping rows (calorie/fat/carb/protein totals) alongside the
+// product's actual active ingredients, and marks them the same way
+// (partOf: "supplement_facts") — but they aren't ingredients anyone is
+// taking the product *for*, and treating them as active pulls in a
+// meaningless PubMed count (a plain "protein" search returns ~9 million
+// hits) that inflates "Research found" on any product with a nutrition
+// panel. Still shown in the ingredient list (for label completeness), just
+// not counted toward research/interaction evidence.
+const NUTRITION_FACTS_PANEL_IDS = new Set([
+  "calories",
+  "total-calories",
+  "total-fat",
+  "saturated-fat",
+  "trans-fat",
+  "polyunsaturated-fat",
+  "monounsaturated-fat",
+  "cholesterol",
+  "sodium",
+  "total-carbohydrates",
+  "dietary-fiber",
+  "total-sugars",
+  "added-sugars",
+  "sugar-alcohol",
+  "protein",
+]);
+
 async function main() {
   let ingredients = store.readIngredients();
   let products = store.readProducts();
@@ -103,10 +130,14 @@ async function main() {
             return name; // placeholder id, replaced below once we resolve async
           });
           const resolvedIngredients = await Promise.all(
-            product.ingredients.map(async (ref, i) => ({
-              ...ref,
-              ingredientId: await resolveIngredient(rawNames[i] ?? ref.ingredientId, "supplement", true),
-            })),
+            product.ingredients.map(async (ref, i) => {
+              const ingredientId = await resolveIngredient(rawNames[i] ?? ref.ingredientId, "supplement", true);
+              return {
+                ...ref,
+                ingredientId,
+                active: ref.active && !NUTRITION_FACTS_PANEL_IDS.has(ingredientId),
+              };
+            }),
           );
           products = upsertBy<Product>(products, { ...product, ingredients: resolvedIngredients });
         } catch (err) {

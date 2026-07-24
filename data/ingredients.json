@@ -12384,5 +12384,320 @@
     "synonyms": [
       "Devil's Claw extract"
     ]
+  },
+  {
+    "id": "100-yaeyama-chlorella",
+    "name": "100% Yaeyama Chlorella",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "100% Yaeyama Chlorella"
+    ]
+  },
+  {
+    "id": "glycostat-wild-bitter-melon-extract",
+    "name": "Glycostat Wild Bitter Melon extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Glycostat Wild Bitter Melon extract"
+    ]
+  },
+  {
+    "id": "banaba-leaf-extract",
+    "name": "Banaba leaf extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Banaba leaf extract"
+    ]
+  },
+  {
+    "id": "turmeric-concentrate",
+    "name": "Turmeric concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Turmeric concentrate"
+    ]
+  },
+  {
+    "id": "total-probiotic-blend",
+    "name": "Total Probiotic Blend",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Total Probiotic Blend"
+    ]
+  },
+  {
+    "id": "celery-seed-extract",
+    "name": "Celery seed extract",
+    "rxcui": "1309989",
+    "category": "supplement",
+    "synonyms": [
+      "Celery seed extract"
+    ]
+  },
+  {
+    "id": "meganatural-bp-grape-seed-extract",
+    "name": "MegaNatural-BP Grape seed extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "MegaNatural-BP Grape seed extract"
+    ]
+  },
+  {
+    "id": "sesaplex-sesame-seed-extract",
+    "name": "SesaPlex Sesame seed extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "SesaPlex Sesame seed extract"
+    ]
+  },
+  {
+    "id": "lactotripeptides",
+    "name": "Lactotripeptides",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Lactotripeptides"
+    ]
+  },
+  {
+    "id": "jarrosil-silicon",
+    "name": "JarroSil Silicon",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "JarroSil Silicon"
+    ]
+  },
+  {
+    "id": "mbp",
+    "name": "MBP",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "MBP"
+    ]
+  },
+  {
+    "id": "glycine-propionyl-l-carnitine-hcl",
+    "name": "Glycine Propionyl-L-Carnitine HCl",
+    "rxcui": "2669317",
+    "category": "supplement",
+    "synonyms": [
+      "Glycine Propionyl-L-Carnitine HCl"
+    ]
+  },
+  {
+    "id": "n-acetyl-tyrosine",
+    "name": "N-Acetyl Tyrosine",
+    "rxcui": "31005",
+    "category": "supplement",
+    "synonyms": [
+      "N-Acetyl Tyrosine"
+    ]
+  },
+  {
+    "id": "deionized-water",
+    "name": "deionized Water",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "deionized Water"
+    ]
+  },
+  {
+    "id": "palm-tocotrienol-tocopherol-complex",
+    "name": "Palm Tocotrienol-Tocopherol Complex",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Palm Tocotrienol-Tocopherol Complex"
+    ]
+  },
+  {
+    "id": "polyoxyl-castor-oil",
+    "name": "Polyoxyl Castor Oil",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Polyoxyl Castor Oil"
+    ]
+  },
+  {
+    "id": "butcher-s-broom-4-1-extract",
+    "name": "Butcher’s Broom 4:1 extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Butcher’s Broom 4:1 extract"
+    ]
+  },
+  {
+    "id": "horse-chestnut-6-1-extract",
+    "name": "Horse Chestnut 6:1 extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Horse Chestnut 6:1 extract"
+    ]
+  },
+  {
+    "id": "total-bile-acids",
+    "name": "Total Bile Acids",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Total Bile Acids"
+    ]
+  },
+  {
+    "id": "cranberry-25-1-concentrate",
+    "name": "Cranberry 25:1 concentrate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Cranberry 25:1 concentrate"
+    ]
+  },
+  {
+    "id": "magnesium-hydroxide",
+    "name": "Magnesium Hydroxide",
+    "rxcui": "6581",
+    "category": "supplement",
+    "synonyms": [
+      "Magnesium Hydroxide"
+    ]
+  },
+  {
+    "id": "r-alpha-lipoic-acid",
+    "name": "R-Alpha Lipoic Acid",
+    "rxcui": "6417",
+    "category": "supplement",
+    "synonyms": [
+      "R-Alpha Lipoic Acid"
+    ]
+  },
+  {
+    "id": "picromax",
+    "name": "PicroMax",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "PicroMax"
+    ]
+  },
+  {
+    "id": "milk-thistle-seed-30-1-extract",
+    "name": "Milk Thistle seed 30:1 extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Milk Thistle seed 30:1 extract"
+    ]
+  },
+  {
+    "id": "uridine-5-monophosphate",
+    "name": "Uridine 5'-Monophosphate",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Uridine 5'-Monophosphate"
+    ]
+  },
+  {
+    "id": "hydrolyzed-bovine-collagen",
+    "name": "hydrolyzed Bovine Collagen",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "hydrolyzed Bovine Collagen"
+    ]
+  },
+  {
+    "id": "saw-palmetto-berry-extract",
+    "name": "Saw Palmetto berry extract",
+    "rxcui": "477189",
+    "category": "supplement",
+    "synonyms": [
+      "Saw Palmetto berry extract"
+    ]
+  },
+  {
+    "id": "pollen-extract",
+    "name": "Pollen extract",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Pollen extract"
+    ]
+  },
+  {
+    "id": "apresflex",
+    "name": "ApresFLEX",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "ApresFLEX"
+    ]
+  },
+  {
+    "id": "stinging-nettle-extract",
+    "name": "Stinging Nettle extract",
+    "rxcui": "580119",
+    "category": "supplement",
+    "synonyms": [
+      "Stinging Nettle extract"
+    ]
+  },
+  {
+    "id": "non-gmo-lecithin",
+    "name": "non-GMO Lecithin",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "non-GMO Lecithin"
+    ]
+  },
+  {
+    "id": "marshmallow",
+    "name": "Marshmallow",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Marshmallow"
+    ]
+  },
+  {
+    "id": "corn-silk",
+    "name": "Corn Silk",
+    "rxcui": "283677",
+    "category": "supplement",
+    "synonyms": [
+      "Corn Silk"
+    ]
+  },
+  {
+    "id": "cleavers",
+    "name": "Cleavers",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Cleavers"
+    ]
+  },
+  {
+    "id": "oil-of-mint",
+    "name": "Oil of Mint",
+    "rxcui": null,
+    "category": "supplement",
+    "synonyms": [
+      "Oil of Mint"
+    ]
   }
 ]

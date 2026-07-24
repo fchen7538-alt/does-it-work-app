@@ -100,11 +100,60 @@ h1.appname {
   height: 17px;
 }
 
-.medbar {
+.medsearch {
+  position: relative;
+  margin-bottom: 16px;
+}
+.medsearch-label {
+  font-size: 12px;
+  color: rgba(18, 36, 31, 0.5);
+  margin-bottom: 4px;
+}
+.medsearch-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.medsearch-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  width: 100%;
+  font-family: 'Inter';
+  font-size: 15px;
+  background: transparent;
+  color: var(--ink);
+}
+.medsearch-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px -8px rgba(18, 36, 31, 0.25);
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 5;
+}
+.medsearch-option {
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.medsearch-option.active,
+.medsearch-option:hover {
+  background: var(--mist);
+}
+.medsearch-selected {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-top: 10px;
 }
 .medchip {
   font-size: 12px;
@@ -120,12 +169,13 @@ h1.appname {
   background: var(--sage);
   color: #fff;
   border-color: var(--sage);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
-.medbar-label {
-  width: 100%;
-  font-size: 12px;
-  color: rgba(18, 36, 31, 0.5);
-  margin-bottom: 4px;
+.medchip-remove {
+  opacity: 0.75;
+  font-size: 10px;
 }
 
 .item-row {
