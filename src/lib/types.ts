@@ -25,6 +25,8 @@ export interface Product {
   /** Two-letter thumbnail initials */
   initials: string;
   kind: ProductKind;
+  /** UPC/GTIN barcode, digits only (no spaces/dashes), when known — lets a scanned barcode resolve straight to a product. Currently only populated for DSLD-sourced (supplement) products; openFDA doesn't expose a retail barcode. */
+  upc?: string;
   ingredients: IngredientRef[];
   /** Provenance of the label data itself */
   source: {

@@ -32,6 +32,13 @@ RxNorm, and PubMed E-utilities APIs:
   from it. A later `npm run sync:dsld` run, after more cooldown time, should
   be able to pick these two up — the pipeline is idempotent and designed for
   exactly this kind of incremental resumption.
+  **UPC coverage is partial**: `upc` (used by the barcode scanner, see
+  `README.md`'s "Scanning" section) was added to the DSLD pipeline after
+  most of the catalog was already synced, so only Nature Made (39 products)
+  currently has a UPC on file. Re-syncing a brand with
+  `npm run sync:dsld -- --brand="Brand Name"` backfills its UPCs — openFDA
+  (OTC) label data doesn't expose a UPC field at all, so OTC products won't
+  get one from this pipeline.
 - `ingredients.json` — canonical ingredient list, including every "other
   ingredient" (fillers, capsule shells, etc.) DSLD/openFDA returned, not
   just active ones. RxCUI is filled in live via RxNorm where a concept

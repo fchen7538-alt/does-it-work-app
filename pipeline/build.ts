@@ -25,6 +25,11 @@ import type { Ingredient, Product } from "../src/lib/types";
 const args = new Set(process.argv.slice(2));
 const only = [...args].find((a) => a.startsWith("--only="))?.split("=")[1];
 const runStage = (stage: string) => !only || only === stage;
+// Restrict dsld/openfda to a single brand, e.g. --brand="New Chapter" — for
+// re-syncing just the brands a previous run left empty (rate-limited, etc.)
+// without waiting through the full configured brand list again.
+const onlyBrand = [...args].find((a) => a.startsWith("--brand="))?.split("=")[1];
+const brandFilter = (brands: string[]) => (onlyBrand ? brands.filter((b) => b === onlyBrand) : brands);
 
 // DSLD ranks by relevance, not an exact brand filter — some brand names
 // (e.g. "NOW") are common enough in ordinary label text that a small page
@@ -75,7 +80,7 @@ async function main() {
 
   if (runStage("dsld")) {
     console.log(`\n[dsld] pulling supplement products for ${SUPPLEMENT_BRANDS.length} brands...`);
-    for (const brand of SUPPLEMENT_BRANDS) {
+    for (const brand of brandFilter(SUPPLEMENT_BRANDS)) {
       let hits: Awaited<ReturnType<typeof dsld.searchProductsByBrand>> = [];
       try {
         hits = await dsld.searchProductsByBrand(brand, PER_BRAND_SEARCH_SIZE);
@@ -114,7 +119,7 @@ async function main() {
 
   if (runStage("openfda")) {
     console.log(`\n[openfda] pulling OTC drug labels for ${OTC_BRANDS.length} brands...`);
-    for (const brand of OTC_BRANDS) {
+    for (const brand of brandFilter(OTC_BRANDS)) {
       try {
         const hits = await openfda.fetchLabelsByBrand(brand, 10);
         console.log(`  ${brand}: ${hits.length} labels found`);

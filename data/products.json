@@ -415,6 +415,7 @@
     "sub": "serving size: 1 Tablet(s) · 275 Premium Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604017576",
     "ingredients": [
       {
         "ingredientId": "vitamin-d",
@@ -470,7 +471,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "9192",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -525,7 +526,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "8951",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -590,7 +591,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "8957",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -680,7 +681,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "8959",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -730,7 +731,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "8782",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -740,6 +741,7 @@
     "sub": "serving size: 1 Caplet(s) · 125 Premium Caplet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604413385",
     "ingredients": [
       {
         "ingredientId": "vitamin-c",
@@ -830,7 +832,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "8903",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -4600,7 +4602,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "26648",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -4610,6 +4612,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604027667",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -4765,7 +4768,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "266767",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -4775,6 +4778,7 @@
     "sub": "serving size: 1 Tablet(s) · 103 Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604029326",
     "ingredients": [
       {
         "ingredientId": "calcium",
@@ -4805,7 +4809,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179965",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -4815,6 +4819,7 @@
     "sub": "serving size: 1 Softgel(s) · 350 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604013004",
     "ingredients": [
       {
         "ingredientId": "vitamin-e",
@@ -4845,7 +4850,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179416",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -4855,6 +4860,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604028886",
     "ingredients": [
       {
         "ingredientId": "vitamin-d3",
@@ -4895,7 +4901,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179943",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -4905,6 +4911,7 @@
     "sub": "serving size: 2 Gummie(s) · 180 Gummie(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604030070",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -4990,7 +4997,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "180096",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -5000,6 +5007,7 @@
     "sub": "serving size: 1 Packet(s) · 30 Packet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604010300",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -5250,7 +5258,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179317",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -5310,7 +5318,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "231416",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -5320,6 +5328,7 @@
     "sub": "serving size: 2 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604043759",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -5360,7 +5369,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "293800",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -5370,6 +5379,7 @@
     "sub": "serving size: 2 Gummie(s) · 190 Gummie(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604030094",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -5450,7 +5460,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179977",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -5460,6 +5470,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604028374",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -5620,7 +5631,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179871",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -5630,6 +5641,7 @@
     "sub": "serving size: 1 Softgel(s) · 180 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604011628",
     "ingredients": [
       {
         "ingredientId": "vitamin-e",
@@ -5655,7 +5667,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "239954",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -5665,6 +5677,7 @@
     "sub": "serving size: 1 Tablet(s) · 90 Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604014995",
     "ingredients": [
       {
         "ingredientId": "vitamin-a",
@@ -5815,7 +5828,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "178825",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -12680,7 +12693,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "209577",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -12690,6 +12703,7 @@
     "sub": "serving size: 3 Softgel(s) · 90 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604028404",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -12740,7 +12754,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "302764",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -12750,6 +12764,7 @@
     "sub": "serving size: 2 Softgel(s) · 100 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604013288",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -12805,7 +12820,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179425",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -12815,6 +12830,7 @@
     "sub": "serving size: 1 Tablet(s) · 300 Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604010379",
     "ingredients": [
       {
         "ingredientId": "concentrated-garlic",
@@ -12860,7 +12876,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179322",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -12950,7 +12966,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "82715",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -12960,6 +12976,7 @@
     "sub": "serving size: 1 Tablet(s) · 300 Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604018894",
     "ingredients": [
       {
         "ingredientId": "vitamin-a",
@@ -13080,7 +13097,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179576",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13090,6 +13107,7 @@
     "sub": "serving size: 1 Capsule(s) · 30 Capsule(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604027605",
     "ingredients": [
       {
         "ingredientId": "lactobacillus-plantarum-299v",
@@ -13115,7 +13133,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "19067",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13125,6 +13143,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604028862",
     "ingredients": [
       {
         "ingredientId": "vitamin-b12",
@@ -13170,7 +13189,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179932",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13180,6 +13199,7 @@
     "sub": "serving size: 1 Tablet(s) · 220 Premium Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604010126",
     "ingredients": [
       {
         "ingredientId": "vitamin-a",
@@ -13560,7 +13580,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "8719",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13570,6 +13590,7 @@
     "sub": "serving size: 2 Tablet(s) · 60 Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604027612",
     "ingredients": [
       {
         "ingredientId": "lactobacillus-acidophilus",
@@ -13610,7 +13631,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "71248",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13670,7 +13691,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "82691",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13680,6 +13701,7 @@
     "sub": "serving size: 3 Softgel(s) · 200 Liquid Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604027155",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -13735,7 +13757,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "26693",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13745,6 +13767,7 @@
     "sub": "serving size: 1 Softgel(s) · 63 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604029364",
     "ingredients": [
       {
         "ingredientId": "biotin",
@@ -13790,7 +13813,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179971",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13835,7 +13858,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "270947",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -13845,6 +13868,7 @@
     "sub": "serving size: 1 Packet(s) · 60 Packet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604017026",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -14125,7 +14149,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179514",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14135,6 +14159,7 @@
     "sub": "serving size: 1 Softgel(s) · 50 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604040925",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -14180,7 +14205,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "180235",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14190,6 +14215,7 @@
     "sub": "serving size: 1 Softgel(s) · 140 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604041311",
     "ingredients": [
       {
         "ingredientId": "coq10",
@@ -14225,7 +14251,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "180262",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14235,6 +14261,7 @@
     "sub": "serving size: 1 Softgel(s) · 30 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604017019",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -14280,7 +14307,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179510",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14290,6 +14317,7 @@
     "sub": "serving size: 2 Gummie(s) · 60 Gummie(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604029517",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -14395,7 +14423,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179985",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14405,6 +14433,7 @@
     "sub": "serving size: 1 Softgel(s) · 300 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604018825",
     "ingredients": [
       {
         "ingredientId": "vitamin-e",
@@ -14430,7 +14459,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "266975",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14440,6 +14469,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604027940",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -14495,7 +14525,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179826",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14505,6 +14535,7 @@
     "sub": "serving size: 1 Packet(s) · 30 Packet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604010256",
     "ingredients": [
       {
         "ingredientId": "vitamin-a",
@@ -14730,7 +14761,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179309",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -14820,7 +14851,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179821",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15005,7 +15036,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "8978",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15155,7 +15186,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "211272",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15165,6 +15196,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604029272",
     "ingredients": [
       {
         "ingredientId": "vitamin-a",
@@ -15240,7 +15272,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179960",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15250,6 +15282,7 @@
     "sub": "serving size: 3 Gummie(s) · 90 Gummie(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604029524",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -15315,7 +15348,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179987",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15465,7 +15498,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "209429",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15475,6 +15508,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604011703",
     "ingredients": [
       {
         "ingredientId": "vitamin-e",
@@ -15500,7 +15534,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "302777",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15510,6 +15544,7 @@
     "sub": "serving size: 1 Tablet(s) · 30 Capsule(s) Probiotics",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604041908",
     "ingredients": [
       {
         "ingredientId": "total-carbohydrates",
@@ -15690,7 +15725,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "180293",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15780,7 +15815,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "209633",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15790,6 +15825,7 @@
     "sub": "serving size: 1 Softgel(s) · 60 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604011703",
     "ingredients": [
       {
         "ingredientId": "vitamin-e",
@@ -15815,7 +15851,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "280359",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15825,6 +15861,7 @@
     "sub": "serving size: 1 Softgel(s) · 100 Softgel(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604011550",
     "ingredients": [
       {
         "ingredientId": "vitamin-e",
@@ -15850,7 +15887,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "179344",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15860,6 +15897,7 @@
     "sub": "serving size: 2 Gummie(s) · 80 Gummy(ies)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604028459",
     "ingredients": [
       {
         "ingredientId": "calories",
@@ -15945,7 +15983,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "272560",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -15955,6 +15993,7 @@
     "sub": "serving size: 2 Tablet(s) · 24 Enteric Coated Tablet(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604010911",
     "ingredients": [
       {
         "ingredientId": "sam-e",
@@ -16035,7 +16074,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "26628",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -16125,7 +16164,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "82539",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {
@@ -16135,6 +16174,7 @@
     "sub": "serving size: 2 Capsule(s) · 100 Capsule(s)",
     "initials": "NM",
     "kind": "supplement",
+    "upc": "031604027537",
     "ingredients": [
       {
         "ingredientId": "total-carbohydrates",
@@ -16180,7 +16220,7 @@
     "source": {
       "provider": "dsld",
       "sourceId": "71358",
-      "lastVerified": "2026-07-23"
+      "lastVerified": "2026-07-24"
     }
   },
   {

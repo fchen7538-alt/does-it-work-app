@@ -9,6 +9,8 @@ export default function SearchScreen({
   onQueryChange,
   items,
   onOpenItem,
+  onOpenScanner,
+  scanNotice,
 }: {
   drugs: Drug[];
   selectedMeds: Set<string>;
@@ -17,6 +19,8 @@ export default function SearchScreen({
   onQueryChange: (v: string) => void;
   items: ProductListItem[];
   onOpenItem: (id: string) => void;
+  onOpenScanner: () => void;
+  scanNotice: string | null;
 }) {
   return (
     <>
@@ -29,7 +33,20 @@ export default function SearchScreen({
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
         />
+        <div className="scan-button" onClick={onOpenScanner} role="button" aria-label="Scan a barcode or label">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 8V5a1 1 0 0 1 1-1h3M20 8V5a1 1 0 0 0-1-1h-3M4 16v3a1 1 0 0 0 1 1h3M20 16v3a1 1 0 0 1-1 1h-3M4 12h16"
+              stroke="currentColor"
+              strokeWidth="1.7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
       </div>
+
+      {scanNotice && <div className="note-strip">{scanNotice}</div>}
 
       <MedBar drugs={drugs} selected={selectedMeds} onToggle={onToggleMed} />
 

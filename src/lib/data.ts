@@ -49,16 +49,34 @@ function interactionsForProduct(product: Product): Interaction[] {
   return result;
 }
 
+const productIdByUpc = new Map(products.filter((p) => p.upc).map((p) => [p.upc!, p.id]));
+
 export function listDrugs(): Drug[] {
   return drugs;
 }
 
+/** Resolves a scanned barcode (any formatting) to a product id, or null if no product has this UPC on file. */
+export function findProductIdByUpc(rawUpc: string): string | null {
+  const digits = rawUpc.replace(/\D/g, "");
+  return productIdByUpc.get(digits) ?? null;
+}
+
 export function listProducts(query: string, selectedDrugIds: string[]): ProductListItem[] {
-  const q = query.trim().toLowerCase();
+  // Match per-word across brand+name combined, not the query as one
+  // contiguous substring against either field alone — a plain substring
+  // check fails "nature made turmeric" against brand "Nature Made" and
+  // name "Turmeric Curcumin 500mg" separately, even though it's an obvious
+  // match. Also lets OCR'd label text (noisy, word-order can vary) still
+  // land on the right product.
+  const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const selected = new Set(selectedDrugIds);
 
   return products
-    .filter((p) => !q || p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q))
+    .filter((p) => {
+      if (terms.length === 0) return true;
+      const haystack = `${p.brand} ${p.name}`.toLowerCase();
+      return terms.every((term) => haystack.includes(term));
+    })
     .map((p) => {
       const matchingInteractionCount = interactionsForProduct(p).filter((i) => selected.has(i.drugId)).length;
       return {

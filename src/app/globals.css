@@ -71,6 +71,7 @@ h1.appname {
   border-radius: 14px;
   padding: 12px 14px;
   margin-bottom: 14px;
+  gap: 8px;
 }
 .search-box input {
   border: none;
@@ -80,6 +81,23 @@ h1.appname {
   font-size: 15px;
   background: transparent;
   color: var(--ink);
+}
+.scan-button {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.scan-button svg {
+  width: 17px;
+  height: 17px;
 }
 
 .medbar {
@@ -394,4 +412,116 @@ h2.pname {
   padding: 60px 10px;
   color: rgba(18, 36, 31, 0.4);
   font-size: 13.5px;
+}
+
+.scanner-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  background: #0d1613;
+  display: flex;
+  flex-direction: column;
+}
+.scanner-header {
+  flex: none;
+  padding: 14px 14px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.scanner-close {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scanner-modetabs {
+  flex: 1;
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 3px;
+}
+.scanner-modetab {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.scanner-modetab.on {
+  background: var(--sage);
+  color: #fff;
+}
+.scanner-viewport {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scanner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scanner-reticle {
+  position: absolute;
+  inset: 20% 12%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  box-shadow: 0 0 0 999px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+.scanner-message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 28px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13.5px;
+  line-height: 1.5;
+  background: rgba(13, 22, 19, 0.55);
+}
+.scanner-footer {
+  flex: none;
+  padding: 14px 20px 20px;
+  text-align: center;
+}
+.scanner-hint {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12.5px;
+  margin: 0 0 10px;
+}
+.scanner-capture {
+  border: none;
+  background: var(--sage);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.scanner-capture:disabled {
+  opacity: 0.5;
+  cursor: default;
 }

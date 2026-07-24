@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { Drug, ProductDetailView, ProductListItem } from "@/lib/types";
 import SearchScreen from "./SearchScreen";
 import DetailScreen from "./DetailScreen";
+import ScannerModal, { type ScanResult } from "./ScannerModal";
 
 export default function App({ initialDrugs }: { initialDrugs: Drug[] }) {
   const [drugs] = useState<Drug[]>(initialDrugs);
@@ -14,6 +15,9 @@ export default function App({ initialDrugs }: { initialDrugs: Drug[] }) {
   const [openId, setOpenId] = useState<string | null>(null);
   const [detail, setDetail] = useState<ProductDetailView | null>(null);
   const [detailLoading, setDetailLoading] = useState(false);
+
+  const [scannerOpen, setScannerOpen] = useState(false);
+  const [scanNotice, setScanNotice] = useState<string | null>(null);
 
   const medsParam = [...selectedMeds].join(",");
 
@@ -52,6 +56,31 @@ export default function App({ initialDrugs }: { initialDrugs: Drug[] }) {
     });
   }
 
+  async function handleScanResult(result: ScanResult) {
+    setScannerOpen(false);
+
+    if (result.type === "text") {
+      setScanNotice(null);
+      setQuery(result.value);
+      return;
+    }
+
+    // UPC: try a direct lookup so a good scan skips the list entirely.
+    const params = new URLSearchParams();
+    if (medsParam) params.set("meds", medsParam);
+    const res = await fetch(`/api/products/by-upc/${result.value}?${params}`);
+    if (res.ok) {
+      const product: ProductDetailView = await res.json();
+      setScanNotice(null);
+      setDetail(product);
+      setOpenId(product.id);
+    } else {
+      setScanNotice(
+        "No product found for that barcode yet — try the \"Scan label text\" mode, or search by name.",
+      );
+    }
+  }
+
   if (openId) {
     if (detailLoading || !detail) {
       return (
@@ -67,14 +96,22 @@ export default function App({ initialDrugs }: { initialDrugs: Drug[] }) {
   }
 
   return (
-    <SearchScreen
-      drugs={drugs}
-      selectedMeds={selectedMeds}
-      onToggleMed={toggleMed}
-      query={query}
-      onQueryChange={setQuery}
-      items={items}
-      onOpenItem={setOpenId}
-    />
+    <>
+      <SearchScreen
+        drugs={drugs}
+        selectedMeds={selectedMeds}
+        onToggleMed={toggleMed}
+        query={query}
+        onQueryChange={setQuery}
+        items={items}
+        onOpenItem={setOpenId}
+        onOpenScanner={() => {
+          setScanNotice(null);
+          setScannerOpen(true);
+        }}
+        scanNotice={scanNotice}
+      />
+      {scannerOpen && <ScannerModal onResult={handleScanResult} onClose={() => setScannerOpen(false)} />}
+    </>
   );
 }

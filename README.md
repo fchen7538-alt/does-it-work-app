@@ -1,14 +1,15 @@
 # Does It Work?
 
-A plain-language supplement and OTC interaction checker. Search a product, tap
-the prescription drugs you're currently taking, and see factual counts —
-study counts, interactions on file — instead of a 1-5 score. Design, tone,
-and interaction pattern follow the provided prototype exactly.
+A plain-language supplement and OTC interaction checker. Search a product (by
+typing, scanning its barcode, or scanning its label), tap the prescription
+drugs you're currently taking, and see factual counts — study counts,
+interactions on file — instead of a 1-5 score. Design, tone, and interaction
+pattern follow the provided prototype exactly.
 
 ## Stack
 
 Next.js 14 (App Router) + TypeScript, no external database — `data/*.json` is
-the datastore, read by `src/lib/data.ts` and served through three API routes.
+the datastore, read by `src/lib/data.ts` and served through four API routes.
 That's the whole surface area: a data pipeline that populates JSON, and a UI
 that reads it.
 
@@ -27,13 +28,14 @@ npm run build && npm run start   # production build
 - `src/lib/data.ts` — joins products + ingredients + evidence + interactions
   into the view models the UI/API need, computing per-request things like
   "which interactions match what you're currently taking."
-- `src/app/api/*` — three routes: `GET /api/products` (search + med-filtered
-  list), `GET /api/products/[id]` (full detail), `GET /api/meds` (the
-  drug picker list).
+- `src/app/api/*` — four routes: `GET /api/products` (search + med-filtered
+  list), `GET /api/products/[id]` (full detail), `GET /api/products/by-upc/[upc]`
+  (barcode lookup, used by the scanner), `GET /api/meds` (the drug picker list).
 - `src/components/*` — the UI, a straight port of the prototype's markup/CSS
   into React, wired to the API instead of a hardcoded array. `src/app/globals.css`
   is the prototype's stylesheet with one addition (`.ingredient-evidence-block`)
-  for products with more than one active ingredient — see below.
+  for products with more than one active ingredient — see below. `ScannerModal.tsx`
+  is the one piece with no prototype equivalent — see "Scanning" below.
 - `pipeline/*` — the live data pipeline (DSLD, openFDA, RxNorm, PubMed
   E-utilities). See `pipeline/README.md`.
 - `data/*.json` + `data/README.md` — the datastore and its provenance.
@@ -49,6 +51,32 @@ For multi-ingredient products — Nature Made Turmeric Curcumin (curcumin +
 black pepper extract), Sports Research D3+K2, Excedrin (acetaminophen +
 aspirin + caffeine) — the UI labels each block with the ingredient it came
 from, so it's clear which claim is about which ingredient.
+
+## Scanning
+
+The search box has a scan button that opens the camera in one of two modes:
+
+- **Scan barcode** — decodes a UPC-A/EAN barcode with `@zxing/browser` and
+  resolves it via `GET /api/products/by-upc/[upc]`, jumping straight to the
+  product's detail view on a match. If the barcode isn't on file (see
+  coverage note below), a note points the user at label-text mode or typing
+  the name instead — it never fails silently.
+- **Scan label text** — for products with no UPC on file, or when the
+  barcode itself isn't legible. Captures a frame and runs it through a
+  self-hosted `tesseract.js` (worker/core/lang files under `public/tesseract/`
+  rather than tesseract.js's CDN default, so it works without third-party
+  runtime fetches), takes the longest clean line of recognized text as a
+  best-effort name guess, and drops it into the normal search box. This is
+  also why `listProducts` matches per-word across brand+name instead of one
+  contiguous substring — noisy OCR output ("NATURE MADE CALCIU") and
+  differently-ordered typed queries both need to land on the right product.
+
+**Barcode coverage**: `upc` is only populated for DSLD-sourced (supplement)
+products whose brand has been synced since the field was added to the
+pipeline — currently just Nature Made (39 UPCs on file). Re-sync a brand
+with `npm run sync:dsld -- --brand="Brand Name"` to backfill its UPCs; the
+rest of the catalog predates this field and has no barcode to match against
+yet, which is expected and handled by the fallback note above, not a bug.
 
 ## Data pipeline status
 

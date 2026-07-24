@@ -56,6 +56,8 @@ export interface DsldLabel {
   brandName: string;
   netContentsDisplay?: string;
   servingSizeDisplay?: string;
+  /** UPC/GTIN, digits only (DSLD returns it space-separated, e.g. "0 31604 01024 9") */
+  upc?: string;
   ingredientRows: DsldLabelIngredient[];
 }
 
@@ -76,6 +78,7 @@ interface DsldLabelResponse {
   id?: number | string;
   fullName?: string;
   brandName?: string;
+  upcSku?: string;
   netContents?: Array<{ quantity?: number; unit?: string; display?: string }>;
   servingSizes?: Array<{ minQuantity?: number; maxQuantity?: number; unit?: string }>;
   ingredientRows?: Array<{
@@ -133,6 +136,8 @@ export async function getProductLabel(dsldId: string): Promise<DsldLabel | null>
   const netContents = data.netContents?.[0];
   const serving = data.servingSizes?.[0];
 
+  const upcDigits = data.upcSku?.replace(/\D/g, "");
+
   return {
     id: String(data.id ?? dsldId),
     fullName: data.fullName ?? "",
@@ -140,6 +145,7 @@ export async function getProductLabel(dsldId: string): Promise<DsldLabel | null>
     netContentsDisplay: netContents?.display,
     servingSizeDisplay:
       serving?.minQuantity !== undefined ? `${serving.minQuantity} ${serving.unit ?? ""}`.trim() : undefined,
+    upc: upcDigits || undefined,
     ingredientRows: [...activeRows, ...otherRows],
   };
 }
@@ -187,6 +193,7 @@ export function mapDsldLabelToProduct(
     sub,
     initials: initials || "SP",
     kind: "supplement",
+    upc: label.upc,
     ingredients,
     source: {
       provider: "dsld",

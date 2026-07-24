@@ -15,6 +15,9 @@ npm run sync:dsld       # just refresh supplement products
 npm run sync:openfda    # just refresh OTC drug products
 npm run sync:rxnorm     # just backfill missing RXCUIs
 npm run sync:pubmed     # just refresh study counts + review candidates
+
+npm run sync:dsld -- --brand="Nature Made"   # resync one brand only
+npm run sync:openfda -- --brand="Advil"      # (also works for openfda)
 ```
 
 Requires outbound HTTPS to `api.ods.od.nih.gov`, `api.fda.gov`, `rxnav.nlm.nih.gov`,
@@ -83,6 +86,10 @@ npm scripts already set it, so this only matters if you invoke
 
 - **Product data** (brand, name, ingredient list, amounts): pulled live from
   DSLD (`pipeline/sources/dsld.ts`) and openFDA (`pipeline/sources/openfda.ts`).
+  DSLD also captures `upc` when the label response includes one — this powers
+  the barcode scanner in the UI (see the main `README.md`'s "Scanning"
+  section and `data/README.md` for current coverage). openFDA's label data
+  has no UPC field, so OTC products never get one from this pipeline.
 - **Name normalization**: RxNorm (`pipeline/sources/rxnorm.ts`) resolves raw
   label ingredient names to a canonical RXCUI-backed ingredient id, so
   "Acetaminophen" on a Tylenol label and "acetaminophen" in an interaction
