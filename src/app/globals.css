@@ -484,7 +484,16 @@ h2.pname {
 }
 
 .scanner-overlay {
-  position: absolute;
+  /* fixed, not absolute: .phone (the nearest positioned ancestor) has no
+     max-height and grows with page content (product list, med search
+     dropdown, etc). With `absolute`, this overlay stretched to cover
+     .phone's full scrollable height rather than the visible screen — on
+     any page tall enough to scroll, the actual video (centered within
+     that oversized flex box) rendered thousands of pixels below the
+     visible viewport, so the camera looked like it wasn't working at all
+     even though the stream was live. `fixed` always covers exactly the
+     real, visible viewport regardless of page height or scroll position. */
+  position: fixed;
   inset: 0;
   z-index: 20;
   background: #0d1613;
@@ -574,6 +583,21 @@ h2.pname {
   font-size: 13.5px;
   line-height: 1.5;
   background: rgba(13, 22, 19, 0.55);
+}
+.scanner-debug {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  right: 6px;
+  color: #6f6;
+  font-family: monospace;
+  font-size: 9px;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 6px;
+  border-radius: 4px;
+  pointer-events: none;
+  word-break: break-all;
 }
 .scanner-footer {
   flex: none;

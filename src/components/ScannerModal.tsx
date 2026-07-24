@@ -26,9 +26,28 @@ export default function ScannerModal({
 }) {
   const [mode, setMode] = useState<Mode>("barcode");
   const [status, setStatus] = useState<Status>("starting");
+  const [debugLine, setDebugLine] = useState("");
+  const [errorLine, setErrorLine] = useState("");
   const videoRef = useRef<HTMLVideoElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const controlsRef = useRef<IScannerControls | null>(null);
+
+  // TEMPORARY: on-screen diagnostics for a "camera permission granted but
+  // nothing renders" report that hasn't reproduced with a fake test camera.
+  // Remove once the real cause is confirmed from a device screenshot.
+  useEffect(() => {
+    const id = setInterval(() => {
+      const v = videoRef.current;
+      const s = streamRef.current;
+      const track = s?.getVideoTracks()[0];
+      setDebugLine(
+        `status=${status} mode=${mode} vw=${v?.videoWidth ?? "-"} vh=${v?.videoHeight ?? "-"} ` +
+          `readyState=${v?.readyState ?? "-"} paused=${v?.paused ?? "-"} ` +
+          `trackState=${track?.readyState ?? "-"} muted=${track?.muted ?? "-"}`,
+      );
+    }, 400);
+    return () => clearInterval(id);
+  }, [status, mode]);
 
   useEffect(() => {
     let cancelled = false;
@@ -39,6 +58,7 @@ export default function ScannerModal({
         return;
       }
       setStatus("starting");
+      setErrorLine("");
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
           // No width/height/aspectRatio hints: an "ideal" 16:9 landscape
@@ -125,6 +145,7 @@ export default function ScannerModal({
       } catch (err) {
         if (!cancelled) {
           setStatus((err as DOMException)?.name === "NotAllowedError" ? "denied" : "unsupported");
+          setErrorLine(`error: ${(err as Error)?.name ?? "?"}: ${(err as Error)?.message ?? String(err)}`);
         }
       }
     }
@@ -210,6 +231,10 @@ export default function ScannerModal({
         )}
         {status === "starting" && <div className="scanner-message">Starting camera…</div>}
         {status === "processing" && <div className="scanner-message">Reading label text…</div>}
+        <div className="scanner-debug">
+          {debugLine}
+          {errorLine && <><br />{errorLine}</>}
+        </div>
       </div>
 
       <div className="scanner-footer">
