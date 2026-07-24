@@ -41,7 +41,17 @@ export default function ScannerModal({
       setStatus("starting");
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: "environment" },
+          // Width/height/aspectRatio hints steer multi-lens phones (iPhones
+          // especially) toward the plain wide-angle back camera at 1x — left
+          // to just `facingMode`, iOS Safari has been observed defaulting to
+          // a zoomed-in lens/digital zoom that's too tight to fit a barcode
+          // or label in frame.
+          video: {
+            facingMode: "environment",
+            width: { ideal: 1280 },
+            height: { ideal: 720 },
+            aspectRatio: { ideal: 16 / 9 },
+          },
           audio: false,
         });
         if (cancelled) {
@@ -49,6 +59,20 @@ export default function ScannerModal({
           return;
         }
         streamRef.current = stream;
+
+        // Some iPhones still start a track at >1x optical/digital zoom even
+        // with the hints above. If the platform exposes a zoom control,
+        // reset it to the lowest (widest) value explicitly rather than
+        // trusting the default.
+        const track = stream.getVideoTracks()[0];
+        const capabilities = track?.getCapabilities?.() as (MediaTrackCapabilities & { zoom?: { min: number } }) | undefined;
+        if (track && capabilities?.zoom) {
+          try {
+            await track.applyConstraints({ advanced: [{ zoom: capabilities.zoom.min } as unknown as MediaTrackConstraintSet] });
+          } catch {
+            // Not fatal — worst case the user is stuck with the platform default zoom.
+          }
+        }
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
           await videoRef.current.play();
