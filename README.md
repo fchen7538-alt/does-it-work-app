@@ -54,28 +54,37 @@ from, so it's clear which claim is about which ingredient.
 
 ## Scanning
 
-The search box has a scan button that opens the camera in one of two modes:
+The search box has a scan button that opens one camera view handling both
+barcode and label-text recognition at once — no mode picker:
 
-- **Scan barcode** — decodes a UPC-A/EAN barcode with `@zxing/browser` and
-  resolves it via `GET /api/products/by-upc/[upc]`, jumping straight to the
-  product's detail view on a match. If the barcode isn't on file (see
-  coverage note below), a note points the user at label-text mode or typing
-  the name instead — it never fails silently.
-- **Scan label text** — for products with no UPC on file, or when the
-  barcode itself isn't legible. Captures a frame and runs it through a
-  self-hosted `tesseract.js` (worker/core/lang files under `public/tesseract/`
-  rather than tesseract.js's CDN default, so it works without third-party
-  runtime fetches), takes the longest clean line of recognized text as a
-  best-effort name guess, and drops it into the normal search box. This is
-  also why `listProducts` matches per-word across brand+name instead of one
-  contiguous substring — noisy OCR output ("NATURE MADE CALCIU") and
-  differently-ordered typed queries both need to land on the right product.
+- **Barcode** — decoded continuously in the background with
+  `@zxing/browser` for as long as the scanner is open, resolved via
+  `GET /api/products/by-upc/[upc]`, jumping straight to the product's
+  detail view the moment a match is found. If the barcode isn't on file
+  (see coverage note below), a note points the user at label-text capture
+  or typing the name instead — it never fails silently.
+- **Label text** — a "Capture label text" button is always available
+  alongside the live barcode scanning, for products with no UPC on file or
+  when the barcode itself isn't legible. Captures the current frame and
+  runs it through a self-hosted `tesseract.js` (worker/core/lang files
+  under `public/tesseract/` rather than tesseract.js's CDN default, so it
+  works without third-party runtime fetches), takes the longest clean line
+  of recognized text as a best-effort name guess, and drops it into the
+  normal search box. This is also why `listProducts` matches per-word
+  across brand+name instead of one contiguous substring — noisy OCR output
+  ("NATURE MADE CALCIU") and differently-ordered typed queries both need to
+  land on the right product.
 
-Switching modes quickly (tap barcode → immediately tap label-text) used to
-leak a running barcode decode loop in the background — see the comments
-around the `mode === "barcode" && !cancelled` check in `ScannerModal.tsx`
-for the race and why a late-arriving `decodeFromStream` promise needs an
-explicit stop, not just a skipped ref assignment.
+This used to be two tabs the user had to switch between manually (each
+restarting the camera on switch), which was also the source of a whole
+class of race-condition bugs — a barcode decode loop from the tab you just
+left could still be resolving/running when the other tab's effect started,
+occasionally leaking a live decode loop that starved the OCR capture step
+of CPU long enough to time out. Running one camera session for the whole
+time the scanner is open, with barcode decoding always active and capture
+always available, removes the restart (and the races that came with it)
+entirely — see `ScannerModal.tsx`'s effect for the current single-session
+setup.
 
 **Barcode coverage**: `upc` is only populated for DSLD-sourced (supplement)
 products whose brand has been re-synced since the field was added to the
@@ -85,6 +94,14 @@ Extension). Re-sync a brand with `npm run sync:dsld -- --brand="Brand Name"`
 to backfill its UPCs; the remaining 9 supplement brands and all 24 OTC
 products predate this field and have no barcode to match against yet, which
 is expected and handled by the fallback note above, not a bug.
+
+**Temporary**: the scanner currently shows a small green diagnostic line
+(status, video dimensions, track settings) at the bottom of the camera
+view — added to debug real-device-only failures that don't reproduce with
+a fake test camera (a genuine positioning bug once had the camera
+rendering tens of thousands of pixels off-screen; see `ScannerModal.tsx`'s
+`scanner-debug` element). Remove once scanning is confirmed reliable
+end-to-end on a real device.
 
 ## Data pipeline status
 

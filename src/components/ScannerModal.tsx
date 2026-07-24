@@ -3,13 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 import type { IScannerControls } from "@zxing/browser";
 
-type Mode = "barcode" | "text";
 type Status = "starting" | "scanning" | "denied" | "unsupported" | "processing";
 
 // A "ready" video frame needs at least this many pixels of width — during
-// stream setup/renegotiation videoWidth can transiently report a small
-// bogus value (a real camera never legitimately reports single digits)
-// before settling on the actual frame size.
+// stream setup videoWidth can transiently report a small bogus value (a
+// real camera never legitimately reports single digits) before settling on
+// the actual frame size.
 const MIN_READY_WIDTH = 50;
 
 export interface ScanResult {
@@ -24,31 +23,45 @@ export default function ScannerModal({
   onResult: (result: ScanResult) => void;
   onClose: () => void;
 }) {
-  const [mode, setMode] = useState<Mode>("barcode");
   const [status, setStatus] = useState<Status>("starting");
   const [debugLine, setDebugLine] = useState("");
   const [errorLine, setErrorLine] = useState("");
   const videoRef = useRef<HTMLVideoElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const controlsRef = useRef<IScannerControls | null>(null);
+  // App.tsx defines onResult fresh on every render (not wrapped in
+  // useCallback) — putting it in the setup effect's deps would restart the
+  // camera on every unrelated parent re-render. Read the latest version via
+  // a ref instead, kept current on every render, so the effect can safely
+  // run once per modal mount.
+  const onResultRef = useRef(onResult);
+  onResultRef.current = onResult;
 
-  // TEMPORARY: on-screen diagnostics for a "camera permission granted but
-  // nothing renders" report that hasn't reproduced with a fake test camera.
-  // Remove once the real cause is confirmed from a device screenshot.
+  // TEMPORARY: on-screen diagnostics for "camera doesn't recognize
+  // anything" reports that haven't reproduced with a fake test camera.
+  // Remove once confirmed fixed from a device screenshot.
   useEffect(() => {
     const id = setInterval(() => {
       const v = videoRef.current;
       const s = streamRef.current;
       const track = s?.getVideoTracks()[0];
       setDebugLine(
-        `status=${status} mode=${mode} vw=${v?.videoWidth ?? "-"} vh=${v?.videoHeight ?? "-"} ` +
+        `status=${status} vw=${v?.videoWidth ?? "-"} vh=${v?.videoHeight ?? "-"} ` +
           `readyState=${v?.readyState ?? "-"} paused=${v?.paused ?? "-"} ` +
-          `trackState=${track?.readyState ?? "-"} muted=${track?.muted ?? "-"}`,
+          `trackState=${track?.readyState ?? "-"} settings=${JSON.stringify(track?.getSettings?.() ?? {})}`,
       );
     }, 400);
     return () => clearInterval(id);
-  }, [status, mode]);
+  }, [status]);
 
+  // Runs once per modal open, not per mode switch — barcode/label-text used
+  // to be separate tabs, each restarting the camera and its own effect
+  // instance on switch. That was the source of a whole category of bugs
+  // (races between a cancelled effect and its still-resolving async setup).
+  // Now the camera starts once, barcode decoding runs continuously in the
+  // background for the whole session, and "Capture" (OCR) is available at
+  // any time against whatever's currently in frame — no mode, no restart,
+  // no race.
   useEffect(() => {
     let cancelled = false;
 
@@ -61,14 +74,16 @@ export default function ScannerModal({
       setErrorLine("");
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          // No width/height/aspectRatio hints: an "ideal" 16:9 landscape
-          // constraint here was actively causing the "too zoomed in"
-          // complaint, not fixing it — on a phone held in portrait, the
-          // viewport is tall and narrow, and object-fit: cover crops a wide
-          // landscape frame down to a thin vertical center strip, which
-          // looks just like being zoomed way in. Let the browser pick its
-          // natural default for the current orientation instead.
-          video: { facingMode: "environment" },
+          // ideal (not exact/required) width+height: a real hint improves
+          // decode/OCR quality over whatever low-res default the browser
+          // might otherwise pick, without forcing a landscape crop — that
+          // came from also pinning aspectRatio, which combined with
+          // object-fit: cover cropped a wide frame down to a thin vertical
+          // strip on a portrait viewport (looked exactly like being zoomed
+          // way in). No aspectRatio constraint + object-fit: contain below
+          // means whatever shape stream we get is shown in full, never
+          // cropped.
+          video: { facingMode: "environment", width: { ideal: 1280 }, height: { ideal: 720 } },
           audio: false,
         });
         if (cancelled) {
@@ -77,29 +92,36 @@ export default function ScannerModal({
         }
         streamRef.current = stream;
 
-        // Some devices (mainly Android/Chrome) start a track at >1x
-        // optical/digital zoom by default. Not supported at all on iOS
-        // Safari (capabilities.zoom is simply undefined there, so this is a
-        // no-op) — the real iOS fix is the object-fit change below, not
-        // this. Where it is supported, reset to the lowest (widest) value
-        // explicitly rather than trusting the platform default.
         const track = stream.getVideoTracks()[0];
-        const capabilities = track?.getCapabilities?.() as (MediaTrackCapabilities & { zoom?: { min: number } }) | undefined;
-        if (track && capabilities?.zoom) {
+        const capabilities = track?.getCapabilities?.() as
+          | (MediaTrackCapabilities & { zoom?: { min: number }; focusMode?: string[] })
+          | undefined;
+        const advanced: MediaTrackConstraintSet[] = [];
+        // Some devices (mainly Android/Chrome) start a track at >1x
+        // optical/digital zoom by default. Not supported on iOS Safari
+        // (capabilities.zoom is undefined there) — harmless no-op.
+        if (capabilities?.zoom) advanced.push({ zoom: capabilities.zoom.min } as unknown as MediaTrackConstraintSet);
+        // Continuous autofocus matters a lot for reading a barcode or label
+        // held a few inches from the lens — without it some devices default
+        // to a fixed focus distance that's fine for a normal photo but too
+        // soft up close to decode. Also unsupported on iOS Safari; no-op.
+        if (capabilities?.focusMode?.includes("continuous")) {
+          advanced.push({ focusMode: "continuous" } as unknown as MediaTrackConstraintSet);
+        }
+        if (track && advanced.length) {
           try {
-            await track.applyConstraints({ advanced: [{ zoom: capabilities.zoom.min } as unknown as MediaTrackConstraintSet] });
+            await track.applyConstraints({ advanced });
           } catch {
-            // Not fatal — worst case the user is stuck with the platform default zoom.
+            // Not fatal — worst case the user is stuck with the platform default.
           }
         }
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
           await videoRef.current.play();
           // play() resolving doesn't reliably mean videoWidth/videoHeight
-          // reflect the real frame size yet — during stream setup/renegotiation
-          // (e.g. right after switching scan modes) videoWidth can briefly
-          // report a bogus tiny value before settling, so a plain truthy
-          // check isn't enough. Capturing a frame before it's really ready
+          // reflect the real frame size yet — videoWidth can briefly report
+          // a bogus tiny value before settling, so a plain truthy check
+          // isn't enough. Capturing a frame before it's really ready
           // produces a near-empty canvas, which makes canvas.toBlob() hand
           // back null and crashes downstream code expecting a real Blob.
           const deadline = Date.now() + 4000;
@@ -109,38 +131,27 @@ export default function ScannerModal({
         }
         setStatus("scanning");
 
-        // By the time execution reaches here, the getUserMedia/zoom/
-        // videoWidth-polling awaits above may have taken long enough that
-        // the mode already switched away (e.g. user tapped "Scan label
-        // text" before the camera even finished setting up) — cleanup for
-        // this effect instance already ran. Starting the barcode decode
-        // loop anyway just to stop it a moment later still lets it run
-        // (and burn CPU against the *new* stream on the same video element,
-        // since zxing reads live from the DOM element) for as long as
-        // decodeFromStream takes to resolve — skip it entirely instead.
-        if (mode === "barcode" && !cancelled) {
-          const { BrowserMultiFormatReader } = await import("@zxing/browser");
-          const reader = new BrowserMultiFormatReader();
-          // Note: don't reference the `controls` returned below from inside
-          // this callback — on a fast/clean scan it can fire before that
-          // `await` resolves and assigns it, throwing a temporal-dead-zone
-          // ReferenceError that zxing's scan loop swallows silently (this
-          // callback then never gets to call onResult). controlsRef is
-          // already-initialized (starts as null) so it's safe to read here.
-          const controls = await reader.decodeFromStream(stream, videoRef.current!, (result) => {
-            if (result && !cancelled) {
-              controlsRef.current?.stop();
-              onResult({ type: "upc", value: result.getText() });
-            }
-          });
-          // Mode could still have switched away while decodeFromStream
-          // itself was resolving — same reasoning as above, stop rather
-          // than leak in that case too.
-          if (cancelled) {
-            controls.stop();
-          } else {
-            controlsRef.current = controls;
+        const { BrowserMultiFormatReader } = await import("@zxing/browser");
+        const reader = new BrowserMultiFormatReader();
+        // Note: don't reference the `controls` returned below from inside
+        // this callback — on a fast/clean scan it can fire before that
+        // `await` resolves and assigns it, throwing a temporal-dead-zone
+        // ReferenceError that zxing's scan loop swallows silently (this
+        // callback then never gets to call onResult). controlsRef is
+        // already-initialized (starts as null) so it's safe to read here.
+        const controls = await reader.decodeFromStream(stream, videoRef.current!, (result) => {
+          if (result && !cancelled) {
+            controlsRef.current?.stop();
+            onResultRef.current({ type: "upc", value: result.getText() });
           }
+        });
+        // The modal could have closed while decodeFromStream was still
+        // resolving — stop rather than leak a running loop nothing else
+        // will ever stop.
+        if (cancelled) {
+          controls.stop();
+        } else {
+          controlsRef.current = controls;
         }
       } catch (err) {
         if (!cancelled) {
@@ -160,7 +171,7 @@ export default function ScannerModal({
       streamRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode]);
+  }, []);
 
   async function captureAndReadText() {
     if (!videoRef.current || videoRef.current.videoWidth < MIN_READY_WIDTH) return;
@@ -194,7 +205,7 @@ export default function ScannerModal({
       .filter((line) => line.length > 2 && /[A-Za-z]/.test(line))
       .sort((a, b) => b.length - a.length)[0];
 
-    onResult({ type: "text", value: cleaned ?? "" });
+    onResultRef.current({ type: "text", value: cleaned ?? "" });
   }
 
   return (
@@ -203,22 +214,12 @@ export default function ScannerModal({
         <button className="scanner-close" onClick={onClose} aria-label="Close scanner">
           ✕
         </button>
-        <div className="scanner-modetabs">
-          <button
-            className={`scanner-modetab ${mode === "barcode" ? "on" : ""}`}
-            onClick={() => setMode("barcode")}
-          >
-            Scan barcode
-          </button>
-          <button className={`scanner-modetab ${mode === "text" ? "on" : ""}`} onClick={() => setMode("text")}>
-            Scan label text
-          </button>
-        </div>
+        <p className="scanner-title">Scan a barcode or the product label</p>
       </div>
 
       <div className="scanner-viewport">
         <video ref={videoRef} className="scanner-video" playsInline muted />
-        {status === "scanning" && mode === "barcode" && <div className="scanner-reticle" />}
+        {status === "scanning" && <div className="scanner-reticle" />}
         {status === "denied" && (
           <div className="scanner-message">
             Camera access was denied. You can still search by typing the product or brand name above.
@@ -233,21 +234,22 @@ export default function ScannerModal({
         {status === "processing" && <div className="scanner-message">Reading label text…</div>}
         <div className="scanner-debug">
           {debugLine}
-          {errorLine && <><br />{errorLine}</>}
+          {errorLine && (
+            <>
+              <br />
+              {errorLine}
+            </>
+          )}
         </div>
       </div>
 
       <div className="scanner-footer">
-        {mode === "barcode" ? (
-          <p className="scanner-hint">Point the camera at the barcode on the bottle.</p>
-        ) : (
-          <>
-            <p className="scanner-hint">Frame the product name on the label, then capture.</p>
-            <button className="scanner-capture" onClick={captureAndReadText} disabled={status !== "scanning"}>
-              Capture
-            </button>
-          </>
-        )}
+        <p className="scanner-hint">
+          Barcodes are recognized automatically. No barcode, or hard to read? Frame the product name and tap capture.
+        </p>
+        <button className="scanner-capture" onClick={captureAndReadText} disabled={status !== "scanning"}>
+          Capture label text
+        </button>
       </div>
     </div>
   );
