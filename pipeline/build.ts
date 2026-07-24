@@ -174,7 +174,6 @@ async function main() {
       try {
         const count = await pubmed.getStudyCount(ing.name);
         const existing = evidenceByIngredientId.get(ing.id);
-        const filled = Math.min(5, Math.max(1, Math.round(Math.log2(count + 1))));
 
         // Study count refreshes live; the plain-language summary, studied-dose
         // range, and any review verdict stay editorially curated (see
@@ -182,7 +181,6 @@ async function main() {
         evidenceByIngredientId.set(ing.id, {
           ingredientId: ing.id,
           studyCount: count,
-          filled,
           sub: existing?.sub ?? "Summary pending editorial review.",
           studiedAmount: existing?.studiedAmount ?? "Not yet reviewed",
           chips: existing?.chips ?? [],

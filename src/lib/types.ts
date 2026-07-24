@@ -65,8 +65,6 @@ export interface Evidence {
   ingredientId: string;
   /** PubMed E-utilities esearch count for this ingredient's primary studied use */
   studyCount: number;
-  /** 0-5 tally fill, a coarse visual proxy for strength of evidence volume */
-  filled: number;
   /** One-line plain-language summary of what the studies mostly looked at */
   sub: string;
   /** Human-readable dose range studied */

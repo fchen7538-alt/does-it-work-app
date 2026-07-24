@@ -1,23 +1,10 @@
 import type { ProductDetailView } from "@/lib/types";
 import Chevron from "./Chevron";
 
-function Tally({ filled, warn }: { filled: number; warn?: boolean }) {
-  return (
-    <div className={`tally ${warn ? "warn" : ""}`}>
-      {Array.from({ length: 5 }, (_, idx) => (
-        <span key={idx} className={idx < filled ? "filled" : ""} />
-      ))}
-    </div>
-  );
-}
-
 export default function DetailScreen({ product, onBack }: { product: ProductDetailView; onBack: () => void }) {
   const { evidence, interactions, ingredients } = product;
 
   const totalStudies = evidence.reduce((sum, e) => sum + e.studyCount, 0);
-  const avgFilled = evidence.length
-    ? Math.min(5, Math.max(0, Math.round(evidence.reduce((sum, e) => sum + e.filled, 0) / evidence.length)))
-    : 0;
   const researchSub =
     evidence.length === 1
       ? evidence[0]!.sub
@@ -61,7 +48,6 @@ export default function DetailScreen({ product, onBack }: { product: ProductDeta
           <div className="panel-count">
             {totalStudies} <span className="unit">studies</span>
           </div>
-          <Tally filled={avgFilled} />
           <div className="panel-sub">{researchSub}</div>
         </div>
         <div className="panel">
@@ -69,7 +55,6 @@ export default function DetailScreen({ product, onBack }: { product: ProductDeta
           <div className="panel-count">
             {interactions.length} <span className="unit">on file</span>
           </div>
-          <Tally filled={Math.min(interactions.length, 5)} warn />
           <div className="panel-sub">
             {relevantInteractions.length
               ? `${relevantInteractions.length} match what you're taking`

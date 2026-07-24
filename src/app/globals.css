@@ -242,7 +242,7 @@ h2.pname {
   font-weight: 700;
   font-size: 26px;
   line-height: 1;
-  margin-bottom: 4px;
+  margin-bottom: 9px;
 }
 .panel-count .unit {
   font-family: 'Inter';
@@ -255,23 +255,6 @@ h2.pname {
   font-size: 12px;
   color: rgba(18, 36, 31, 0.6);
   line-height: 1.45;
-}
-.tally {
-  display: flex;
-  gap: 3px;
-  margin: 9px 0 7px;
-}
-.tally span {
-  flex: 1;
-  height: 16px;
-  border-radius: 3px;
-  background: var(--mist);
-}
-.tally span.filled {
-  background: var(--sage);
-}
-.tally.warn span.filled {
-  background: var(--amber);
 }
 
 .ingredient-strip {
