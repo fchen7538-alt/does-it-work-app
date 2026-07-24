@@ -147,9 +147,9 @@ export default function DetailScreen({ product, onBack }: { product: ProductDeta
           ) : (
             <>
               {relevantInteractions.map((i) => (
-                <div style={{ marginBottom: 12 }} key={i.ingredientId + i.drugId}>
+                <div className="interaction-row relevant" key={i.ingredientId + i.drugId}>
                   {showIngredientLabels && <div className="ing-evidence-name">{i.ingredientName}</div>}
-                  {i.text}
+                  <span className="interaction-drug">{i.drugLabel}</span> {i.text}
                   <span className="record-chip">{i.severity}</span>
                 </div>
               ))}
@@ -165,9 +165,10 @@ export default function DetailScreen({ product, onBack }: { product: ProductDeta
                     Other things it can interact with:
                   </div>
                   {otherInteractions.map((i) => (
-                    <div style={{ marginBottom: 9, opacity: 0.75 }} key={i.ingredientId + i.drugId}>
+                    <div className="interaction-row" key={i.ingredientId + i.drugId}>
                       {showIngredientLabels && <div className="ing-evidence-name">{i.ingredientName}</div>}
-                      {i.text} <span className="record-chip">{i.severity}</span>
+                      <span className="interaction-drug">{i.drugLabel}</span> {i.text}{" "}
+                      <span className="record-chip">{i.severity}</span>
                     </div>
                   ))}
                 </div>

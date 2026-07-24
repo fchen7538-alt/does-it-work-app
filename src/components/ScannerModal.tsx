@@ -41,17 +41,14 @@ export default function ScannerModal({
       setStatus("starting");
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          // Width/height/aspectRatio hints steer multi-lens phones (iPhones
-          // especially) toward the plain wide-angle back camera at 1x — left
-          // to just `facingMode`, iOS Safari has been observed defaulting to
-          // a zoomed-in lens/digital zoom that's too tight to fit a barcode
-          // or label in frame.
-          video: {
-            facingMode: "environment",
-            width: { ideal: 1280 },
-            height: { ideal: 720 },
-            aspectRatio: { ideal: 16 / 9 },
-          },
+          // No width/height/aspectRatio hints: an "ideal" 16:9 landscape
+          // constraint here was actively causing the "too zoomed in"
+          // complaint, not fixing it — on a phone held in portrait, the
+          // viewport is tall and narrow, and object-fit: cover crops a wide
+          // landscape frame down to a thin vertical center strip, which
+          // looks just like being zoomed way in. Let the browser pick its
+          // natural default for the current orientation instead.
+          video: { facingMode: "environment" },
           audio: false,
         });
         if (cancelled) {
@@ -60,10 +57,12 @@ export default function ScannerModal({
         }
         streamRef.current = stream;
 
-        // Some iPhones still start a track at >1x optical/digital zoom even
-        // with the hints above. If the platform exposes a zoom control,
-        // reset it to the lowest (widest) value explicitly rather than
-        // trusting the default.
+        // Some devices (mainly Android/Chrome) start a track at >1x
+        // optical/digital zoom by default. Not supported at all on iOS
+        // Safari (capabilities.zoom is simply undefined there, so this is a
+        // no-op) — the real iOS fix is the object-fit change below, not
+        // this. Where it is supported, reset to the lowest (widest) value
+        // explicitly rather than trusting the platform default.
         const track = stream.getVideoTracks()[0];
         const capabilities = track?.getCapabilities?.() as (MediaTrackCapabilities & { zoom?: { min: number } }) | undefined;
         if (track && capabilities?.zoom) {

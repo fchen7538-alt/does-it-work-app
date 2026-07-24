@@ -425,6 +425,25 @@ h2.pname {
   font-size: 13px;
   color: rgba(18, 36, 31, 0.55);
 }
+.interaction-row {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.interaction-row.relevant {
+  background: #fbf0e4;
+  border: 1px solid #efd9b8;
+}
+.interaction-row:not(.relevant) {
+  padding: 0;
+  opacity: 0.75;
+}
+.interaction-drug {
+  font-weight: 700;
+}
+.interaction-row.relevant .interaction-drug {
+  color: var(--amber);
+}
 .disclaimer {
   text-align: center;
   font-size: 11px;
@@ -528,7 +547,12 @@ h2.pname {
 .scanner-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* contain, not cover: this is a viewfinder, not decorative background
+     video — cropping the frame to fill a tall portrait box out of a wider
+     camera capture reads as "zoomed way in" (you're only seeing a thin
+     center slice of the real field of view). contain always shows the
+     full captured frame, letterboxed on whichever axis doesn't match. */
+  object-fit: contain;
 }
 .scanner-reticle {
   position: absolute;
