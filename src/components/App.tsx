@@ -76,7 +76,7 @@ export default function App({ initialDrugs }: { initialDrugs: Drug[] }) {
       setOpenId(product.id);
     } else {
       setScanNotice(
-        "No product found for that barcode yet — try capturing the label text instead, or search by name.",
+        `No product found for barcode ${result.value} yet — try capturing the label text instead, or search by name.`,
       );
     }
   }
