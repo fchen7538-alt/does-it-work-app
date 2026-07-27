@@ -3,6 +3,7 @@ import ingredientsJson from "@data/ingredients.json";
 import drugsJson from "@data/drugs.json";
 import evidenceJson from "@data/evidence.json";
 import interactionsJson from "@data/interactions.json";
+import upcAliasesJson from "@data/upc-aliases.json";
 import type {
   Product,
   Ingredient,
@@ -49,7 +50,15 @@ function interactionsForProduct(product: Product): Interaction[] {
   return result;
 }
 
-const productIdByUpc = new Map(products.filter((p) => p.upc).map((p) => [p.upc!, p.id]));
+// A scanned barcode that isn't on file in DSLD's own data for the exact
+// product we already have (e.g. DSLD only submitted a 30/60/120/180-count
+// bottle's UPC, but a shopper's physical bottle is a 150-count) — see
+// data/upc-aliases.json for how entries here were verified before adding.
+const upcAliases = upcAliasesJson as Record<string, string>;
+const productIdByUpc = new Map<string, string>([
+  ...products.filter((p) => p.upc).map((p): [string, string] => [p.upc!, p.id]),
+  ...Object.entries(upcAliases),
+]);
 
 export function listDrugs(): Drug[] {
   return drugs;

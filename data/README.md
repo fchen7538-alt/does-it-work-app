@@ -127,6 +127,14 @@ RxNorm, and PubMed E-utilities APIs:
   795 distinct active ingredients exist across the live-pulled product
   catalog, and only 32 of them have any interaction row yet.
 
+- `upc-aliases.json` — hand-verified `{barcode: productId}` entries for
+  real-world scans that came back "not found" because DSLD's own dataset
+  never had that exact pack size's barcode on file, even though the same
+  formulation is already in `products.json` under a different DSLD label
+  (different count, same ingredients). Checked live against the DSLD
+  `/label/{id}` API before adding, not guessed. `findProductIdByUpc` in
+  `src/lib/data.ts` checks this after `products.json`'s own `upc` field.
+
 Re-run `npm run sync` (or a `sync:<source>` stage) any time to refresh live
 data; curated `evidence.json` fields (`sub`, `studiedAmount`, `chips`,
 `reviewVerdict`) and all of `interactions.json` are preserved rather than
